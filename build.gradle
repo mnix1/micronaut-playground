@@ -17,7 +17,9 @@ dependencies {
     implementation("jakarta.annotation:jakarta.annotation-api")
     runtimeOnly("ch.qos.logback:logback-classic")
     implementation("io.micronaut:micronaut-validation")
-
+    //faker
+    implementation('com.github.javafaker:javafaker:1.0.2') { exclude module: 'snakeyaml' }
+    implementation group: 'org.yaml', name: 'snakeyaml', version: '1.30'
 }
 
 
