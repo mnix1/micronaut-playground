@@ -1,5 +1,6 @@
 package com.example;
 
+import com.example.repository.VehicleRepository;
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 

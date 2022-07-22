@@ -1,0 +1,57 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "gradle.plugin.com.github.johnrengelman:shadow:7.1.2"
+        classpath "io.micronaut.gradle:micronaut-gradle-plugin:3.5.1"
+    }
+}
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+subprojects {
+    apply plugin: "com.github.johnrengelman.shadow"
+    apply plugin: "io.micronaut.application"
+
+    group = "com.example"
+
+    dependencies {
+        annotationProcessor("io.micronaut:micronaut-http-validation")
+        implementation("io.micronaut:micronaut-http-client")
+        implementation("io.micronaut:micronaut-jackson-databind")
+        implementation("jakarta.annotation:jakarta.annotation-api")
+        runtimeOnly("ch.qos.logback:logback-classic")
+        implementation("io.micronaut:micronaut-validation")
+        //faker
+        implementation('com.github.javafaker:javafaker:1.0.2') { exclude module: 'snakeyaml' }
+        implementation group: 'org.yaml', name: 'snakeyaml', version: '1.30'
+
+        testImplementation(platform('org.junit:junit-bom:5.8.2'))
+        testImplementation('org.junit.jupiter:junit-jupiter')
+        testImplementation('org.junit.jupiter:junit-jupiter-params')
+        testImplementation('org.assertj:assertj-core:3.23.1')
+        testImplementation('org.mockito:mockito-core:4.6.1')
+    }
+    compileJava { options.encoding = "UTF-8" }
+
+    java {
+        sourceCompatibility = JavaVersion.toVersion("17")
+        targetCompatibility = JavaVersion.toVersion("17")
+    }
+
+    graalvmNative.toolchainDetection = false
+    micronaut {
+        runtime("netty")
+        testRuntime("junit5")
+        processing {
+            incremental(true)
+            annotations("com.example.*")
+        }
+    }
+}

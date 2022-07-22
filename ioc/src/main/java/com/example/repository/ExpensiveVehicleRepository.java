@@ -1,15 +1,14 @@
-package com.example;
+package com.example.repository;
 
 import java.util.List;
 
-class InMemoryVehicleRepository implements VehicleRepository {
+class ExpensiveVehicleRepository implements VehicleRepository {
 
     @Override
     public List<String> vehicles() {
         return List.of(
                 "Ferrari",
-                "Lambo",
-                "Fiat"
+                "Lamborghini"
         );
     }
 }
