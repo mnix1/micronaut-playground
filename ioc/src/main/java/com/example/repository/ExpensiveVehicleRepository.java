@@ -7,8 +7,7 @@ class ExpensiveVehicleRepository implements VehicleRepository {
     @Override
     public List<String> vehicles() {
         return List.of(
-                "Ferrari",
-                "Lamborghini"
+                "Ferrari F8 Spider"
         );
     }
 }

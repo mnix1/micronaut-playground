@@ -2,12 +2,12 @@ package com.example.repository;
 
 import java.util.List;
 
-class CheapVehicleRepository implements VehicleRepository {
+public class SUVVehicleRepository implements VehicleRepository {
 
     @Override
     public List<String> vehicles() {
         return List.of(
-                "Fiat 126p"
+                "Toyota Rav4"
         );
     }
 }

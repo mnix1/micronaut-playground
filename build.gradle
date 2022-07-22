@@ -32,17 +32,21 @@ subprojects {
         implementation('com.github.javafaker:javafaker:1.0.2') { exclude module: 'snakeyaml' }
         implementation group: 'org.yaml', name: 'snakeyaml', version: '1.30'
 
-        testImplementation(platform('org.junit:junit-bom:5.8.2'))
-        testImplementation('org.junit.jupiter:junit-jupiter')
-        testImplementation('org.junit.jupiter:junit-jupiter-params')
+        testAnnotationProcessor "io.micronaut:micronaut-inject-java"
+        testImplementation("org.junit.jupiter:junit-jupiter-api")
+        testImplementation("io.micronaut.test:micronaut-test-junit5")
+        testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:{junitVersion}")
         testImplementation('org.assertj:assertj-core:3.23.1')
-        testImplementation('org.mockito:mockito-core:4.6.1')
     }
     compileJava { options.encoding = "UTF-8" }
 
     java {
         sourceCompatibility = JavaVersion.toVersion("17")
         targetCompatibility = JavaVersion.toVersion("17")
+    }
+
+    test {
+        useJUnitPlatform()
     }
 
     graalvmNative.toolchainDetection = false
