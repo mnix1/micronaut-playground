@@ -2,8 +2,8 @@ package com.example;
 
 import io.micronaut.runtime.Micronaut;
 
-class Application {
+class IOCApplication {
     public static void main(String[] args) {
-        Micronaut.run(Application.class, args);
+        Micronaut.run(IOCApplication.class, args);
     }
 }

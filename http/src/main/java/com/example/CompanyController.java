@@ -1,4 +1,4 @@
-package com.example.http;
+package com.example;
 
 import com.github.javafaker.Faker;
 import io.micronaut.http.HttpResponse;

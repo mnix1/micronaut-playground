@@ -1,4 +1,4 @@
-package com.example.dependencyinjection;
+package com.example;
 
 import io.micronaut.context.annotation.Bean;
 import io.micronaut.context.annotation.Factory;

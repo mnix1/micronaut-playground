@@ -1,4 +1,4 @@
-package com.example.dependencyinjection;
+package com.example;
 
 import java.util.List;
 

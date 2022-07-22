@@ -1,9 +1,7 @@
 micronaut:
   application:
-    name: micronautPlayground
+    name: http
 netty:
   default:
     allocator:
       max-order: 3
-property:
-  prefix

@@ -1,2 +1,4 @@
 rootProject.name = "micronaut-playground"
 
+include 'http'
+include 'ioc'

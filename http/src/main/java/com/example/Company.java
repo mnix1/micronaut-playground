@@ -1,4 +1,4 @@
-package com.example.http;
+package com.example;
 
 import java.time.Instant;
 import java.util.List;

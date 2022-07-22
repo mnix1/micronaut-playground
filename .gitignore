@@ -2,6 +2,8 @@ Thumbs.db
 .DS_Store
 .gradle
 build/
+http/build/
+ioc/build/
 target/
 out/
 .idea
