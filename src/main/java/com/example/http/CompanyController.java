@@ -3,12 +3,10 @@ package com.example.http;
 import com.github.javafaker.Faker;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.HttpStatus;
-import io.micronaut.http.MutableHttpMessage;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Delete;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.http.annotation.Post;
-import io.micronaut.runtime.Micronaut;
 
 import java.time.Instant;
 import java.util.*;
@@ -16,33 +14,29 @@ import java.util.stream.IntStream;
 
 @Controller("/companies")
 class CompanyController {
-    public static void main(String[] args) {
-        Micronaut.run(CompanyController.class, args);
-    }
-
     private final List<Company> companies = new ArrayList<>();
 
     @Get
     List<ListCompanySnapshot> find(Optional<Integer> employeesFrom, Optional<Integer> employeesTo) {
         return companies.stream()
-                .filter(c -> employeesFrom.filter(i -> c.employees < i).isEmpty())
-                .filter(c -> employeesTo.filter(i -> c.employees > i).isEmpty())
-                .map(c -> new ListCompanySnapshot(c.id, c.name, c.industry, c.employees, c.createdDateTime.toString()))
+                .filter(c -> employeesFrom.filter(i -> c.employees() < i).isEmpty())
+                .filter(c -> employeesTo.filter(i -> c.employees() > i).isEmpty())
+                .map(c -> new ListCompanySnapshot(c.id(), c.name(), c.industry(), c.employees(), c.createdDateTime().toString()))
                 .toList();
     }
 
     @Get("findByName")
     List<ListCompanySnapshot> findByName(String namePrefix, Optional<String> nameSuffix) {
         return companies.stream()
-                .filter(c -> c.name.startsWith(namePrefix))
-                .filter(c -> nameSuffix.filter(s -> !c.name.endsWith(s)).isEmpty())
-                .map(c -> new ListCompanySnapshot(c.id, c.name, c.industry, c.employees, c.createdDateTime.toString()))
+                .filter(c -> c.name().startsWith(namePrefix))
+                .filter(c -> nameSuffix.filter(s -> !c.name().endsWith(s)).isEmpty())
+                .map(c -> new ListCompanySnapshot(c.id(), c.name(), c.industry(), c.employees(), c.createdDateTime().toString()))
                 .toList();
     }
 
     @Get("/{id}")
     Optional<Company> get(UUID id) {
-        return companies.stream().filter(c -> c.id.equals(id)).findAny();
+        return companies.stream().filter(c -> c.id().equals(id)).findAny();
     }
 
     @Post("/random")
@@ -69,7 +63,7 @@ class CompanyController {
 
     @Delete("/{id}")
     HttpResponse<Void> delete(UUID id) {
-        companies.removeIf(c -> c.id.equals(id));
+        companies.removeIf(c -> c.id().equals(id));
         return HttpResponse.noContent();
     }
 
@@ -77,23 +71,6 @@ class CompanyController {
     HttpResponse<Void> delete() {
         companies.clear();
         return HttpResponse.noContent();
-    }
-
-    record Company(
-            UUID id,
-            String name,
-            String industry,
-            int employees,
-            Instant createdDateTime,
-            List<Facility> facilities
-    ) {
-
-    }
-
-    record Facility(
-            String country,
-            String city
-    ) {
     }
 
     record CompanyRequestBody(
