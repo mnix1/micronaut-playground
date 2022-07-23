@@ -24,6 +24,8 @@ class VehicleRepositoryConfiguration {
         return new CheapVehicleRepository();
     }
 
+    //TODO change @Singleton to @Prototype
+    //TODO change VehicleRepository to SUVVehicleRepository
     @Singleton
     @Requires(property = "vehicles.suv", value = "true")
     VehicleRepository suvVehicleRepository() {

@@ -14,7 +14,8 @@ class IOCApplication {
         };
         ApplicationContext run = Micronaut.run(IOCApplication.class, args);
         LOG.info(run.getBean(VehicleService.class).vehicles().toString());
-        logBeans(run);
+        //TODO check beans
+//        logBeans(run);
     }
 
     private static void logBeans(ApplicationContext context) {
