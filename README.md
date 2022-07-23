@@ -23,10 +23,10 @@
 - @Post("/random")
 - @Client("/vehicles") HttpClient client;
 
-## ioc
+## [ioc](https://docs.micronaut.io/3.5.3/guide/index.html#ioc)
 - @Inject
 - @Bean
-- Scopes
+- [Scopes](https://docs.micronaut.io/3.5.3/guide/index.html#scopes)
   - @Singleton - indicates only one instance of the bean will exist. Note that when starting an ApplicationContext, by default @Singleton-scoped beans are created lazily and on-demand. This is by design to optimize startup time. Annotate any @Singleton-scoped bean with @Parallel which allows parallel initialization of your bean without impacting overall startup time. Eager initialization of @Singleton beans maybe desirable in certain scenarios, such as on AWS Lambda where more CPU resources are assigned to Lambda construction than execution.
   - @Context - indicates that the bean will be created at the same time as the ApplicationContext (eager initialization)
   - @Prototype - indicates that a new instance of the bean is created each time it is injected
@@ -34,18 +34,38 @@
   - @ThreadLocal - custom scope that associates a bean per thread via a ThreadLocal
   - @Refreshable - custom scope that allows a bean’s state to be refreshed via the /refresh endpoint.
   - @RequestScope - custom scope that indicates a new instance of the bean is created and associated with each HTTP request
-- @Factory
+- [@Factory](https://docs.micronaut.io/3.5.3/guide/index.html#factories)
 - @Any
 - @Primary
-- @Named("v8")
-- @Requires(property = "vehicles.expensive", value = "true")
-- @Requires(missingBeans = VehicleRepository.class)
+- [@Named("v8")](https://docs.micronaut.io/3.5.3/guide/index.html#qualifiers)
+- [@Requires(property = "vehicles.expensive", value = "true")](https://docs.micronaut.io/3.5.3/guide/index.html#conditionalBeans)
+- [Life-Cycle](https://docs.micronaut.io/3.5.3/guide/index.html#lifecycle)
+  - @PostConstruct
+  - @PreDestroy
+- [@Introspected](https://docs.micronaut.io/3.5.3/guide/index.html#introspection)
+
 
 ## properties
+The convention is to search for a file named application.yml, application.properties, application.json or application.groovy.
+In addition, like Spring and Grails, Micronaut allows overriding any property via system properties or environment variables.
+
+
+Micronaut by default contains [PropertySourceLoader](https://docs.micronaut.io/3.5.3/guide/index.html#propertySource) implementations that load properties from the given locations and priority:
+
+1. Command line arguments
+2. Properties from SPRING_APPLICATION_JSON (for Spring compatibility)
+3. Properties from MICRONAUT_APPLICATION_JSON
+4. Java System Properties
+5. OS environment variables
+6. Configuration files loaded in order from the system property 'micronaut.config.files' or the environment variable MICRONAUT_CONFIG_FILES. The value can be a comma-separated list of paths with the last file having precedence. The files can be referenced from the file system as a path, or the classpath with a classpath: prefix.
+7. Environment-specific properties from application-{environment}.{extension}
+8. Application-specific properties from application.{extension}
+
+## [events](https://docs.micronaut.io/3.5.3/guide/index.html#contextEvents)
 
 
 ## test
 - @MicronautTest
 - @ExtendWith(AlwaysRebuildContextJunit5Extension.class)
 - @Property(name = "vehicles.expensive", value = "true")
-- @Replaces
+- [@Replaces](https://docs.micronaut.io/3.5.3/guide/index.html#replaces)

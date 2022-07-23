@@ -1,0 +1,4 @@
+application {
+    mainClass.set("com.example.IOCApplication")
+}
+

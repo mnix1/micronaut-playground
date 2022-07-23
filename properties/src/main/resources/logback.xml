@@ -13,6 +13,4 @@
     <root level="info">
         <appender-ref ref="STDOUT"/>
     </root>
-<!--    TODO check this -->
-<!--    <logger name="io.micronaut.context.condition" level="DEBUG"/>-->
 </configuration>

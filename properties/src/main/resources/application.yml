@@ -1,0 +1,27 @@
+micronaut:
+  application:
+    name: http
+netty:
+  default:
+    allocator:
+      max-order: 3
+inject:
+  value1: 10
+  value2: 20
+cars:
+  - name: Toyota Rav4
+    mass: 2010
+    type: SUV
+    produced: "2010-10-02T00:04:05Z"
+  - name: Volvo XC40
+    mass: 1810
+    type: SUV
+    produced: "2013-02-04T10:05:02Z"
+  - name: Audi A4
+    mass: 1410
+    type: SEDAN
+    produced: "2019-12-09T14:07:02Z"
+  - name: Hyundai i20
+    mass: 1104
+    type: HATCHBACK
+    produced: "2015-01-04T09:34:01Z"
