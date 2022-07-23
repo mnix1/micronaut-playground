@@ -13,4 +13,30 @@
 
 - [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
 
+---
+## ANNOTATIONS:
 
+
+## http
+- @Controller("/companies")
+- @Get("/{id}")
+- @Post("/random")
+- @Client("/vehicles") HttpClient client;
+
+## ioc
+- @Inject
+- @Singleton
+- @Bean
+- @Prototype
+- @Factory
+- @Named("v8")
+- @Requires(property = "vehicles.expensive", value = "true")
+- @Requires(missingBeans = VehicleRepository.class)
+
+## properties
+
+
+## test
+- @MicronautTest
+- @ExtendWith(AlwaysRebuildContextJunit5Extension.class)
+- @Property(name = "vehicles.expensive", value = "true")
