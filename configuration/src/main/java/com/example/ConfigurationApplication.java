@@ -2,8 +2,8 @@ package com.example;
 
 import io.micronaut.runtime.Micronaut;
 
-class PropertiesApplication {
+class ConfigurationApplication {
     public static void main(String[] args) {
-        Micronaut.run(PropertiesApplication.class, args);
+        Micronaut.run(ConfigurationApplication.class, args);
     }
 }
