@@ -29,6 +29,8 @@
 - @Bean
 - @Prototype
 - @Factory
+- @Any
+- @Primary
 - @Named("v8")
 - @Requires(property = "vehicles.expensive", value = "true")
 - @Requires(missingBeans = VehicleRepository.class)

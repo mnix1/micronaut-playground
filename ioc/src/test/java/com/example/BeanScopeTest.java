@@ -1,7 +1,7 @@
 package com.example;
 
 import io.micronaut.context.ApplicationContext;
-import io.micronaut.context.annotation.Bean;
+import io.micronaut.context.annotation.Prototype;
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
@@ -19,15 +19,23 @@ class BeanScopeTest {
     ApplicationContext applicationContext;
 
     @Test
-    void test() {
+    void prototypeInitializesManyTimes() {
         //when
         for (int i = 0; i < 100; i++) {
-            applicationContext.getBean(SimpleSingleton.class);
             applicationContext.getBean(SimplePrototype.class);
         }
         //then
-        assertThat(SimpleSingleton.count).isEqualTo(1);
         assertThat(SimplePrototype.count).isEqualTo(100);
+    }
+
+    @Test
+    void singletonInitializesOnce() {
+        //when
+        for (int i = 0; i < 100; i++) {
+            applicationContext.getBean(SimpleSingleton.class);
+        }
+        //then
+        assertThat(SimpleSingleton.count).isEqualTo(1);
     }
 
     @Singleton
@@ -35,7 +43,7 @@ class BeanScopeTest {
         return new SimpleSingleton();
     }
 
-    @Bean
+    @Prototype
     SimplePrototype simplePrototype() {
         return new SimplePrototype();
     }

@@ -56,13 +56,13 @@ class QualifiersTest {
     static class FastVehicle {
         private final Engine engine;
 
-        //try to remove annotation
-        //try to change annotation value to v8Engin
-        //try to change annotation value to v8Engine
-        //try to change annotation value to v6
-        //try to change annotation value to slow
-        //try to change annotation value to slowEng
-        //try to change annotation value to slowEngine
+        //TODO try to remove annotation
+        //TODO try to change annotation value to v8Engin
+        //TODO try to change annotation value to v8Engine
+        //TODO try to change annotation value to v6
+        //TODO try to change annotation value to slow
+        //TODO try to change annotation value to slowEng
+        //TODO try to change annotation value to slowEngine
         FastVehicle(@Named("v8") Engine engine) {
             this.engine = engine;
         }
