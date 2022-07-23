@@ -1,13 +1,17 @@
 package com.example.repository;
 
-import io.micronaut.context.annotation.Bean;
 import io.micronaut.context.annotation.Factory;
-import io.micronaut.context.annotation.Primary;
 import io.micronaut.context.annotation.Requires;
 import jakarta.inject.Singleton;
 
 @Factory
 class VehicleRepositoryConfiguration {
+    @Singleton
+    @Requires(missingBeans = VehicleRepository.class)
+    VehicleRepository defaultVehicleRepository() {
+        return new CheapVehicleRepository();
+    }
+
     @Singleton
     @Requires(property = "vehicles.expensive", value = "true")
     VehicleRepository expensiveVehicleRepository() {

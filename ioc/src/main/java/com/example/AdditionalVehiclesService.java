@@ -8,7 +8,6 @@ import jakarta.inject.Singleton;
 @Singleton
 @Requires(bean = SUVVehicleRepository.class)
 class AdditionalVehiclesService {
-
     String additionalVehicle() {
         return "Toyota Highlander";
     }
