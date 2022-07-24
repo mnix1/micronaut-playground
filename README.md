@@ -90,16 +90,21 @@ Micronaut by default contains [PropertySourceLoader](https://docs.micronaut.io/3
 - @Scheduled(fixedRate = "1s")
 - [@EventListener](https://docs.micronaut.io/3.5.3/guide/index.html#contextEvents)
 
-
 ## test
 - @MicronautTest
 - @ExtendWith(AlwaysRebuildContextJunit5Extension.class)
 - @Property(name = "vehicles.expensive", value = "true")
 - [@Replaces](https://docs.micronaut.io/3.5.3/guide/index.html#replaces)
 
+
+## DOCUMENTATION:
 ## [data](https://micronaut-projects.github.io/micronaut-data/latest/guide/)
 - https://guides.micronaut.io/latest/micronaut-jpa-hibernate-gradle-java.html
 - https://guides.micronaut.io/latest/micronaut-data-jdbc-repository-gradle-java.html
 
 
 ## [aws](https://micronaut-projects.github.io/micronaut-aws/3.5.1/guide/index.html)
+- https://guides.micronaut.io/latest/mn-serverless-function-aws-lambda-gradle-java.html
+
+## [graalvm](https://www.graalvm.org/)
+- https://guides.micronaut.io/latest/mn-serverless-function-aws-lambda-graalvm-gradle-java.html
