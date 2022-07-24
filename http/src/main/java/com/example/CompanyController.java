@@ -3,10 +3,9 @@ package com.example;
 import com.github.javafaker.Faker;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.HttpStatus;
-import io.micronaut.http.annotation.Controller;
-import io.micronaut.http.annotation.Delete;
-import io.micronaut.http.annotation.Get;
-import io.micronaut.http.annotation.Post;
+import io.micronaut.http.annotation.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.time.Instant;
 import java.util.*;
@@ -14,6 +13,7 @@ import java.util.stream.IntStream;
 
 @Controller("/companies")
 class CompanyController {
+    private final static Logger LOG = LoggerFactory.getLogger(CompanyController.class);
     private final List<Company> companies = new ArrayList<>();
 
     @Get
@@ -35,7 +35,8 @@ class CompanyController {
     }
 
     @Get("/{id}")
-    Optional<Company> get(UUID id) {
+    Optional<Company> get(UUID id, @Header String contentType) {
+        LOG.info(contentType);
         return companies.stream().filter(c -> c.id().equals(id)).findAny();
     }
 
@@ -67,10 +68,10 @@ class CompanyController {
         return HttpResponse.noContent();
     }
 
+    @Status(HttpStatus.NO_CONTENT)
     @Delete
-    HttpResponse<Void> delete() {
+    void delete() {
         companies.clear();
-        return HttpResponse.noContent();
     }
 
     record CompanyRequestBody(

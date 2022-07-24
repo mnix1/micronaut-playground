@@ -17,11 +17,26 @@
 ## ANNOTATIONS:
 
 
-## http
+## [http](https://docs.micronaut.io/3.5.3/guide/index.html#httpServer)
 - @Controller("/companies")
-- @Get("/{id}")
-- @Post("/random")
-- @Client("/vehicles") HttpClient client;
+- HTTP Routing Annotations
+  - @Delete - DELETE
+  - @Get - GET
+  - @Head - HEAD
+  - @Options - OPTIONS
+  - @Patch - PATCH
+  - @Put - PUT
+  - @Post - POST
+  - @Trace - TRACE
+- [@Client("/vehicles") HttpClient client](https://docs.micronaut.io/3.5.3/guide/index.html#clientAnnotation);
+- Parameter Binding Annotation
+  - @Body - Specifies the parameter for the body of the request - @Body String body
+  - @CookieValue - Specifies parameters to be sent as cookies - @CookieValue String myCookie
+  - @Header - Specifies parameters to be sent as HTTP headers - @Header String requestId
+  - @QueryValue - Customizes the name of the URI parameter to bind from - @QueryValue("userAge") Integer age
+  - @PathVariable - Binds a parameter exclusively from a Path Variable. - @PathVariable Long id
+  - @RequestAttribute - Specifies parameters to be set as request attributes - @RequestAttribute Integer locationId
+- [@Version](https://docs.micronaut.io/3.5.3/guide/index.html#apiVersioning)
 
 ## [ioc](https://docs.micronaut.io/3.5.3/guide/index.html#ioc)
 - @Inject
@@ -45,7 +60,7 @@
 - [@Introspected](https://docs.micronaut.io/3.5.3/guide/index.html#introspection)
 
 
-## properties
+## [configuration](https://docs.micronaut.io/3.5.3/guide/index.html#config)
 The convention is to search for a file named application.yml, application.properties, application.json or application.groovy.
 In addition, like Spring and Grails, Micronaut allows overriding any property via system properties or environment variables.
 
@@ -69,6 +84,11 @@ Micronaut by default contains [PropertySourceLoader](https://docs.micronaut.io/3
 - @InterceptorBean(NotNull.class)
 - @Introduction
 - @Adapter
+- @CacheConfig("slowMethod")
+- @Cacheable
+- @Retryable
+- @CircuitBreaker(attempts = "1", delay = "100ms", reset = "1s")
+- @Scheduled(fixedRate = "1s")
 
 ## test
 - @MicronautTest

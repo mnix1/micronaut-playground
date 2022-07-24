@@ -11,7 +11,9 @@ GET http://localhost:8080/companies?employeesFrom=10&employeesTo=100
 GET http://localhost:8080/companies/findByName?namePrefix=A&nameSuffix=A
 
 ###get by id
-GET http://localhost:8080/companies/56dc0a7e-288a-4fa0-97b0-35dd1e1abb9c
+GET http://localhost:8080/companies/36cf8e86-37fe-42b2-ae96-aed56ec38a94
+Content-Type: application/json
+//TODO remove Content-Type header
 
 ###create random
 POST http://localhost:8080/companies/random
