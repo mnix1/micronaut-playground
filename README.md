@@ -36,6 +36,7 @@
   - @QueryValue - Customizes the name of the URI parameter to bind from - @QueryValue("userAge") Integer age
   - @PathVariable - Binds a parameter exclusively from a Path Variable. - @PathVariable Long id
   - @RequestAttribute - Specifies parameters to be set as request attributes - @RequestAttribute Integer locationId
+- [@Filter("/hello/**")](https://docs.micronaut.io/3.5.3/guide/index.html#filters)
 - [@Version](https://docs.micronaut.io/3.5.3/guide/index.html#apiVersioning)
 - [OpenApi]()
 - [Management](https://docs.micronaut.io/3.5.3/guide/index.html#providedEndpoints)
