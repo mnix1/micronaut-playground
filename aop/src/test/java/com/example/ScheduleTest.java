@@ -1,5 +1,6 @@
 package com.example;
 
+import io.micronaut.context.annotation.Requires;
 import io.micronaut.scheduling.annotation.Scheduled;
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
 import jakarta.inject.Inject;
@@ -30,6 +31,8 @@ class ScheduleTest {
     }
 
     @Singleton
+    //TODO remove @Requires and run other test, for example EventsTest
+    @Requires(bean = ScheduleTest.class)
     static class ScheduleExample {
         List<Instant> timestamps = new ArrayList<>();
 

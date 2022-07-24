@@ -78,9 +78,6 @@ Micronaut by default contains [PropertySourceLoader](https://docs.micronaut.io/3
 7. Environment-specific properties from application-{environment}.{extension}
 8. Application-specific properties from application.{extension}
 
-## [events](https://docs.micronaut.io/3.5.3/guide/index.html#contextEvents)
-
-
 ## [aop](https://docs.micronaut.io/3.5.3/guide/index.html#aop)
 - @Around
 - @InterceptorBean(NotNull.class)
@@ -91,9 +88,18 @@ Micronaut by default contains [PropertySourceLoader](https://docs.micronaut.io/3
 - @Retryable
 - @CircuitBreaker(attempts = "1", delay = "100ms", reset = "1s")
 - @Scheduled(fixedRate = "1s")
+- [@EventListener](https://docs.micronaut.io/3.5.3/guide/index.html#contextEvents)
+
 
 ## test
 - @MicronautTest
 - @ExtendWith(AlwaysRebuildContextJunit5Extension.class)
 - @Property(name = "vehicles.expensive", value = "true")
 - [@Replaces](https://docs.micronaut.io/3.5.3/guide/index.html#replaces)
+
+## [data](https://micronaut-projects.github.io/micronaut-data/latest/guide/)
+- https://guides.micronaut.io/latest/micronaut-jpa-hibernate-gradle-java.html
+- https://guides.micronaut.io/latest/micronaut-data-jdbc-repository-gradle-java.html
+
+
+## [aws](https://micronaut-projects.github.io/micronaut-aws/3.5.1/guide/index.html)
