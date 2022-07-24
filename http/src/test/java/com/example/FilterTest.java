@@ -7,6 +7,7 @@ import io.micronaut.http.filter.HttpServerFilter;
 import io.micronaut.http.filter.ServerFilterChain;
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
 import jakarta.inject.Inject;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.reactivestreams.Publisher;
 
@@ -16,6 +17,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 class FilterTest {
     @Inject
     DeclarativeClientTest.CompaniesClient client;
+
+    @BeforeEach
+    void setUp() {
+        client.delete();
+    }
 
     @Test
     void countsRequests() {
