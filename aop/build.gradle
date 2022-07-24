@@ -1,6 +1,9 @@
 application {
     mainClass.set("com.example.AOPApplication")
 }
-
+dependencies {
+    implementation 'io.micronaut.cache:micronaut-cache-core'
+    implementation 'io.micronaut.cache:micronaut-cache-caffeine'
+}
 
 

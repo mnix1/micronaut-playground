@@ -67,6 +67,8 @@ Micronaut by default contains [PropertySourceLoader](https://docs.micronaut.io/3
 ## [aop](https://docs.micronaut.io/3.5.3/guide/index.html#aop)
 - @Around
 - @InterceptorBean(NotNull.class)
+- @Introduction
+- @Adapter
 
 ## test
 - @MicronautTest
