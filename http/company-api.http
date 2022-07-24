@@ -26,3 +26,34 @@ DELETE http://localhost:8080/companies/e22fe38d-e799-469e-b1cb-94ec31cc59bf
 
 ###delete all
 DELETE http://localhost:8080/companies
+
+##management
+###beans
+GET http://localhost:8080/beans
+
+###health
+GET http://localhost:8080/health
+
+###info
+GET http://localhost:8080/info
+
+###loggers
+GET http://localhost:8080/loggers
+
+###metrics
+GET http://localhost:8080/metrics
+
+###refresh
+GET http://localhost:8080/refresh
+
+###routes
+GET http://localhost:8080/routes
+
+###threaddump
+GET http://localhost:8080/threaddump
+
+
+
+
+
+

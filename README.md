@@ -37,7 +37,8 @@
   - @PathVariable - Binds a parameter exclusively from a Path Variable. - @PathVariable Long id
   - @RequestAttribute - Specifies parameters to be set as request attributes - @RequestAttribute Integer locationId
 - [@Version](https://docs.micronaut.io/3.5.3/guide/index.html#apiVersioning)
-
+- [OpenApi]()
+- [Management](https://docs.micronaut.io/3.5.3/guide/index.html#providedEndpoints)
 ## [ioc](https://docs.micronaut.io/3.5.3/guide/index.html#ioc)
 - @Inject
 - @Bean
