@@ -64,6 +64,10 @@ Micronaut by default contains [PropertySourceLoader](https://docs.micronaut.io/3
 ## [events](https://docs.micronaut.io/3.5.3/guide/index.html#contextEvents)
 
 
+## [aop](https://docs.micronaut.io/3.5.3/guide/index.html#aop)
+- @Around
+- @InterceptorBean(NotNull.class)
+
 ## test
 - @MicronautTest
 - @ExtendWith(AlwaysRebuildContextJunit5Extension.class)
