@@ -38,7 +38,7 @@
   - @RequestAttribute - Specifies parameters to be set as request attributes - @RequestAttribute Integer locationId
 - [@Filter("/hello/**")](https://docs.micronaut.io/3.5.3/guide/index.html#filters)
 - [@Version](https://docs.micronaut.io/3.5.3/guide/index.html#apiVersioning)
-- [OpenApi]()
+- [OpenApi](https://micronaut-projects.github.io/micronaut-openapi/latest/guide/index.html)
 - [Management](https://docs.micronaut.io/3.5.3/guide/index.html#providedEndpoints)
 ## [ioc](https://docs.micronaut.io/3.5.3/guide/index.html#ioc)
 - @Inject
