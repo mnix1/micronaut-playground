@@ -1,0 +1,8 @@
+micronaut:
+  application:
+    name: data-mongodb
+netty:
+  default:
+    allocator:
+      max-order: 3
+mongodb.uri: mongodb://${MONGO_HOST:localhost}:${MONGO_PORT:8000}/mydb
