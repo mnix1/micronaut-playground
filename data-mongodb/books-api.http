@@ -16,7 +16,7 @@ GET http://localhost:8080/books?available=false
 GET http://localhost:8080/books?available=true
 
 ###
-POST http://localhost:8080/books/a59793ad-26f9-4088-95bb-c663ac79d798/comment
+POST http://localhost:8080/books/9a6b0303-8aeb-4c0e-a2ca-71f8e0b4b592/comment
 Content-Type: application/json
 
 {
@@ -37,5 +37,5 @@ Content-Type: application/json
 
 
 ###
-PUT http://localhost:8080/books/a59793ad-26f9-4088-95bb-c663ac79d798/available
+PUT http://localhost:8080/books/9a6b0303-8aeb-4c0e-a2ca-71f8e0b4b592/available
 Content-Type: application/json

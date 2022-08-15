@@ -5,4 +5,5 @@ netty:
   default:
     allocator:
       max-order: 3
-mongodb.uri: mongodb://${MONGO_HOST:localhost}:${MONGO_PORT:8000}/mydb
+mongodb:
+  uri: mongodb://${MONGO_USER:user}:${MONGO_PASSWORD:user}@${MONGO_HOST:localhost}:${MONGO_PORT:27017}/test?authSource=admin
