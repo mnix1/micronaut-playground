@@ -1,19 +1,19 @@
 package com.example.component.http;
 
 import com.example.api.BookFacade;
-import com.example.api.command.CommentBookCommand;
-import com.example.api.command.CreateBookCommand;
+import com.example.api.command.*;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Post;
+import io.micronaut.http.annotation.Put;
 
 import java.util.UUID;
 
 
 @Controller("/books")
-class CreateBookController {
+class BookController {
     private final BookFacade facade;
 
-    CreateBookController(BookFacade facade) {
+    BookController(BookFacade facade) {
         this.facade = facade;
     }
 
@@ -22,9 +22,28 @@ class CreateBookController {
         return facade.create(requestBody.toCommand());
     }
 
-    @Post("/{id}")
+    @Post("/{id}/comment")
     void comment(UUID id, CommentRequestBody requestBody) {
         facade.comment(new CommentBookCommand(id, requestBody.comment));
+    }
+
+    @Put("/{id}/available")
+    void available(UUID id) {
+        facade.makeAvailable(new MakeBookAvailableCommand(id));
+    }
+
+    @Put("/{id}/unavailable")
+    void unavailable(UUID id) {
+        facade.makeUnavailable(new MakeBookUnavailableCommand(id));
+    }
+
+    @Put("/{id}/increase-order")
+    void increaseOrder(UUID id) {
+        facade.increaseOrder(new BookOrderIncreaseCommand(id));
+    }
+    @Put("/{id}/decrease-order")
+    void decreaseOrder(UUID id) {
+        facade.decreaseOrder(new BookOrderDecreaseCommand(id));
     }
 
     private record BookRequestBody(String name, Integer pages) {

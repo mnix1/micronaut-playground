@@ -13,5 +13,7 @@ public interface BookFacade {
 
     void makeUnavailable(MakeBookUnavailableCommand command);
 
-    void changeOrder(ChangeBookOrderCommand command);
+    void increaseOrder(BookOrderIncreaseCommand command);
+
+    void decreaseOrder(BookOrderDecreaseCommand command);
 }

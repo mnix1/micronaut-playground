@@ -17,6 +17,9 @@ class BookListViewController {
 
     @Get
     List<BookViewRecord> list(Optional<Boolean> available) {
+        if (available.isPresent()) {
+            return repository.filter(available.get());
+        }
         return repository.list();
     }
 }
