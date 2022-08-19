@@ -6,7 +6,8 @@ import java.util.List;
 import java.util.UUID;
 
 @DynamoDbBean
-public class DynamoBookViewRecord implements BookViewRecord{
+public class DynamoBookViewRecord implements BookViewRecord {
+
     private UUID id;
     private String name;
     private Integer order;
@@ -14,8 +15,7 @@ public class DynamoBookViewRecord implements BookViewRecord{
     private Integer pages;
     private List<String> comments;
 
-    public DynamoBookViewRecord() {
-    }
+    public DynamoBookViewRecord() {}
 
     public List<String> getComments() {
         return comments;

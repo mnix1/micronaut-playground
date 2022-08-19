@@ -17,7 +17,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @MicronautTest
 class ScheduleTest {
-    private final static Logger LOG = LoggerFactory.getLogger(ScheduleTest.class);
+
+    private static final Logger LOG = LoggerFactory.getLogger(ScheduleTest.class);
+
     @Inject
     ScheduleExample example;
 
@@ -34,6 +36,7 @@ class ScheduleTest {
     //TODO remove @Requires and run other test, for example EventsTest
     @Requires(bean = ScheduleTest.class)
     static class ScheduleExample {
+
         List<Instant> timestamps = new ArrayList<>();
 
         @Scheduled(fixedRate = "1s")

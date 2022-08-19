@@ -1,6 +1,5 @@
 package com.example;
 
-
 import io.micronaut.context.ApplicationContext;
 import jakarta.inject.Singleton;
 import org.junit.jupiter.api.AfterEach;
@@ -8,6 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class TimedTest {
+
     ApplicationContext applicationContext;
 
     @BeforeEach
@@ -32,6 +32,7 @@ class TimedTest {
 
     @Singleton
     static class TimedExample {
+
         //TODO change access modifier to private
         @Timed
         void slowMethod() throws InterruptedException {

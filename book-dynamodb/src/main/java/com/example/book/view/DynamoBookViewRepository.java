@@ -9,6 +9,7 @@ import java.util.List;
 
 @Singleton
 class DynamoBookViewRepository implements BookViewRepository {
+
     private final DynamoDbEnhancedClient dynamoDbEnhancedClient;
 
     DynamoBookViewRepository(DynamoDbEnhancedClient dynamoDbEnhancedClient) {

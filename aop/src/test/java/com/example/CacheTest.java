@@ -11,6 +11,7 @@ import java.util.Random;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class CacheTest {
+
     @Test
     void caches() {
         Random random = new Random(10);
@@ -27,6 +28,7 @@ class CacheTest {
     @Singleton
     @CacheConfig("slowMethod")
     static class CacheExample {
+
         Random random = new Random(10);
 
         @Timed

@@ -8,9 +8,9 @@ import io.micronaut.http.annotation.Put;
 
 import java.util.UUID;
 
-
 @Controller("/books")
 class BookController {
+
     private final BookFacade facade;
 
     BookController(BookFacade facade) {
@@ -41,6 +41,7 @@ class BookController {
     void increaseOrder(UUID id) {
         facade.increaseOrder(new BookOrderIncreaseCommand(id));
     }
+
     @Put("/{id}/decrease-order")
     void decreaseOrder(UUID id) {
         facade.decreaseOrder(new BookOrderDecreaseCommand(id));
@@ -52,6 +53,5 @@ class BookController {
         }
     }
 
-    private record CommentRequestBody(String comment) {
-    }
+    private record CommentRequestBody(String comment) {}
 }

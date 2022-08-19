@@ -16,12 +16,12 @@ interface MongoBookRepository extends CrudRepository<BookRecord, String>, BookRe
     }
 
     @Override
-    default Book save(Book book){
+    default Book save(Book book) {
         return save(new BookRecord(book)).toDomain();
     }
 
     @Override
-    default Book update(Book book){
+    default Book update(Book book) {
         return update(new BookRecord(book)).toDomain();
     }
 

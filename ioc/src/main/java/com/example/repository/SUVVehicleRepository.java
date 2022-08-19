@@ -6,12 +6,11 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 
 public class SUVVehicleRepository implements VehicleRepository {
-    private final static Logger LOG = LoggerFactory.getLogger(SUVVehicleRepository.class);
+
+    private static final Logger LOG = LoggerFactory.getLogger(SUVVehicleRepository.class);
 
     @Override
     public List<String> vehicles() {
-        return List.of(
-                "Toyota Rav4"
-        );
+        return List.of("Toyota Rav4");
     }
 }

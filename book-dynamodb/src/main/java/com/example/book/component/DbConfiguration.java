@@ -9,6 +9,7 @@ import java.net.URI;
 
 @Factory
 class DbConfiguration {
+
     @Singleton
     DynamoDbEnhancedClient dynamoDbEnhancedClient() {
         DynamoDbClient dynamoDbClient = DynamoDbClient.builder().endpointOverride(URI.create("http://localhost:8000")).build();

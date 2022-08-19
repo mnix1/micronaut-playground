@@ -15,6 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @MicronautTest
 class FilterTest {
+
     @Inject
     DeclarativeClientTest.CompaniesClient client;
 
@@ -33,6 +34,7 @@ class FilterTest {
 
     @Filter("/companies/random")
     static class SimpleFilter implements HttpServerFilter {
+
         static int counter = 0;
 
         @Override

@@ -6,10 +6,13 @@ import io.micronaut.data.annotation.MappedEntity;
 import java.time.Instant;
 import java.util.List;
 import java.util.UUID;
+
 @MappedEntity(value = "book")
 public class BookRecord {
+
     @Id
     private String id;
+
     private String name;
     private Integer order;
     private boolean available;
@@ -82,8 +85,7 @@ public class BookRecord {
         this.comments = comments;
     }
 
-    public BookRecord() {
-    }
+    public BookRecord() {}
 
     Book toDomain() {
         return new Book(UUID.fromString(id), name, order, available, pages, createdTimestamp, updatedTimestamp, comments);

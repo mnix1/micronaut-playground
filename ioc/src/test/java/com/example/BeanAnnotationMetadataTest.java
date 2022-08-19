@@ -16,7 +16,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @MicronautTest
 class BeanAnnotationMetadataTest {
-    private final static Logger LOG = LoggerFactory.getLogger(RequestScopeTest.class);
+
+    private static final Logger LOG = LoggerFactory.getLogger(RequestScopeTest.class);
+
     @Inject
     BeanContext beanContext;
 

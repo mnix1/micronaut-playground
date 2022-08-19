@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.UUID;
 
 class Book {
+
     final UUID id;
     final String name;
     Integer order;
@@ -14,7 +15,16 @@ class Book {
     Instant updatedTimestamp;
     final List<String> comments;
 
-    Book(UUID id, String name, Integer order, boolean available, Integer pages, Instant createdTimestamp, Instant updatedTimestamp, List<String> comments) {
+    Book(
+        UUID id,
+        String name,
+        Integer order,
+        boolean available,
+        Integer pages,
+        Instant createdTimestamp,
+        Instant updatedTimestamp,
+        List<String> comments
+    ) {
         this.id = id;
         this.name = name;
         this.order = order;

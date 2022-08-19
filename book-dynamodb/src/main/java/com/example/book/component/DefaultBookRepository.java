@@ -18,6 +18,7 @@ import static java.util.Optional.ofNullable;
 @Singleton
 @Context
 class DefaultBookRepository implements BookRepository {
+
     private final DynamoDbEnhancedClient dynamoDbEnhancedClient;
 
     DefaultBookRepository(DynamoDbEnhancedClient dynamoDbEnhancedClient) {

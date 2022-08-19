@@ -23,7 +23,9 @@ class StubTest {
     interface StubExample {
         @Stub("10")
         int getNumber();
+
         LocalDateTime getDate();
+
         @Stub("someString")
         String getString();
     }

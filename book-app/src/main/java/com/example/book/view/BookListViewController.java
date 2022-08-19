@@ -5,11 +5,10 @@ import io.micronaut.http.annotation.Get;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.StreamSupport;
-
 
 @Controller("/books")
 class BookListViewController {
+
     private final BookViewRepository repository;
 
     BookListViewController(BookViewRepository repository) {

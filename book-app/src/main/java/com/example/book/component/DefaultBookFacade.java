@@ -9,6 +9,7 @@ import java.util.UUID;
 
 @Singleton
 class DefaultBookFacade implements BookFacade {
+
     private final BookRepository repository;
 
     DefaultBookFacade(BookRepository repository) {
@@ -43,12 +44,8 @@ class DefaultBookFacade implements BookFacade {
     }
 
     @Override
-    public void increaseOrder(BookOrderIncreaseCommand command) {
-
-    }
+    public void increaseOrder(BookOrderIncreaseCommand command) {}
 
     @Override
-    public void decreaseOrder(BookOrderDecreaseCommand command) {
-
-    }
+    public void decreaseOrder(BookOrderDecreaseCommand command) {}
 }

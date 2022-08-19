@@ -6,6 +6,7 @@ import jakarta.inject.Singleton;
 
 @Factory
 class VehicleRepositoryConfiguration {
+
     @Singleton
     @Requires(missingBeans = VehicleRepository.class)
     VehicleRepository defaultVehicleRepository() {

@@ -8,19 +8,24 @@ import org.junit.jupiter.api.Test;
 
 @MicronautTest
 class NotNullTest {
+
     @Inject
     NotNullExample notNullExample;
 
     @Test
     void forbidsNullArgument() {
-        Assertions.assertThrows(IllegalArgumentException.class, () -> {
-            notNullExample.doWork(null);
-        });
+        Assertions.assertThrows(
+            IllegalArgumentException.class,
+            () -> {
+                notNullExample.doWork(null);
+            }
+        );
         notNullExample.doWork("clean");
     }
 
     @Singleton
     static class NotNullExample {
+
         @NotNull
         void doWork(String taskName) {
             System.out.println("Doing job: " + taskName);

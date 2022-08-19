@@ -32,12 +32,13 @@ class DeclarativeClientTest {
         Company testCompany = client.create(new CompanyController.CompanyRequestBody("Test", "IT", 1, Instant.now(), List.of()));
         List<CompanyController.ListCompanySnapshot> companies = client.list();
         //then
-        assertThat(companies.stream().map(CompanyController.ListCompanySnapshot::id)).containsExactlyInAnyOrder(randomCompany.id(), testCompany.id());
+        assertThat(companies.stream().map(CompanyController.ListCompanySnapshot::id))
+            .containsExactlyInAnyOrder(randomCompany.id(), testCompany.id());
     }
 
     @Client("/companies")
     interface CompaniesClient {
-        @Get()
+        @Get
         List<CompanyController.ListCompanySnapshot> list();
 
         @Post

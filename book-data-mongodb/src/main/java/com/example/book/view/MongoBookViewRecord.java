@@ -8,16 +8,17 @@ import java.util.UUID;
 
 @MappedEntity(value = "book")
 public class MongoBookViewRecord implements BookViewRecord {
+
     @Id
     private String id;
+
     private String name;
     private Integer order;
     private boolean available;
     private Integer pages;
     private List<String> comments;
 
-    public MongoBookViewRecord() {
-    }
+    public MongoBookViewRecord() {}
 
     public void setId(String id) {
         this.id = id;

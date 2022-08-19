@@ -10,6 +10,7 @@ import java.util.UUID;
 
 @DynamoDbBean
 public class BookRecord {
+
     private UUID id;
     private String name;
     private Integer order;
@@ -19,8 +20,7 @@ public class BookRecord {
     private Instant updatedTimestamp;
     private List<String> comments;
 
-    public BookRecord() {
-    }
+    public BookRecord() {}
 
     @DynamoDbPartitionKey
     public UUID getId() {

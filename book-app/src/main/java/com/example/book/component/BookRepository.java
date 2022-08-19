@@ -12,5 +12,4 @@ interface BookRepository {
     Book save(Book book);
 
     Book update(Book book);
-
 }

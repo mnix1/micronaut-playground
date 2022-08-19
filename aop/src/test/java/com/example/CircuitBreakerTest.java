@@ -16,7 +16,8 @@ import java.time.Instant;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class CircuitBreakerTest {
-    private final static Logger LOG = LoggerFactory.getLogger(CircuitBreakerExample.class);
+
+    private static final Logger LOG = LoggerFactory.getLogger(CircuitBreakerExample.class);
     CircuitBreakerExample example;
     ApplicationContext applicationContext;
 
@@ -56,6 +57,7 @@ class CircuitBreakerTest {
 
     @Prototype
     static class CircuitBreakerExample {
+
         int invokeCounter = 0;
 
         @CircuitBreaker(attempts = "1", delay = "100ms", reset = "1s")

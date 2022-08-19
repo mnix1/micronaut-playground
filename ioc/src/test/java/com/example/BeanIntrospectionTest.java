@@ -28,7 +28,6 @@ class BeanIntrospectionTest {
         assertThat(introspection.getPropertyNames()).containsExactly("name", "age");
     }
 
-
     @Test
     void wrapsPerson() {
         BeanWrapper<Person> wrapper = BeanWrapper.getWrapper(new Person("Fred"));

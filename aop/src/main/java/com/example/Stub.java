@@ -14,7 +14,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Bean
 @Documented
 @Retention(RUNTIME)
-@Target({TYPE, ANNOTATION_TYPE, METHOD})
+@Target({ TYPE, ANNOTATION_TYPE, METHOD })
 @interface Stub {
     String value() default "";
 }

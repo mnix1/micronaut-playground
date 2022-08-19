@@ -40,6 +40,7 @@ subprojects {
         testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:{junitVersion}")
         testImplementation('org.assertj:assertj-core:3.23.1')
     }
+
     compileJava { options.encoding = "UTF-8" }
 
     java {
@@ -49,6 +50,14 @@ subprojects {
 
     test {
         useJUnitPlatform()
+    }
+
+    spotless {
+        java {
+            removeUnusedImports()
+            prettier(['prettier': '2.7.1', 'prettier-plugin-java': '1.6.2']).config(['parser': 'java', 'tabWidth': 4, 'printWidth': 140])
+            importOrder('', 'java', '\\#')
+        }
     }
 
     graalvmNative.toolchainDetection = false
