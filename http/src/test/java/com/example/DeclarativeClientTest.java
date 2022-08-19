@@ -1,9 +1,5 @@
 package com.example;
 
-import io.micronaut.http.annotation.Delete;
-import io.micronaut.http.annotation.Get;
-import io.micronaut.http.annotation.Post;
-import io.micronaut.http.client.annotation.Client;
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
 import jakarta.inject.Inject;
 import org.junit.jupiter.api.BeforeEach;
@@ -36,18 +32,4 @@ class DeclarativeClientTest {
             .containsExactlyInAnyOrder(randomCompany.id(), testCompany.id());
     }
 
-    @Client("/companies")
-    interface CompaniesClient {
-        @Get
-        List<CompanyController.ListCompanySnapshot> list();
-
-        @Post
-        Company create(CompanyController.CompanyRequestBody requestBody);
-
-        @Post("/random")
-        Company createRandom();
-
-        @Delete
-        void delete();
-    }
 }

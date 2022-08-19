@@ -1,14 +1,18 @@
 package com.example.book;
 
-import com.example.book.component.TestBookViewRecord;
 import com.example.book.view.BookView;
+import com.example.book.view.MongoBookViewRecord;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.http.annotation.Post;
 import io.micronaut.http.annotation.Put;
 import io.micronaut.http.client.annotation.Client;
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
 import jakarta.inject.Inject;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.testcontainers.containers.MongoDBContainer;
+import org.testcontainers.junit.jupiter.Testcontainers;
 
 import java.util.List;
 import java.util.UUID;
@@ -16,7 +20,23 @@ import java.util.UUID;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @MicronautTest
-class IntegrationTest {
+@Testcontainers
+class MongoIntegrationTest {
+    static MongoDBContainer container;
+
+    @BeforeAll
+    static void beforeAll() {
+        container = new MongoDBContainer("mongo:5.0.10")
+                .withEnv("MONGO_INITDB_DATABASE", "test");
+        container.setPortBindings(List.of("27017:27017"));
+        container.start();
+    }
+
+    @AfterAll
+    static void afterAll() {
+        container.stop();
+    }
+
     @Inject
     BooksClient client;
 
@@ -60,13 +80,13 @@ class IntegrationTest {
         void comment(UUID id, CommentRequestBody requestBody);
 
         @Get
-        List<TestBookViewRecord> list();
+        List<MongoBookViewRecord> list();
 
         @Get("?available=true")
-        List<TestBookViewRecord> listAvailable();
+        List<MongoBookViewRecord> listAvailable();
 
         @Get("?available=false")
-        List<TestBookViewRecord> listUnavailable();
+        List<MongoBookViewRecord> listUnavailable();
 
         @Put("/{id}/available")
         void available(UUID id);

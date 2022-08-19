@@ -67,7 +67,7 @@ public class DynamoBookViewRecord implements BookView {
 
     @Override
     public UUID id() {
-        return null;
+        return id;
     }
 
     @Override

@@ -17,7 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class FilterTest {
 
     @Inject
-    DeclarativeClientTest.CompaniesClient client;
+    CompaniesClient client;
 
     @BeforeEach
     void setUp() {

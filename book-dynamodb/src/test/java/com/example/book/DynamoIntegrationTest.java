@@ -1,7 +1,7 @@
 package com.example.book;
 
-import com.example.book.component.TestBookViewRecord;
 import com.example.book.view.BookView;
+import com.example.book.view.DynamoBookViewRecord;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.http.annotation.Post;
 import io.micronaut.http.annotation.Put;
@@ -16,7 +16,7 @@ import java.util.UUID;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @MicronautTest
-class IntegrationTest {
+class DynamoIntegrationTest {
     @Inject
     BooksClient client;
 
@@ -60,13 +60,13 @@ class IntegrationTest {
         void comment(UUID id, CommentRequestBody requestBody);
 
         @Get
-        List<TestBookViewRecord> list();
+        List<DynamoBookViewRecord> list();
 
         @Get("?available=true")
-        List<TestBookViewRecord> listAvailable();
+        List<DynamoBookViewRecord> listAvailable();
 
         @Get("?available=false")
-        List<TestBookViewRecord> listUnavailable();
+        List<DynamoBookViewRecord> listUnavailable();
 
         @Put("/{id}/available")
         void available(UUID id);

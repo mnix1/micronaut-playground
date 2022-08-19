@@ -6,4 +6,7 @@ dependencies {
     annotationProcessor("io.micronaut.data:micronaut-data-document-processor")
     implementation("io.micronaut.data:micronaut-data-mongodb")
     runtimeOnly("org.mongodb:mongodb-driver-sync")
+    testImplementation("org.testcontainers:junit-jupiter")
+    testImplementation("org.testcontainers:mongodb")
+    testImplementation("org.testcontainers:testcontainers")
 }
