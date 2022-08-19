@@ -1,5 +1,6 @@
 package com.example.car.api;
 
+import java.util.Objects;
 import java.util.UUID;
 
 public class CarSnapshot {
@@ -15,5 +16,18 @@ public class CarSnapshot {
         this.producer = producer;
         this.productionYear = productionYear;
         this.owner = owner;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CarSnapshot that = (CarSnapshot) o;
+        return productionYear == that.productionYear && id.equals(that.id) && model.equals(that.model) && producer == that.producer && Objects.equals(owner, that.owner);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, model, producer, productionYear, owner);
     }
 }

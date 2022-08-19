@@ -32,9 +32,7 @@ class CarRecord {
     }
 
     Car toDomain() {
-        return new Car(
-                UUID.fromString(id), model, producer, productionYear, owner
-        );
+        return new Car(UUID.fromString(id), model, producer, productionYear, owner);
     }
 
     public String getId() {
