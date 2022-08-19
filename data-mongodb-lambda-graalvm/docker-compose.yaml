@@ -1,0 +1,45 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo:5.0.10
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=user
+      - MONGO_INITDB_ROOT_PASSWORD=user
+      - MONGO_INITDB_DATABASE=test
+  native-agent-run:
+    volumes:
+      - ./PrepareArtworkToPrintFunction/build/libs/:/home/app/libs/
+      - ./PrepareArtworkToPrintFunction/src/main/resources/META-INF/native-image/:/home/app/agent-output/
+    build:
+      context: .
+      dockerfile: ./PrepareArtworkToPrintFunction/build/docker/native-main/DockerfileNative
+      target: graalvm
+    command: bash -c "java -agentlib:native-image-agent=config-output-dir=/home/app/agent-output,experimental-class-define-support -cp $$(find . -name '*-all.jar') com.displate.artworktoprintpreparer.lambda.LocalRunner"
+    env_file:
+      - .env
+  native-agent-test:
+    volumes:
+      - ./PrepareArtworkToPrintFunction/src/main/resources/META-INF/native-image/:/home/app/agent-output/
+    build:
+      context: .
+      dockerfile: ./PrepareArtworkToPrintFunction/scripts/DockerfileNativeAgentTest
+    entrypoint: bash -c "cp -rf /var/task/PrepareArtworkToPrintFunction/build/native/agent-output/test/* /home/app/agent-output"
+  run:
+    image: prepareartworktoprintfunction:latest
+    ports:
+      - "9001:8080"
+    environment:
+      LOGGER_LEVELS_COM_DISPLATE: DEBUG
+    volumes:
+      - ./aws-lambda-rie:/aws-lambda-rie
+    entrypoint: bash -c "cp -R /function /var/task && /aws-lambda-rie"
+    env_file:
+      - .env
+  native-test:
+    image: registry.gitlab.com/displate/docker/graalvm:java17-0.0.1
+    working_dir: /home
+    volumes:
+      - ./:/home
+    command: bash -c "./gradlew PrepareArtworkToPrintFunction:nativeTest"
