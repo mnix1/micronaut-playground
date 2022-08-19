@@ -1,0 +1,21 @@
+application {
+    mainClass.set("com.example.book.BookApplication")
+}
+dependencies {
+    implementation project(':book-data-mongodb')
+    implementation 'io.micronaut.aws:micronaut-function-aws'
+    implementation 'com.amazonaws:aws-lambda-java-events:3.11.0'
+}
+java {
+    sourceCompatibility = JavaVersion.toVersion('17')
+    targetCompatibility = JavaVersion.toVersion('17')
+}
+
+micronaut {
+    runtime("lambda_java")
+    testRuntime("junit5")
+    processing {
+        incremental(true)
+        annotations("com.example.book")
+    }
+}

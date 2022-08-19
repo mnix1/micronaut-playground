@@ -1,0 +1,11 @@
+micronaut:
+  application:
+    name: book
+netty:
+  default:
+    allocator:
+      max-order: 3
+dynamodb: url
+aws:
+  accessKeyId: TEST_ACCESS_KEY_ID
+  secretKey: TEST_SECRET_KEY

@@ -1,0 +1,9 @@
+application {
+    mainClass.set("com.example.book.BookApplication")
+}
+dependencies {
+    implementation project(':book-app')
+    implementation("software.amazon.awssdk:dynamodb")
+    implementation("software.amazon.awssdk:dynamodb-enhanced")
+    implementation("io.micronaut.aws:micronaut-aws-sdk-v2")
+}

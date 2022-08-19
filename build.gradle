@@ -8,6 +8,7 @@ buildscript {
     dependencies {
         classpath "gradle.plugin.com.github.johnrengelman:shadow:7.1.2"
         classpath "io.micronaut.gradle:micronaut-gradle-plugin:3.5.1"
+        classpath "com.diffplug.spotless:spotless-plugin-gradle:6.9.1"
     }
 }
 allprojects {
@@ -18,6 +19,7 @@ allprojects {
 subprojects {
     apply plugin: "com.github.johnrengelman.shadow"
     apply plugin: "io.micronaut.application"
+    apply plugin: "com.diffplug.spotless"
 
     group = "com.example"
 

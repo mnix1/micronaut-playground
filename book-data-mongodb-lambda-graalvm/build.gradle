@@ -1,0 +1,38 @@
+application {
+    mainClass.set("com.example.book.BookApplication")
+}
+dependencies {
+    implementation project(':book-data-mongodb')
+}
+micronaut {
+    runtime("lambda_provided")
+    testRuntime("junit5")
+    processing {
+        incremental(true)
+        annotations("com.example.*")
+    }
+}
+tasks.named("dockerfileNative") {
+    args(
+            "-XX:MaximumHeapSizePercent=80",
+            "-Dio.netty.allocator.numDirectArenas=0",
+            "-Dio.netty.noPreferDirect=true"
+    )
+}
+String projectNameLowerCase = project.name.toLowerCase()
+tasks.named("dockerBuildNative") {
+    images = ["$projectNameLowerCase:$project.version", "$projectNameLowerCase:latest"]
+}
+graalvmNative {
+    binaries {
+        main {
+            imageName = "func"
+        }
+        test {
+            agent {
+                options.add("access-filter-file=${projectDir}/src/test/resources/access-filter.json")
+            }
+            buildArgs.add('--initialize-at-build-time=org.junit.platform.reporting.open.xml.OpenTestReportGeneratingListener')
+        }
+    }
+}

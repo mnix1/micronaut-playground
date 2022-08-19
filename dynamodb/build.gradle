@@ -1,8 +1,0 @@
-application {
-    mainClass.set("com.example.DynamoDBApplication")
-}
-dependencies {
-    implementation("software.amazon.awssdk:dynamodb")
-    implementation("software.amazon.awssdk:dynamodb-enhanced")
-    implementation("io.micronaut.aws:micronaut-aws-sdk-v2")
-}
