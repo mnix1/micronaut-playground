@@ -11,12 +11,12 @@ interface MongoBookViewRepository extends CrudRepository<MongoBookViewRecord, St
     List<MongoBookViewRecord> findByAvailable(boolean available);
 
     @Override
-    default List<? extends BookViewRecord> filter(Boolean available) {
+    default List<? extends BookView> filter(boolean available) {
         return findByAvailable(available);
     }
 
     @Override
-    default List<? extends BookViewRecord> list() {
+    default List<? extends BookView> list() {
         return StreamSupport.stream(findAll().spliterator(), false).toList();
     }
 }

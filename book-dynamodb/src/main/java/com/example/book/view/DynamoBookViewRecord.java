@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.UUID;
 
 @DynamoDbBean
-public class DynamoBookViewRecord implements BookViewRecord {
+public class DynamoBookViewRecord implements BookView {
 
     private UUID id;
     private String name;

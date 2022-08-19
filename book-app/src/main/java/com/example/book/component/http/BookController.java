@@ -47,11 +47,11 @@ class BookController {
         facade.decreaseOrder(new BookOrderDecreaseCommand(id));
     }
 
-    private record BookRequestBody(String name, Integer pages) {
+    record BookRequestBody(String name, Integer pages) {
         CreateBookCommand toCommand() {
             return new CreateBookCommand(name, pages);
         }
     }
 
-    private record CommentRequestBody(String comment) {}
+    record CommentRequestBody(String comment) {}
 }

@@ -1,8 +1,11 @@
 package com.example.book.component;
 
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+
+import static java.util.Optional.ofNullable;
 
 class Book {
 
@@ -13,7 +16,7 @@ class Book {
     final Integer pages;
     final Instant createdTimestamp;
     Instant updatedTimestamp;
-    final List<String> comments;
+    List<String> comments;
 
     Book(
         UUID id,
@@ -40,6 +43,7 @@ class Book {
     }
 
     void addComment(String comment) {
+        comments = new ArrayList<>(ofNullable(comments).orElse(List.of()));
         comments.add(comment);
         updatedTimestamp = Instant.now();
     }

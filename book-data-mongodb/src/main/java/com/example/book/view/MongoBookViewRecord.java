@@ -7,11 +7,10 @@ import java.util.List;
 import java.util.UUID;
 
 @MappedEntity(value = "book")
-public class MongoBookViewRecord implements BookViewRecord {
+public class MongoBookViewRecord implements BookView {
 
     @Id
     private String id;
-
     private String name;
     private Integer order;
     private boolean available;

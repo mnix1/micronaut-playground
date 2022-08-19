@@ -16,12 +16,12 @@ class DynamoBookViewRepository implements BookViewRepository {
         this.dynamoDbEnhancedClient = dynamoDbEnhancedClient;
     }
 
-    public List<? extends BookViewRecord> list() {
+    public List<? extends BookView> list() {
         return table().scan().items().stream().toList();
     }
 
-    public List<? extends BookViewRecord> filter(Boolean available) {
-        return table().scan().items().stream().filter(bookViewRecord -> available.equals(bookViewRecord.isAvailable())).toList();
+    public List<? extends BookView> filter(boolean available) {
+        return table().scan().items().stream().filter(bookViewRecord -> available == bookViewRecord.isAvailable()).toList();
     }
 
     private DynamoDbTable<DynamoBookViewRecord> table() {
