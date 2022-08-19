@@ -18,6 +18,9 @@ class CarRecord {
     Instant createdTimestamp;
     Instant updatedTimestamp;
 
+    public CarRecord() {
+    }
+
     CarRecord(Car car) {
         id = car.id.toString();
         model = car.model;
