@@ -1,0 +1,27 @@
+[
+    {
+        "interfaces": [
+            
+        ]
+    },
+    {
+        "interfaces": [
+            
+        ]
+    },
+    {
+        "interfaces": [
+            
+        ]
+    },
+    {
+        "interfaces": [
+            
+        ]
+    },
+    {
+        "interfaces": [
+            "org.testcontainers.dockerclient.RootlessDockerClientProviderStrategy$LibC"
+        ]
+    }
+]
