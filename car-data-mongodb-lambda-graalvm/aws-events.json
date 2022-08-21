@@ -1,0 +1,18 @@
+[
+  {
+    "path": "/cars",
+    "httpMethod": "GET"
+  },
+  {
+    "body": "{\"model\":\"Punto\",\"producer\":\"FIAT\",\"productionYear\":2009}",
+    "path": "/cars",
+    "httpMethod": "POST",
+    "isBase64Encoded": false
+  },
+  {
+    "body": "{\"owner\":\"Hikaru\"}",
+    "path": "/cars/f88d7cdc-e52e-45e1-ab1f-826e4a437175/changeOwner",
+    "httpMethod": "PATCH",
+    "isBase64Encoded": false
+  }
+]
