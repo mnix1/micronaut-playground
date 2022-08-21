@@ -19,6 +19,13 @@ micronaut {
         annotations("com.example.car.*")
     }
 }
+application {
+    mainClass = 'com.example.car.lambda.FunctionLambdaRuntime'
+}
+java {
+    sourceCompatibility = JavaVersion.toVersion('17')
+    targetCompatibility = JavaVersion.toVersion('17')
+}
 tasks.named("dockerfileNative") {
     args(
             "-XX:MaximumHeapSizePercent=80",
