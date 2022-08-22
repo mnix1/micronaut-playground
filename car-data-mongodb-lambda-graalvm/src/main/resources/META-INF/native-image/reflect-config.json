@@ -7765,11 +7765,11 @@
         "name": "org.slf4j.Logger"
     },
     {
-        "name": "org.testcontainers.containers.GenericContainer$$Lambda$465/0x0000000800eac9b0",
+        "name": "org.testcontainers.containers.GenericContainer$$Lambda$465/0x0000000800eac5f8",
         "queryAllDeclaredMethods": true
     },
     {
-        "name": "org.testcontainers.dockerclient.DockerClientProviderStrategy$$Lambda$403/0x0000000800d82c68",
+        "name": "org.testcontainers.dockerclient.DockerClientProviderStrategy$$Lambda$403/0x0000000800d82660",
         "queryAllDeclaredMethods": true
     },
     {

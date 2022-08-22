@@ -1,3 +1,2 @@
 FROM mvppl123/graalvm:java17-0.0.1
 COPY . .
-RUN ./gradlew -Pagent --info car-data-mongodb-lambda-graalvm:test
