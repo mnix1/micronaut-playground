@@ -5,9 +5,12 @@ services:
     ports:
       - "27017:27017"
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=user
-      - MONGO_INITDB_ROOT_PASSWORD=user
-      - MONGO_INITDB_DATABASE=test
+      MONGO_INITDB_DATABASE: test
+    command: "mongod --replSet rs0 --bind_ip_all"
+    healthcheck:
+      test: mongo --eval "rs.initiate()" && mongo --eval 'db.createUser({user:"user",pwd:"user",roles:["readWrite"]})'
+      start_period: 5s
+      interval: 10s
 #  native-agent-run:
 #    volumes:
 #      - ./data-mongodb-lambda-graalvm/build/libs/:/home/app/libs/
