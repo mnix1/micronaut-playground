@@ -45,7 +45,7 @@ public class CustomHandler extends DefaultApplicationContextBuilder implements R
     }
 
     @Override
-    public void close() throws IOException {
+    public void close() {
         handler.close();
     }
 }

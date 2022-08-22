@@ -9,13 +9,19 @@
       "excludeClasses": ".*Test"
     },
     {
-      "excludeClasses": "org.gradle.*"
+      "excludeClasses": "org.gradle.**"
     },
     {
-      "excludeClasses": "org.junit.*"
+      "excludeClasses": "org.junit.**"
     },
     {
-      "excludeClasses": "io.micronaut.test.*"
+      "excludeClasses": "io.micronaut.test.**"
+    },
+    {
+      "excludeClasses": "org.testcontainers.**"
+    },
+    {
+      "excludeClasses": "com.github.dockerjava.**"
     },
     {
       "excludeClasses": ".*Test\\$Definition"

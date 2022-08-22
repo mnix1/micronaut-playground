@@ -1,5 +1,5 @@
 application {
-    mainClass.set("com.example.car.Main")
+    mainClass.set("com.example.car.lambda.CustomHandler")
 }
 dependencies {
     annotationProcessor("io.micronaut.data:micronaut-data-document-processor")
