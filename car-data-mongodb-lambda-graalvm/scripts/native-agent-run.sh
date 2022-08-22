@@ -1,5 +1,5 @@
 #!/bin/sh
 
-./gradlew data-mongodb-lambda-graalvm:dockerfileNative
-./gradlew data-mongodb-lambda-graalvm:shadowJar
-docker-compose up native-agent-run
+./gradlew car-data-mongodb-lambda-graalvm:dockerfileNative
+./gradlew car-data-mongodb-lambda-graalvm:shadowJar
+docker-compose -f car-data-mongodb-lambda-graalvm/docker-compose.yaml up native-agent-run

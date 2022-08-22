@@ -1,2 +1,2 @@
 mongodb:
-  uri: mongodb://${MONGO_USER:user}:${MONGO_PASSWORD:user}@${MONGO_HOST:localhost}:${MONGO_PORT:27017}${MONGO_URI_SUFFIX:/test?authSource=admin}
+  uri: mongodb://${MONGO_USER:user}:${MONGO_PASSWORD:user}@${MONGO_HOST:localhost}:${MONGO_PORT:27017}${MONGO_URI_SUFFIX:/test?authSource=test}

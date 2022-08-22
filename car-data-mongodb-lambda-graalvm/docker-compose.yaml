@@ -34,17 +34,25 @@ services:
     build:
       context: ./..
       dockerfile: ./car-data-mongodb-lambda-graalvm/scripts/DockerfileNativeAgentTest
-    entrypoint: bash -c "./gradlew clean -Pagent --info car-data-mongodb-lambda-graalvm:test && cp -rf /var/task/car-data-mongodb-lambda-graalvm/build/native/agent-output/test/* /home/app/agent-output"
+    entrypoint: bash -c "./gradlew car-data-mongodb-lambda-graalvm:clean -Pagent --info car-data-mongodb-lambda-graalvm:test && cp -rf /var/task/car-data-mongodb-lambda-graalvm/build/native/agent-output/test/* /home/app/agent-output"
   native-test:
+    environment:
+      TESTCONTAINERS_RYUK_DISABLED: "true"
     image: mvppl123/graalvm:java17-0.0.1
+    network_mode: "host"
     working_dir: /home
     volumes:
-      - ./:/home
-    command: bash -c "./gradlew car-data-mongodb-lambda-graalvm:nativeTest"
-#  local-run:
-#    image: car-data-mongodb-lambda-graalvm:latest
-#    ports:
-#      - "9001:8080"
-#    volumes:
-#      - ./aws-lambda-rie:/aws-lambda-rie
-#    entrypoint: bash -c "cp -R /function /var/task && /aws-lambda-rie"
+      - ../:/home
+      - ~/.gradle/wrapper:/root/.gradle/wrapper
+      - ~/.m2:/root/.m2
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: bash -c "./gradlew car-data-mongodb-lambda-graalvm:clean car-data-mongodb-lambda-graalvm:nativeTest"
+  local-run:
+    environment:
+      MONGO_HOST: host.docker.internal
+    image: car-data-mongodb-lambda-graalvm:latest
+    ports:
+      - "9001:8080"
+    volumes:
+      - ./aws-lambda-rie:/aws-lambda-rie
+    entrypoint: bash -c "cp -R /function /var/task && /aws-lambda-rie"
