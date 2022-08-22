@@ -13,6 +13,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @MicronautTest
 class QualifiersTest {
+
     @Inject
     FastVehicle fastVehicle;
 
@@ -38,6 +39,7 @@ class QualifiersTest {
     @Singleton
     @Named("slowEngine")
     static class V6Engine implements Engine {
+
         @Override
         public String start() {
             return "Starting V6";
@@ -46,6 +48,7 @@ class QualifiersTest {
 
     @Singleton
     static class V8Engine implements Engine {
+
         @Override
         public String start() {
             return "Starting V8";
@@ -54,6 +57,7 @@ class QualifiersTest {
 
     @Singleton
     static class FastVehicle {
+
         private final Engine engine;
 
         //TODO try to remove annotation
@@ -74,6 +78,7 @@ class QualifiersTest {
 
     @Singleton
     static class SlowVehicle {
+
         private final Engine engine;
 
         SlowVehicle(@V6 Engine engine) {
@@ -84,7 +89,6 @@ class QualifiersTest {
             return engine.start();
         }
     }
-
 
     @Named("slowEngine")
     @Retention(RUNTIME)

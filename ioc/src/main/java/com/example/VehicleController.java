@@ -7,6 +7,7 @@ import java.util.List;
 
 @Controller("/vehicles")
 class VehicleController {
+
     private final VehicleService vehicleService;
 
     VehicleController(VehicleService vehicleService) {

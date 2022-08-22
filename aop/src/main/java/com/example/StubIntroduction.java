@@ -9,12 +9,10 @@ import jakarta.inject.Singleton;
 @Singleton
 @InterceptorBean(Stub.class)
 class StubIntroduction implements MethodInterceptor<Object, Object> {
+
     @Nullable
     @Override
     public Object intercept(MethodInvocationContext<Object, Object> context) {
-        return context.getValue(
-                Stub.class,
-                context.getReturnType().getType()
-        ).orElse(null);
+        return context.getValue(Stub.class, context.getReturnType().getType()).orElse(null);
     }
 }

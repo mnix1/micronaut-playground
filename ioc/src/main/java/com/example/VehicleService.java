@@ -10,9 +10,11 @@ import java.util.Optional;
 
 @Singleton
 class VehicleService {
+
     //can't be final
     @Inject
     private VehicleRepository vehicleRepository;
+
     @Inject
     private Optional<AdditionalVehiclesService> additionalVehiclesService;
 

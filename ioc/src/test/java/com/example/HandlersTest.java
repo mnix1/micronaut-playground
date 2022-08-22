@@ -12,8 +12,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @MicronautTest
 class HandlersTest {
+
     @Inject
     private MovementHistory movementHistory;
+
     private final MovementService movementService;
 
     HandlersTest(MovementService movementService) {
@@ -34,6 +36,7 @@ class HandlersTest {
 
     @Singleton
     static class MovementService {
+
         private final List<MovementCommandHandler> movementCommandHandlers;
 
         MovementService(List<MovementCommandHandler> movementCommandHandlers) {
@@ -47,6 +50,7 @@ class HandlersTest {
 
     @Singleton
     static class MovementHistory {
+
         List<String> actions = new ArrayList<>();
 
         void next(String action) {
@@ -60,6 +64,7 @@ class HandlersTest {
 
     @Singleton
     static class SitCommandHandler implements MovementCommandHandler {
+
         private final MovementHistory history;
 
         SitCommandHandler(MovementHistory history) {
@@ -76,6 +81,7 @@ class HandlersTest {
 
     @Singleton
     static class MovingCommandHandler implements MovementCommandHandler {
+
         private final MovementHistory history;
 
         MovingCommandHandler(MovementHistory history) {
@@ -93,15 +99,11 @@ class HandlersTest {
         }
     }
 
-    interface MovementCommand {
-    }
+    interface MovementCommand {}
 
-    record WalkCommand(String direction) implements MovementCommand {
-    }
+    record WalkCommand(String direction) implements MovementCommand {}
 
-    record SitCommand() implements MovementCommand {
-    }
+    record SitCommand() implements MovementCommand {}
 
-    record RunCommand(String direction, int speed) implements MovementCommand {
-    }
+    record RunCommand(String direction, int speed) implements MovementCommand {}
 }

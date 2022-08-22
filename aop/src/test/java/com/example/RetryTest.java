@@ -10,6 +10,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @MicronautTest
 class RetryTest {
+
     @Inject
     RetryExample example;
 
@@ -20,7 +21,9 @@ class RetryTest {
 
     @Singleton
     static class RetryExample {
+
         int invokeCounter = 0;
+
         //TODO try changing @Retryable properties
         //TODO try uncomment getOrder method
         @Retryable
@@ -34,7 +37,6 @@ class RetryTest {
         }
 
         @Timed
-        void otherMethod() {
-        }
+        void otherMethod() {}
     }
 }

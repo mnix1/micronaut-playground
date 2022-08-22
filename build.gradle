@@ -8,6 +8,7 @@ buildscript {
     dependencies {
         classpath "gradle.plugin.com.github.johnrengelman:shadow:7.1.2"
         classpath "io.micronaut.gradle:micronaut-gradle-plugin:3.5.1"
+        classpath "com.diffplug.spotless:spotless-plugin-gradle:6.9.1"
     }
 }
 allprojects {
@@ -18,16 +19,18 @@ allprojects {
 subprojects {
     apply plugin: "com.github.johnrengelman.shadow"
     apply plugin: "io.micronaut.application"
+    apply plugin: "com.diffplug.spotless"
 
     group = "com.example"
+    version = "0.0.1"
 
     dependencies {
         annotationProcessor("io.micronaut:micronaut-http-validation")
         implementation("io.micronaut:micronaut-http-client")
         implementation("io.micronaut:micronaut-jackson-databind")
         implementation("jakarta.annotation:jakarta.annotation-api")
-        runtimeOnly("ch.qos.logback:logback-classic")
         implementation("io.micronaut:micronaut-validation")
+        runtimeOnly("ch.qos.logback:logback-classic")
         //faker
         implementation('com.github.javafaker:javafaker:1.0.2') { exclude module: 'snakeyaml' }
         implementation group: 'org.yaml', name: 'snakeyaml', version: '1.30'
@@ -38,6 +41,7 @@ subprojects {
         testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:{junitVersion}")
         testImplementation('org.assertj:assertj-core:3.23.1')
     }
+
     compileJava { options.encoding = "UTF-8" }
 
     java {
@@ -47,6 +51,14 @@ subprojects {
 
     test {
         useJUnitPlatform()
+    }
+
+    spotless {
+        java {
+            removeUnusedImports()
+            prettier(['prettier': '2.7.1', 'prettier-plugin-java': '1.6.2']).config(['parser': 'java', 'tabWidth': 4, 'printWidth': 140])
+            importOrder('', 'java', '\\#')
+        }
     }
 
     graalvmNative.toolchainDetection = false

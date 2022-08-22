@@ -1,0 +1,7 @@
+micronaut:
+  application:
+    name: book
+netty:
+  default:
+    allocator:
+      max-order: 3

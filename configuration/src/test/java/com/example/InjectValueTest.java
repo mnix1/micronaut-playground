@@ -1,6 +1,5 @@
 package com.example;
 
-
 import io.micronaut.context.annotation.Property;
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
 import org.junit.jupiter.api.Test;
@@ -13,8 +12,10 @@ class InjectValueTest {
     //TODO rename application-test.yml to application.yml
     @Property(name = "inject.value1")
     int value1;
+
     @Property(name = "inject.value2")
     int value2;
+
     @Property(name = "inject.value3", defaultValue = "5")
     int value3;
 

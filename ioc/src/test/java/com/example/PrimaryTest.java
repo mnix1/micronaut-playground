@@ -10,6 +10,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @MicronautTest
 class PrimaryTest {
+
     @Inject
     Vehicle vehicle;
 
@@ -25,6 +26,7 @@ class PrimaryTest {
 
     @Singleton
     static class V6Engine implements Engine {
+
         @Override
         public String start() {
             return "Starting V6";
@@ -35,6 +37,7 @@ class PrimaryTest {
     //TODO remove @Primary and use @Any (?where)
     @Primary
     static class V8Engine implements Engine {
+
         @Override
         public String start() {
             return "Starting V8";
@@ -43,6 +46,7 @@ class PrimaryTest {
 
     @Singleton
     static class Vehicle {
+
         private final Engine engine;
 
         Vehicle(Engine engine) {

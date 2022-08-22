@@ -23,6 +23,7 @@ import java.lang.reflect.AnnotatedElement;
 import java.util.List;
 
 public class AlwaysRebuildContextJunit5Extension extends MicronautJunit5Extension {
+
     @Override
     protected void beforeEach(ExtensionContext context, Object testInstance, AnnotatedElement method, List<Property> propertyAnnotations) {
         testProperties.put("micronaut.test.count", 1);

@@ -12,10 +12,13 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @MicronautTest
 class EventsTest {
+
     @Inject
     ApplicationEventPublisher<SimpleEvent> eventPublisher;
+
     @Inject
     SimpleEventListener simpleEventListener;
+
     @Inject
     OtherEventListener otherEventListener;
 
@@ -30,12 +33,11 @@ class EventsTest {
         assertThat(otherEventListener.last).isEqualTo(2);
     }
 
-
-    record SimpleEvent(int value) {
-    }
+    record SimpleEvent(int value) {}
 
     @Singleton
     static class SimpleEventListener implements ApplicationEventListener<SimpleEvent> {
+
         private int sum = 0;
 
         @Override
@@ -46,6 +48,7 @@ class EventsTest {
 
     @Singleton
     static class OtherEventListener {
+
         private Integer last = null;
 
         @EventListener

@@ -6,8 +6,6 @@ class CheapVehicleRepository implements VehicleRepository {
 
     @Override
     public List<String> vehicles() {
-        return List.of(
-                "Fiat 126p"
-        );
+        return List.of("Fiat 126p");
     }
 }

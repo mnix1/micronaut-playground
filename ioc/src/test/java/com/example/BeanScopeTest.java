@@ -13,7 +13,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @MicronautTest
 class BeanScopeTest {
-    private final static Logger LOG = LoggerFactory.getLogger(BeanScopeTest.class);
+
+    private static final Logger LOG = LoggerFactory.getLogger(BeanScopeTest.class);
 
     @Inject
     ApplicationContext applicationContext;
@@ -49,6 +50,7 @@ class BeanScopeTest {
     }
 
     static class SimpleSingleton {
+
         static int count = 0;
 
         SimpleSingleton() {
@@ -57,6 +59,7 @@ class BeanScopeTest {
     }
 
     static class SimplePrototype {
+
         static int count = 0;
 
         SimplePrototype() {

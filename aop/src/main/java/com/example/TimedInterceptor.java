@@ -14,6 +14,7 @@ import java.util.concurrent.TimeUnit;
 @Singleton
 @InterceptorBean(Timed.class)
 class TimedInterceptor implements MethodInterceptor<Object, Object> {
+
     private static final Logger LOG = LoggerFactory.getLogger(TimedInterceptor.class);
 
     @Nullable
@@ -26,9 +27,8 @@ class TimedInterceptor implements MethodInterceptor<Object, Object> {
         LOG.info(context.getName() + " execution took {} and started at {}", diff, now);
         return result;
     }
-
-//    @Override
-//    public int getOrder() {
-//        return InterceptPhase.RETRY.getPosition() - 1;
-//    }
+    //    @Override
+    //    public int getOrder() {
+    //        return InterceptPhase.RETRY.getPosition() - 1;
+    //    }
 }

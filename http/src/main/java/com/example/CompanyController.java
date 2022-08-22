@@ -13,25 +13,28 @@ import java.util.stream.IntStream;
 
 @Controller("/companies")
 class CompanyController {
-    private final static Logger LOG = LoggerFactory.getLogger(CompanyController.class);
+
+    private static final Logger LOG = LoggerFactory.getLogger(CompanyController.class);
     private final List<Company> companies = new ArrayList<>();
 
     @Get
     List<ListCompanySnapshot> find(Optional<Integer> employeesFrom, Optional<Integer> employeesTo) {
-        return companies.stream()
-                .filter(c -> employeesFrom.filter(i -> c.employees() < i).isEmpty())
-                .filter(c -> employeesTo.filter(i -> c.employees() > i).isEmpty())
-                .map(c -> new ListCompanySnapshot(c.id(), c.name(), c.industry(), c.employees(), c.createdDateTime().toString()))
-                .toList();
+        return companies
+            .stream()
+            .filter(c -> employeesFrom.filter(i -> c.employees() < i).isEmpty())
+            .filter(c -> employeesTo.filter(i -> c.employees() > i).isEmpty())
+            .map(c -> new ListCompanySnapshot(c.id(), c.name(), c.industry(), c.employees(), c.createdDateTime().toString()))
+            .toList();
     }
 
     @Get("findByName")
     List<ListCompanySnapshot> findByName(String namePrefix, Optional<String> nameSuffix) {
-        return companies.stream()
-                .filter(c -> c.name().startsWith(namePrefix))
-                .filter(c -> nameSuffix.filter(s -> !c.name().endsWith(s)).isEmpty())
-                .map(c -> new ListCompanySnapshot(c.id(), c.name(), c.industry(), c.employees(), c.createdDateTime().toString()))
-                .toList();
+        return companies
+            .stream()
+            .filter(c -> c.name().startsWith(namePrefix))
+            .filter(c -> nameSuffix.filter(s -> !c.name().endsWith(s)).isEmpty())
+            .map(c -> new ListCompanySnapshot(c.id(), c.name(), c.industry(), c.employees(), c.createdDateTime().toString()))
+            .toList();
     }
 
     @Get("/{id}")
@@ -74,41 +77,27 @@ class CompanyController {
         companies.clear();
     }
 
-    record CompanyRequestBody(
-            String name,
-            String industry,
-            int employees,
-            Instant createdDateTime,
-            List<Facility> facilities
-    ) {
-
+    record CompanyRequestBody(String name, String industry, int employees, Instant createdDateTime, List<Facility> facilities) {
         Company toCompany(UUID id) {
             return new Company(id, name, industry, employees, createdDateTime, facilities);
         }
     }
 
-    record ListCompanySnapshot(
-            UUID id,
-            String name,
-            String industry,
-            int employees,
-            String createdDateTime
-    ) {
-
-    }
+    record ListCompanySnapshot(UUID id, String name, String industry, int employees, String createdDateTime) {}
 
     private Company generateRandomCompany() {
         Faker faker = new Faker(Locale.forLanguageTag("PL"));
         return new Company(
-                UUID.randomUUID(),
-                faker.company().name(),
-                faker.company().industry(),
-                faker.number().numberBetween(2, 2000),
-                faker.date().birthday().toInstant(),
-                IntStream.rangeClosed(1, faker.number().numberBetween(1, 10)).boxed().map(i -> new Facility(
-                        faker.country().name(),
-                        faker.address().cityName()
-                )).toList()
+            UUID.randomUUID(),
+            faker.company().name(),
+            faker.company().industry(),
+            faker.number().numberBetween(2, 2000),
+            faker.date().birthday().toInstant(),
+            IntStream
+                .rangeClosed(1, faker.number().numberBetween(1, 10))
+                .boxed()
+                .map(i -> new Facility(faker.country().name(), faker.address().cityName()))
+                .toList()
         );
     }
 }

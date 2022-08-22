@@ -47,7 +47,9 @@ class IntegrationTest {
         createGoogleCompany();
         createAppleCompany();
         //when
-        HttpResponse<List<Company>> response = client.toBlocking().exchange(HttpRequest.GET("/findByName?namePrefix=Ap"), Argument.listOf(Company.class));
+        HttpResponse<List<Company>> response = client
+            .toBlocking()
+            .exchange(HttpRequest.GET("/findByName?namePrefix=Ap"), Argument.listOf(Company.class));
         //then
         assertOneCompany(response, 8, "Apple");
     }

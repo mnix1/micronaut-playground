@@ -1,0 +1,28 @@
+application {
+    mainClass.set("com.example.car.lambda.CustomHandler")
+}
+dependencies {
+    annotationProcessor("io.micronaut.data:micronaut-data-document-processor")
+    implementation("io.micronaut.data:micronaut-data-mongodb")
+    implementation("org.mongodb:mongodb-driver-sync")
+    implementation 'com.fasterxml.jackson.module:jackson-module-parameter-names:2.13.3'
+    implementation 'io.micronaut.aws:micronaut-aws-sdk-v2'
+    implementation 'io.micronaut.aws:micronaut-function-aws'
+    implementation 'com.amazonaws:aws-lambda-java-events:3.11.0'
+
+    testImplementation("org.testcontainers:junit-jupiter")
+    testImplementation("org.testcontainers:mongodb")
+    testImplementation("org.testcontainers:testcontainers")
+}
+java {
+    sourceCompatibility = JavaVersion.toVersion('11')
+    targetCompatibility = JavaVersion.toVersion('11')
+}
+micronaut {
+    runtime("lambda_java")
+    testRuntime("junit5")
+    processing {
+        incremental(true)
+        annotations("com.example.car.*")
+    }
+}

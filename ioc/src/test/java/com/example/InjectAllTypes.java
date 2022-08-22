@@ -11,10 +11,13 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @MicronautTest
 class InjectAllTypes {
+
     @Inject
     Optional<Engine> engine;
+
     @Inject
     Optional<CarPart> carPart;
+
     @Inject
     Optional<CarEngine> carEngine;
 

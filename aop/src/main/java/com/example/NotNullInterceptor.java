@@ -14,17 +14,19 @@ import java.util.Optional;
 @Singleton
 @InterceptorBean(NotNull.class)
 class NotNullInterceptor implements MethodInterceptor<Object, Object> {
+
     @Nullable
     @Override
     public Object intercept(MethodInvocationContext<Object, Object> context) {
-        Optional<Map.Entry<String, MutableArgumentValue<?>>> nullParam = context.getParameters()
-                .entrySet()
-                .stream()
-                .filter(entry -> {
-                    MutableArgumentValue<?> argumentValue = entry.getValue();
-                    return Objects.isNull(argumentValue.getValue());
-                })
-                .findFirst();
+        Optional<Map.Entry<String, MutableArgumentValue<?>>> nullParam = context
+            .getParameters()
+            .entrySet()
+            .stream()
+            .filter(entry -> {
+                MutableArgumentValue<?> argumentValue = entry.getValue();
+                return Objects.isNull(argumentValue.getValue());
+            })
+            .findFirst();
         if (nullParam.isPresent()) {
             throw new IllegalArgumentException("Null parameter [" + nullParam.get().getKey() + "] not allowed");
         }

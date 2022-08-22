@@ -22,7 +22,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @MicronautTest
 class RequestScopeTest {
-    private final static Logger LOG = LoggerFactory.getLogger(RequestScopeTest.class);
+
+    private static final Logger LOG = LoggerFactory.getLogger(RequestScopeTest.class);
 
     @Inject
     @Client("/")
@@ -43,6 +44,7 @@ class RequestScopeTest {
 
     @Controller("/")
     static class HelloController {
+
         @Inject
         SimpleRequestScope simpleRequestScope;
 
@@ -54,6 +56,7 @@ class RequestScopeTest {
 
     @RequestScope
     static class SimpleRequestScope {
+
         private static final Random random = new Random(10);
         private int count;
 

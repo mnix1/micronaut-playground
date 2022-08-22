@@ -14,3 +14,5 @@ out/
 .settings
 .classpath
 .factorypath
+
+**/application-local.yml

@@ -18,6 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @MicronautTest(rebuildContext = true)
 @ExtendWith(AlwaysRebuildContextJunit5Extension.class)
 class IntegrationTest {
+
     @Inject
     @Client("/vehicles")
     HttpClient client;

@@ -1,7 +1,3 @@
 package com.example;
 
-record Facility(
-        String country,
-        String city
-) {
-}
+record Facility(String country, String city) {}

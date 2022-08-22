@@ -1,0 +1,36 @@
+{
+  "rules": [
+  ],
+  "regexRules": [
+    {
+      "includeClasses": ".*"
+    },
+    {
+      "excludeClasses": ".*Test"
+    },
+    {
+      "excludeClasses": "org.gradle.*"
+    },
+    {
+      "excludeClasses": "org.junit.*"
+    },
+    {
+      "excludeClasses": "io.micronaut.test.*"
+    },
+    {
+      "excludeClasses": "org.testcontainers.*"
+    },
+    {
+      "excludeClasses": "com.github.dockerjava.*"
+    },
+    {
+      "excludeClasses": ".*Test\\$Definition"
+    },
+    {
+      "excludeClasses": ".*Test\\$Definition\\$Exec"
+    },
+    {
+      "excludeClasses": ".*Test\\$Definition\\$Reference"
+    }
+  ]
+}

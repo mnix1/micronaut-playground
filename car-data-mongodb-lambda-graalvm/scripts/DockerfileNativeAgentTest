@@ -1,0 +1,2 @@
+FROM mvppl123/graalvm:java17-0.0.1
+COPY . .
