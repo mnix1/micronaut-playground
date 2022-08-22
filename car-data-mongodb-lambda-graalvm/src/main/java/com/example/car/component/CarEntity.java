@@ -9,8 +9,10 @@ import java.util.UUID;
 
 @MappedEntity(value = "car")
 class CarEntity {
+
     @Id
     String id;
+
     String model;
     CarProducer producer;
     int productionYear;
@@ -18,8 +20,7 @@ class CarEntity {
     Instant createdTimestamp;
     Instant updatedTimestamp;
 
-    public CarEntity() {
-    }
+    public CarEntity() {}
 
     CarEntity(Car car) {
         id = car.id.toString();

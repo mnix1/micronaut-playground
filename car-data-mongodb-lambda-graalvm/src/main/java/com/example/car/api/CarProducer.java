@@ -6,5 +6,5 @@ public enum CarProducer {
     TOYOTA,
     LEXUS,
     FIAT,
-    VOLVO
+    VOLVO,
 }

@@ -6,6 +6,7 @@ import com.example.car.api.CarSnapshot;
 import java.util.UUID;
 
 class Car {
+
     final UUID id;
     final String model;
     final CarProducer producer;
@@ -19,7 +20,6 @@ class Car {
         this.productionYear = productionYear;
         this.owner = owner;
     }
-
 
     public CarSnapshot toSnapshot() {
         return new CarSnapshot(id, model, producer, productionYear, owner);

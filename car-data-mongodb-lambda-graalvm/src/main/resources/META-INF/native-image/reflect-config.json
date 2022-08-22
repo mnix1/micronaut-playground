@@ -78,6 +78,54 @@
         "name": "[Lorg.testcontainers.shaded.com.google.common.collect.ImmutableMapEntry;"
     },
     {
+        "name": "com.example.$TransactionTest$TestOtherFacade$Definition",
+        "allDeclaredClasses": true,
+        "queryAllDeclaredMethods": true,
+        "queryAllPublicMethods": true
+    },
+    {
+        "name": "com.example.$TransactionTest$TestOtherFacade$Definition$Reference",
+        "allDeclaredClasses": true,
+        "queryAllDeclaredMethods": true,
+        "queryAllPublicMethods": true,
+        "methods": [
+            {
+                "name": "<init>",
+                "parameterTypes": [
+                    
+                ]
+            }
+        ]
+    },
+    {
+        "name": "com.example.TransactionTest$TestOtherFacade",
+        "allDeclaredClasses": true,
+        "queryAllDeclaredMethods": true,
+        "queryAllPublicMethods": true
+    },
+    {
+        "name": "com.example.audit.$AuditEntity$IntrospectionRef",
+        "methods": [
+            {
+                "name": "<init>",
+                "parameterTypes": [
+                    
+                ]
+            }
+        ]
+    },
+    {
+        "name": "com.example.audit.$AuditRepository$Intercepted$Definition$Reference",
+        "methods": [
+            {
+                "name": "<init>",
+                "parameterTypes": [
+                    
+                ]
+            }
+        ]
+    },
+    {
         "name": "com.example.car.api.CarProducer",
         "queryAllDeclaredMethods": true,
         "allDeclaredFields": true
@@ -128,6 +176,11 @@
         ]
     },
     {
+        "name": "com.example.car.api.OtherFacade",
+        "allDeclaredClasses": true,
+        "queryAllPublicMethods": true
+    },
+    {
         "name": "com.example.car.api.command.CreateCarCommand",
         "queryAllDeclaredMethods": true,
         "allDeclaredFields": true,
@@ -154,7 +207,40 @@
         ]
     },
     {
-        "name": "com.example.car.component.$CarRecord$IntrospectionRef",
+        "name": "com.example.car.component.$CarController$ChangeCarOwnerRequestBody$IntrospectionRef",
+        "methods": [
+            {
+                "name": "<init>",
+                "parameterTypes": [
+                    
+                ]
+            }
+        ]
+    },
+    {
+        "name": "com.example.car.component.$CarController$CreateCarRequestBody$IntrospectionRef",
+        "methods": [
+            {
+                "name": "<init>",
+                "parameterTypes": [
+                    
+                ]
+            }
+        ]
+    },
+    {
+        "name": "com.example.car.component.$CarController$Definition$Reference",
+        "methods": [
+            {
+                "name": "<init>",
+                "parameterTypes": [
+                    
+                ]
+            }
+        ]
+    },
+    {
+        "name": "com.example.car.component.$CarEntity$IntrospectionRef",
         "methods": [
             {
                 "name": "<init>",
@@ -176,6 +262,17 @@
         ]
     },
     {
+        "name": "com.example.car.component.$DefaultCarFacade$Definition$Intercepted$Definition$Reference",
+        "methods": [
+            {
+                "name": "<init>",
+                "parameterTypes": [
+                    
+                ]
+            }
+        ]
+    },
+    {
         "name": "com.example.car.component.$DefaultCarFacade$Definition$Reference",
         "methods": [
             {
@@ -187,7 +284,7 @@
         ]
     },
     {
-        "name": "com.example.car.component.http.$CarController$ChangeCarOwnerRequestBody$IntrospectionRef",
+        "name": "com.example.car.component.$DefaultOtherFacade$Definition$Reference",
         "methods": [
             {
                 "name": "<init>",
@@ -198,35 +295,13 @@
         ]
     },
     {
-        "name": "com.example.car.component.http.$CarController$CreateCarRequestBody$IntrospectionRef",
-        "methods": [
-            {
-                "name": "<init>",
-                "parameterTypes": [
-                    
-                ]
-            }
-        ]
-    },
-    {
-        "name": "com.example.car.component.http.$CarController$Definition$Reference",
-        "methods": [
-            {
-                "name": "<init>",
-                "parameterTypes": [
-                    
-                ]
-            }
-        ]
-    },
-    {
-        "name": "com.example.car.component.http.CarController$ChangeCarOwnerRequestBody",
+        "name": "com.example.car.component.CarController$ChangeCarOwnerRequestBody",
         "queryAllDeclaredMethods": true,
         "allDeclaredFields": true,
         "queryAllDeclaredConstructors": true
     },
     {
-        "name": "com.example.car.component.http.CarController$CreateCarRequestBody",
+        "name": "com.example.car.component.CarController$CreateCarRequestBody",
         "queryAllDeclaredMethods": true,
         "allDeclaredFields": true,
         "queryAllDeclaredConstructors": true
@@ -1336,6 +1411,29 @@
         ]
     },
     {
+        "name": "io.micronaut.context.AbstractBeanContextConditional",
+        "allDeclaredClasses": true,
+        "queryAllDeclaredMethods": true,
+        "queryAllPublicMethods": true
+    },
+    {
+        "name": "io.micronaut.context.AbstractInitializableBeanDefinition",
+        "allDeclaredClasses": true,
+        "queryAllDeclaredMethods": true,
+        "queryAllPublicMethods": true
+    },
+    {
+        "name": "io.micronaut.context.AbstractInitializableBeanDefinitionReference",
+        "allDeclaredClasses": true,
+        "queryAllDeclaredMethods": true,
+        "queryAllPublicMethods": true
+    },
+    {
+        "name": "io.micronaut.context.EnvironmentConfigurable",
+        "allDeclaredClasses": true,
+        "queryAllPublicMethods": true
+    },
+    {
         "name": "io.micronaut.context.annotation.Prototype"
     },
     {
@@ -1372,7 +1470,37 @@
         ]
     },
     {
+        "name": "io.micronaut.core.annotation.AnnotationMetadata",
+        "allDeclaredClasses": true,
+        "queryAllPublicMethods": true
+    },
+    {
+        "name": "io.micronaut.core.annotation.AnnotationMetadataDelegate",
+        "allDeclaredClasses": true,
+        "queryAllPublicMethods": true
+    },
+    {
+        "name": "io.micronaut.core.annotation.AnnotationMetadataProvider",
+        "allDeclaredClasses": true,
+        "queryAllPublicMethods": true
+    },
+    {
+        "name": "io.micronaut.core.annotation.AnnotationSource",
+        "allDeclaredClasses": true,
+        "queryAllPublicMethods": true
+    },
+    {
         "name": "io.micronaut.core.async.publisher.Publishers"
+    },
+    {
+        "name": "io.micronaut.core.naming.Named",
+        "allDeclaredClasses": true,
+        "queryAllPublicMethods": true
+    },
+    {
+        "name": "io.micronaut.core.type.ArgumentCoercible",
+        "allDeclaredClasses": true,
+        "queryAllPublicMethods": true
     },
     {
         "name": "io.micronaut.data.document.model.query.builder.$MongoQueryBuilder$IntrospectionRef",
@@ -3683,6 +3811,35 @@
         ]
     },
     {
+        "name": "io.micronaut.http.hateoas.AbstractResource",
+        "queryAllDeclaredMethods": true,
+        "allDeclaredFields": true
+    },
+    {
+        "name": "io.micronaut.http.hateoas.DefaultLink",
+        "queryAllDeclaredMethods": true,
+        "allDeclaredFields": true,
+        "queryAllDeclaredConstructors": true
+    },
+    {
+        "name": "io.micronaut.http.hateoas.JsonError",
+        "queryAllDeclaredMethods": true,
+        "allDeclaredFields": true,
+        "queryAllDeclaredConstructors": true
+    },
+    {
+        "name": "io.micronaut.http.hateoas.Link",
+        "queryAllDeclaredMethods": true
+    },
+    {
+        "name": "io.micronaut.http.hateoas.Link$Builder",
+        "queryAllDeclaredMethods": true
+    },
+    {
+        "name": "io.micronaut.http.hateoas.Resource",
+        "queryAllDeclaredMethods": true
+    },
+    {
         "name": "io.micronaut.http.netty.channel.$DefaultEventLoopGroupConfiguration$Definition$Reference",
         "methods": [
             {
@@ -4429,6 +4586,31 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "io.micronaut.inject.BeanContextConditional",
+        "allDeclaredClasses": true,
+        "queryAllPublicMethods": true
+    },
+    {
+        "name": "io.micronaut.inject.BeanDefinition",
+        "allDeclaredClasses": true,
+        "queryAllPublicMethods": true
+    },
+    {
+        "name": "io.micronaut.inject.BeanDefinitionReference",
+        "allDeclaredClasses": true,
+        "queryAllPublicMethods": true
+    },
+    {
+        "name": "io.micronaut.inject.BeanFactory",
+        "allDeclaredClasses": true,
+        "queryAllPublicMethods": true
+    },
+    {
+        "name": "io.micronaut.inject.BeanType",
+        "allDeclaredClasses": true,
+        "queryAllPublicMethods": true
     },
     {
         "name": "io.micronaut.inject.annotation.AnnotationConvertersRegistrar",

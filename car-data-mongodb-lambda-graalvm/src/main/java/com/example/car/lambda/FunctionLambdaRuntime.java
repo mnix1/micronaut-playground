@@ -10,7 +10,8 @@ import org.slf4j.LoggerFactory;
 
 import java.net.MalformedURLException;
 
-public class FunctionLambdaRuntime extends AbstractMicronautLambdaRuntime<AwsProxyRequest, AwsProxyResponse, AwsProxyRequest, AwsProxyResponse> {
+public class FunctionLambdaRuntime
+    extends AbstractMicronautLambdaRuntime<AwsProxyRequest, AwsProxyResponse, AwsProxyRequest, AwsProxyResponse> {
 
     private static final Logger LOG = LoggerFactory.getLogger(FunctionLambdaRuntime.class);
 

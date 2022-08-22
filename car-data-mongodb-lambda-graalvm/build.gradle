@@ -16,7 +16,7 @@ micronaut {
     testRuntime("junit5")
     processing {
         incremental(true)
-        annotations("com.example.car.*")
+        annotations("com.example.*")
     }
 }
 application {
