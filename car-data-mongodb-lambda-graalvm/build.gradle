@@ -38,14 +38,21 @@ tasks.named("dockerBuildNative") {
     images = ["$projectNameLowerCase:$project.version", "$projectNameLowerCase:latest"]
 }
 graalvmNative {
+    agent {
+        defaultMode = "standard" // Default agent mode if one isn't specified using `-Pagent=mode_name`
+        enabled = true
+        accessFilterFiles.from("${projectDir}/src/test/resources/access-filter.json")
+        builtinCallerFilter = true
+        builtinHeuristicFilter = true
+        enableExperimentalPredefinedClasses = true
+        enableExperimentalUnsafeAllocationTracing = true
+        trackReflectionMetadata = true
+    }
     binaries {
         main {
             imageName = "func"
         }
         test {
-            agent {
-                options.add("access-filter-file=${projectDir}/src/test/resources/access-filter.json")
-            }
             buildArgs.add('--initialize-at-build-time=org.junit.platform.reporting.open.xml.OpenTestReportGeneratingListener')
         }
     }

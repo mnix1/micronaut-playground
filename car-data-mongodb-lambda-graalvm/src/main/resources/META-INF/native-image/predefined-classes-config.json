@@ -2,7 +2,1874 @@
     {
         "type": "agent-extracted",
         "classes": [
-            
+            {
+                "nameInfo": "org/gradle/util/internal/GFileUtils",
+                "hash": "3ca8ee587d917b8e0ed4d3ec716536b04e718a2f10bcd357597123345390c905"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/inet/SocketConnection$SocketOutputStream",
+                "hash": "0f13cd54b5e3107986f5bf057f70c2c280794a494de35d021ab82ef6190cd8b3"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/sink/OutputEventRenderer$LazyListener",
+                "hash": "b42ac8b45dffb3594e0b3a4bf0d84f4bb7bd11a4523de1a7a2983263fde6e04a"
+            },
+            {
+                "nameInfo": "org/gradle/internal/os/OperatingSystem",
+                "hash": "e2c6613af2d54a6678598db6a31c259957c9106842bfe06d081a7c7d27ba55d4"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/DefaultServiceRegistry$FactoryService",
+                "hash": "5764fd2d81095e650538586dfb82357e34ec03bdeeafb40960f2b9231791a3dc"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/file/temp/GradleUserHomeTemporaryFileProvider",
+                "hash": "251a9c39544940b1648549aaba7ff9a16bef97b09c885a5eaa5a6a36564af7db"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/results/AttachParentTestResultProcessor",
+                "hash": "dc006ad7e752c764626c49563afc166f2aff50f675d8974b5a6220d837258529"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/HashCodeSerializer",
+                "hash": "f0a2d790c3d82fe37aa7da210983ea49e2b543251fd8edd4beb1b8c897066092"
+            },
+            {
+                "nameInfo": "org/gradle/internal/dispatch/ContextClassLoaderDispatch",
+                "hash": "a8ea01157ac59ad059e7bbbd7f9e303e4717f5641e12319a62f842d4da3d8c74"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/BaseSerializerFactory$ByteArraySerializer",
+                "hash": "5420690b0d360c378ff42216a77b41e334c5af6577744d75ceb305e5b7631141"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/DefaultMethodArgsSerializer$ArraySerializer",
+                "hash": "c2a9934245be50c3a72afbd46266be70831f371d33f1a679e0563c7846f40220"
+            },
+            {
+                "nameInfo": "org/gradle/internal/concurrent/DefaultExecutorFactory$TrackedManagedExecutor",
+                "hash": "517d740e14e7e1e058d15e0f542a6e9c52456578a05193b425524908e905dfa1"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/ObjectConnectionBuilder",
+                "hash": "17449b28c813a0c0be7f4df421b91369e215f573e065aa97aaa500d0e90189a2"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/DefaultTestSuiteDescriptor",
+                "hash": "94c2ed81f7cd4c8c941ff78c5f061245fcb78f77b0a0b9ddddaf60be15ee4181"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/inet/InetAddressFactory",
+                "hash": "ca0b101581cbf0bfb04b02326f336fb90ca2b781ba4860541c96026c5bcba80a"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/DefaultTestOutputEvent",
+                "hash": "30b4bca2b5b59dacd2f22388c25c32eee14446fa6919132ae830425306cd0e20"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/RelevantMethods",
+                "hash": "dfeca0620f401c78832bc42cacaa4a85210270774c388bcc0f89fa0eee7fefca"
+            },
+            {
+                "nameInfo": "org/gradle/process/internal/worker/child/SystemApplicationClassLoaderWorker$ContextImpl",
+                "hash": "cf349a60f3d4531c717debd6c3dcf6649c3e27b949c060667a42d54dfb562714"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/protocol/StreamFailureMessage",
+                "hash": "b0d4a63028c16907c5b2582279054aaf4b79ed2da46638a78fcc2ff631dc730b"
+            },
+            {
+                "nameInfo": "org/gradle/internal/id/IdGenerator",
+                "hash": "b59bc98797802de2a67776541e7ab6560a2d5024e23738a5ac6c6ff8e911053d"
+            },
+            {
+                "nameInfo": "org/gradle/internal/concurrent/ExecutorPolicy$CatchAndRecordFailures",
+                "hash": "ec277e0ffe4db1c167eb7193dc2dd4fdd6e4874e72ab769c77898c6cdd49fc9e"
+            },
+            {
+                "nameInfo": "org/gradle/internal/concurrent/ThreadFactoryImpl",
+                "hash": "96dc49f3da6cf078dee5b09031f710698b0d3cfa97ddf96d16cc8753c35321e5"
+            },
+            {
+                "nameInfo": "org/gradle/process/internal/worker/child/SystemApplicationClassLoaderWorker$PrintUnrecoverableErrorToFileHandler",
+                "hash": "034b4c644848f130baa8f9d98aed9c620d6763ad58dab76a2d31045dbea4c2a4"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/DefaultSerializerRegistry$1",
+                "hash": "594af385b04ed3e25ef634dd2d076cffbcb291d9a2888d5ef1a4e920524c3938"
+            },
+            {
+                "nameInfo": "org/gradle/internal/event/BroadcastDispatch",
+                "hash": "3112fcc983fe5a1b47789839b1da1e9c96a199bde9696898b3cd9c2f6e130539"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/source/JavaUtilLoggingSystem$SnapshotImpl",
+                "hash": "4e891a1ce8092093ae35cb35c58fe01eb8c5364ed8dd88af0c902af738530ccc"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/source/PrintStreamLoggingSystem$1",
+                "hash": "efc6d29f8f09b88a1168d7ee8525648c46665e8bf112e7e853437f2cf80b5d50"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/DefaultServiceMethodFactory",
+                "hash": "0fd47fa520c1fac0653319cc554b5a5f9d884dc264d253146d6a231abac3bd67"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/sink/OutputEventRenderer",
+                "hash": "ba2a0456d92c5a6855ffcd178011ec3dd71a6084a5e66c2f9568f795a26317c1"
+            },
+            {
+                "nameInfo": "org/gradle/api/Transformer",
+                "hash": "5c90fb4204821285afaacf672f6903c29dea29d972c6b6f0d428695adf6bbe01"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/sink/OutputEventListenerManager",
+                "hash": "57e89e17c3637caa7099d9d36e182f068264ea8a169954a9c948f9398d9806e7"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/WorkerTestClassProcessorFactory",
+                "hash": "362010b6aab14e85b23938e24cbb73fd4a59992c4fd123bc303a0da97f9d63e2"
+            },
+            {
+                "nameInfo": "org/gradle/internal/operations/BuildOperationInvocationException",
+                "hash": "5cffff775c1a416666b2618de2e5e79a72963d7cbdb55ce3f29ae5f813d1e433"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/AbstractSerializer",
+                "hash": "593f1acbd6166d73e6a133aca7dc58a94ae61aa7755edee3251ab2615f0adc73"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/console/ColorMap",
+                "hash": "1329fdad279e965ecba227fc6a8785d282750d961dde3c9d3425a7ff1bb3e7f4"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/DefaultSerializerRegistry$TypeInfo",
+                "hash": "8f839d06db404a6a93803172cc6060affa7fc81160358b2371471e4f5b77ac25"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/junitplatform/JUnitPlatformSpec",
+                "hash": "1589549f1739eb764ca70cc84ebaead315bf8c061c45140049a8c819da5b19bb"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/Serializer",
+                "hash": "d7980d502ee259ef7edf703effe3e12c9aaf14fd478c1885184725834135953e"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/processors/TestOutputRedirector",
+                "hash": "abf77b84a0506541a24d6fcf3110863db72a4c099373826b161a6347ce6f4568"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/format/LogHeaderFormatter",
+                "hash": "76f92f555e674c2713bf79c13927f177ed4181582da3f91c8c57eea8cdab9bf8"
+            },
+            {
+                "nameInfo": "org/gradle/internal/MutableBoolean",
+                "hash": "0ce905f62fde3aacabe695794f7861b90bface71dd433596b0f252c8637f107b"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/TestCompleteEvent",
+                "hash": "cc80e6580e3ef3c0e0551f2c6022db440733c9e15be327f38096b631731fb43a"
+            },
+            {
+                "nameInfo": "org/gradle/internal/concurrent/ThreadSafe",
+                "hash": "77a87493c0b135853330a3cf1d71cbfda7f95d92e31564f7d3620b75f3bc0bc2"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/BaseSerializerFactory$FloatSerializer",
+                "hash": "c77782462178068ef0ab0f0c800057d651958aef6eb4fcfdeafefb78f43cd9e5"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/DefaultSerializerRegistry$SerializerClassMatcherStrategy",
+                "hash": "6be9aa081672c01d1de257405388877aa56ddcdedffc4d05c5f79f20ccdaa9e0"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/filesystem/services/GenericFileSystem",
+                "hash": "526c7a0ffae7ef36082dbe46b3c55f120324ce1dda4960cd275fa9374404c69a"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/TestClassProcessor",
+                "hash": "4c5594c547cdc64495299e499128b4cd89e0a916a95b9b0dac4e52281373f7e9"
+            },
+            {
+                "nameInfo": "net/rubygrapefruit/platform/WindowsRegistry",
+                "hash": "150a646e7c2844a9ee81b655755b4fe516cb9f7f10a5ff862fa9c4fd569dd156"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/filesystem/FileMetadataAccessor",
+                "hash": "31c6b1db20244acd9b9f5a33bf3b80b4594848ec35d1b895e1afe615ff9ed904"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/ServiceValidationException",
+                "hash": "c08bc33a73081cf1b1bd398cba372ae50217bbe4ed54cf94733cb72e98553ee3"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/DefaultTestClassDescriptor",
+                "hash": "20252726e77b443e79ec15d646445a8dc583e2cae29631714667221bd767133a"
+            },
+            {
+                "nameInfo": "org/gradle/internal/event/BroadcastDispatch$CompositeDispatch",
+                "hash": "a26c3c38a32f3386b52af898094dcbf73c009f23b5e3b77cf3a1c94875dc5cf8"
+            },
+            {
+                "nameInfo": "org/gradle/internal/concurrent/CompositeStoppable$2",
+                "hash": "dbe441f500a845490c76318a8862f417af31b625353d6efad8bdc9ce948e7cea"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/kryo/TypeSafeSerializer$1",
+                "hash": "ab781fa7c8975df2c89e4163d4c7c0faf82466a31fdb4765411b24cc4ac89d48"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/DefaultServiceRegistry$ThisAsService",
+                "hash": "de77e2e9d4d1e9dc42fa81b7607942b2fecdc09ff3e13bfec82c0b678aac2453"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/events/ProgressCompleteEvent",
+                "hash": "f9d34eb22eae0632b9f68af92747907eb767d237e146e615475f7cf21ce610aa"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/AbstractEncoder$EncoderStream",
+                "hash": "2332583de436b6c7f039fd9b287fee8d835f25362b090fb5aa617bbf87c89efc"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/serializer/SpanSerializer",
+                "hash": "1258a422e969427435ab269bc53238180a960e9a22f9b620f2c81657f191d408"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/services/LoggingServiceRegistry$CommandLineLogging",
+                "hash": "c817761e3d75a7b16c74dc5945848a187a66b782dc1c35da4ee46d7192a8c2aa"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/BaseSerializerFactory$StringMapSerializer",
+                "hash": "42dbff050e372647d8d6b41f3b8b06107556d04a91acd5220135636a0e257168"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/BaseSerializerFactory$ThrowableSerializer",
+                "hash": "5c338e39f0480fd17304b2fe023be908c20d44c9bbf83067e011c72e04da80fd"
+            },
+            {
+                "nameInfo": "org/gradle/internal/exceptions/MultiCauseException",
+                "hash": "4e0e7a3fa906b510636992e5275913a910304a2d484edda7ce27c857c5337861"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/source/PrintStreamLoggingSystem$OutputEventDestination",
+                "hash": "c5fa21eb4f0d33d789ca8d477541eb4cf9c45db1fd9bca3fb685517d2744c2c3"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/source/DefaultStdOutLoggingSystem",
+                "hash": "5f566bcb61007651c2139c6bbd1850bda6e92a6ebd73149004404405b60c04e8"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/DefaultServiceRegistry$ClassInspector$ClassDetails",
+                "hash": "80efd718771d9a6bd9cb5707c6c3145d4f016b4706ccd538fd8c45506f3ad813"
+            },
+            {
+                "nameInfo": "org/slf4j/LoggerFactory",
+                "hash": "f7ddf1ee2f7c3172c9eabac62f8d2117da45c649b5d23ec63ec17bf6e05cb1a2"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/filesystem/services/FileSystemServices",
+                "hash": "18696294b1176636dc4a93f66ef009584d0c0bd65ec1e6134c5e4bd06da80e2b"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/MethodInvocationSerializer",
+                "hash": "5d6a05df6af0b826de8ec1656e3dfdfd2669589331cf409e3434a048442202e4"
+            },
+            {
+                "nameInfo": "org/gradle/internal/time/MonotonicClock",
+                "hash": "5758479e3f2565e18a29526493534abffbb4e713f8b13956f01eaf8fa7a227f3"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/ContainsServices",
+                "hash": "3e6e26cdf6309fa843ce0f35ef232ea76c9ba3916d40dc89606c48c12cbecd32"
+            },
+            {
+                "nameInfo": "org/gradle/internal/event/ListenerManager",
+                "hash": "38efec97e1227a8171c433d594406fe0e59eae1a828621f74cb67fcdd506c710"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/ServiceRegistration",
+                "hash": "069cd2474dd2754d7d6dedf0a9ef698e7d4619ef9763ee95e3a8610df50870d5"
+            },
+            {
+                "nameInfo": "com/esotericsoftware/kryo/io/Output",
+                "hash": "1ce4b8fe7d39507ce83a4a9ef91b7d559ee5d16b68d9af631c347f922ad4afcc"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/TestClassRunInfo",
+                "hash": "d3808d212367b5b9bff443a7ab75cf568a1cc588bf27dd90627620858de6de23"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/TestWorker$State",
+                "hash": "566c988a900402cf1d84ac717db8c1b1104d5f119cc36a7cc816af12023a8320"
+            },
+            {
+                "nameInfo": "org/gradle/api/tasks/testing/TestOutputEvent$Destination",
+                "hash": "91fe91d5da5cbc3d3352e0c1335444b90673d5b2724e201b3c35518f341df6a1"
+            },
+            {
+                "nameInfo": "org/gradle/internal/operations/logging/LogEventBuildOperationProgressDetails",
+                "hash": "687daf3f6be36e14d782936c7fbe072e25c95544a7ff9529b126b16355cd6d9d"
+            },
+            {
+                "nameInfo": "org/gradle/internal/time/CountdownTimer",
+                "hash": "cc8126dd3eb5b79ef269ad1cb29f9ea0a531ea77d31632361e0360d7ae73dfbf"
+            },
+            {
+                "nameInfo": "org/gradle/api/tasks/testing/TestFrameworkOptions",
+                "hash": "f7e59a93a12d7931b84b648df984a7ea9fa3a0491fd2077ea535230a84a99652"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/services/DefaultLoggingManager",
+                "hash": "fc25188b9badbe3372a14653396ae52b5d85c35aaa82f5a2b32fceb5eb3a2a43"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/DefaultSerializerRegistry$StrictSerializerMatcher",
+                "hash": "e38dc86f06fdd93a087ddfa9c23f8d1c4008d2c89810893004ef49e518839954"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/MessageIOException",
+                "hash": "359e9b0386a1850bd2f4bb4f2b145dcada9d366db8e87827d7d43133f7a42527"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$TestStartEventSerializer",
+                "hash": "711d3fbaa27fcbc6cc87a0341705b88c9cbe4f3b212df67173b65af7dd9fa39d"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/KryoBackedMessageSerializer",
+                "hash": "b4364ab594e539b7d6554aa95c0c3e4a5783617574907a28ed73818d2bccd066"
+            },
+            {
+                "nameInfo": "org/gradle/process/internal/worker/child/ActionExecutionWorker$1",
+                "hash": "b97fd8ec1fd038ed333f6abcbb2805bff9049e74e9d055ffa6d9b261bea709ab"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/IncomingQueue",
+                "hash": "a18e567f4f515fdf6aed9715003991bfd1184de88256fafd279cd27c3cc26723"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/ConnectException",
+                "hash": "5b1a0b6d3dd2447a0a6f37625bddbbca85a47748724e2ae46f63b8e5b1dfdd89"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/events/StyledTextOutputEvent",
+                "hash": "9b051b6283c3cb4e87cac506e7c463d55e043a05f315b5b41c1944f151e8f84f"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/Decoder",
+                "hash": "c283101be3c7bf3b3c43ccf7c765f57fcddd2ac5ce615632089df0f9bcce5ce0"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/events/StyledTextOutputEvent$Span",
+                "hash": "09727e415a36b520fa6e884fc85de9756cbe7ae53f707909b6569159f80ae00c"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/LoggingOutputInternal",
+                "hash": "0713e0fc9e25e99d42ce9d7ac88cfeb771f31c40dac52adaa0c7aba90f54b570"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/WorkerTestClassProcessor",
+                "hash": "502df42ff5722eb6fc441c6398d08f69709429b102fbf49c5ec35240dd2f0ebd"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/MethodInvocationSerializer$MethodDetails",
+                "hash": "7aad179dafdbb8f10f33d5219c3a30dce8b674e62da9959f25c38f8d46854967"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/MessageHub$State",
+                "hash": "63045cf201fe9313fb447a3e61613b06f87ebcd6ddd0c6c5ff1b9e8fd60b9fed"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/config/LoggingConfigurer",
+                "hash": "510282050dbfd87b793c814106e29487ab3daca88ee3f230095850c0051e7f7c"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$DefaultTestSuiteDescriptorSerializer",
+                "hash": "058a0a03104f7759017a5cfabbafbaf486b800402e163ed93ee18d73041d5e1b"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/BaseSerializerFactory$ShortSerializer",
+                "hash": "08e17903258891cbd8c4532c6e9a4e2ec01770158ebfc50b6a48aecdfe44101a"
+            },
+            {
+                "nameInfo": "org/gradle/internal/concurrent/Stoppable",
+                "hash": "8d4d55ea6ee73b511ed172d743d648de4715bc3d3b2fecfe891b8bb23ac3556e"
+            },
+            {
+                "nameInfo": "org/gradle/internal/event/BroadcastDispatch$SingletonDispatch",
+                "hash": "8baedc983e8d0b7c3bb5cad7436bae7957d6610a48ef23f0bb2c1e4d8a16ffeb"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/events/CategorisedOutputEvent",
+                "hash": "de6e3a081788696f289d75248a3184851fad516d337bd897295ad60c08f13e1d"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/NativeCapabilities",
+                "hash": "be67fd67892709611af845ad7459b2086e2678cc7d0f4ed6ab606e507847e686"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/filesystem/services/GenericFileSystem$Factory",
+                "hash": "175f96a935ff1ef94a87753b6302aa9ff3099f3cd8c7019252fafcdc5d26fb07"
+            },
+            {
+                "nameInfo": "org/gradle/internal/dispatch/ProxyDispatchAdapter",
+                "hash": "fce9e45c5f3a24a31f1d62edd608dd065651da8120cb848901991b10c1b009ab"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/jansi/JansiLibraryFactory",
+                "hash": "97b9987189306f0c9535fef3951e0873f71f0ec56ac09c76fe32e6697eb8a8ce"
+            },
+            {
+                "nameInfo": "org/gradle/internal/io/StreamByteBuffer",
+                "hash": "5d725a4d44d29c66f88bed0159f848970f6f6ae836d32edd13fbb63b9082e45b"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/processors/DefaultStandardOutputRedirector$WriteAction",
+                "hash": "beab00239b3b4086765d2b225ed025e511dd26a638d137c9e0d7a795c7adcf96"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$TestCompleteEventSerializer",
+                "hash": "1dacd0a6ea8853f43ecbc7e8e4c5c90cf0c324a34b5f7a55b1ca6fa7a742ce42"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/jansi/DefaultJansiRuntimeResolver",
+                "hash": "1fa9dcaa4e9b9e1405799ec6d79897eb35967f23ad20bbe12385a1715a3a49ff"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/BaseSerializerFactory$BigDecimalSerializer",
+                "hash": "606b05989ff9fcec395e7ed4560e9bdb48e335b7fc910aec9f339bcf9a94f180"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/kryo/TypeSafeSerializer",
+                "hash": "477b93f3af0c115eee1bb60cc71009445b610dc592780d20436a60edf1b43650"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/kryo/KryoBackedEncoder$1",
+                "hash": "6921d5efb04e77a5d679bf151e387425082db5d8b5e57d81e6838b2466b9972e"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/DefaultServiceRegistry$ClassInspector",
+                "hash": "5fee71fa81f6c449a5faa3fc165711144b616661aafbe762d11b22c1e5e50139"
+            },
+            {
+                "nameInfo": "org/gradle/internal/concurrent/ExecutorFactory",
+                "hash": "08e56fd5a63a0e9ba7f6ab7e81d0b22cb2a3c3377468cb5de1c0f7d96c384464"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/processors/DefaultStandardOutputRedirector$DiscardAction",
+                "hash": "c96aa08944e78ccffea2b573a53125cab3f0fb015dd0949564f447323bcdf082"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/DefaultServiceRegistry$CompositeServiceProvider",
+                "hash": "e8443fafd5e90f46ea6de209ede9243de504310699005c6c4bdc1230809c00f2"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/ServiceMethodFactory",
+                "hash": "6e0f359d19044993f0814460b1e8cceed7660b0c3291a284c61b91c28cfcf842"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/ServiceProvider",
+                "hash": "8e8d28342bbff18fd0be30d3bac8d89fddf9d7ef712d3ee04074a5f63d5b3746"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/jansi/JansiRuntimeResolver",
+                "hash": "56cb26791b670590f7f3e4895ce9508c2afd15f41c4d93e36d45de50121684ec"
+            },
+            {
+                "nameInfo": "org/slf4j/helpers/MessageFormatter",
+                "hash": "c270a09de30f66cc1d93a7c5a1edc2665233778ddf8b7dffe453e7824bdb1d8c"
+            },
+            {
+                "nameInfo": "org/gradle/internal/jvm/JavaInfo",
+                "hash": "d04a36421e86369bc6c5283f778f5d472871307533ab65ee65f609cd79be89b5"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/FlushableEncoder",
+                "hash": "b999b68450ddc5aded28ce44503e27e881498a31692913d6ae8f4dded59b5e06"
+            },
+            {
+                "nameInfo": "org/gradle/internal/io/TextStream",
+                "hash": "21364941e4a783265cc01398f0a169568a824de92c0ca1c14447fbebaffef8ea"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/IncomingConnector",
+                "hash": "6c8a76e3fa5ea41d229fd6dd260388b42da3623ff2d9665305b70a5c04ab91fa"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/StreamFailureHandler",
+                "hash": "9b64910b8ce364cfff2dce103002e54a897391d7ba5f84b8c2c3c754ab768f69"
+            },
+            {
+                "nameInfo": "org/slf4j/helpers/NOPLoggerFactory",
+                "hash": "fc7473a00fbe794ae761e41ca0c236371d211a5a4b74b0cdae2bdbd2fabbb0d9"
+            },
+            {
+                "nameInfo": "net/rubygrapefruit/platform/file/FileSystems",
+                "hash": "17bfd34406f0f30aa7f22fdb97b5071c0a12946afd67dd1f30067d61a55c625d"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/DefaultServiceRegistry$ParentServices",
+                "hash": "2b710dbfc1a02ffb4eda4bfae1f7cdba861fab56c3441cc3fddf6a6b54ea6e0a"
+            },
+            {
+                "nameInfo": "org/gradle/process/internal/health/memory/MemoryManager",
+                "hash": "4edcbab03fb05a597a05648747a8a2d49ed88c482c0d472afc7724ebc4367f52"
+            },
+            {
+                "nameInfo": "org/gradle/util/internal/GFileUtils$TailReadingException",
+                "hash": "0db0495b7d0d551203886ddcb0fe53df9ac3011eb6e957719544252bd311bb26"
+            },
+            {
+                "nameInfo": "org/gradle/internal/concurrent/ManagedExecutorImpl",
+                "hash": "794e38acc90ca41626914869e559c43b321a338b99546597189db9a5550e6929"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/TestWorker$2",
+                "hash": "0403fae9b708e61bfa2faa2c7513341eb2244eb6b7492cde652be5781f6bcb8c"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/TestDescriptorInternal",
+                "hash": "cbfd22a9c0c8b87c4bfa37fbece3cdbccf89a966ef718996c92eb0880d0706f1"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/BaseSerializerFactory$ByteSerializer",
+                "hash": "d859c4eaf1a36ac022cbf4680f7e9c26f53f872519286a24cf14e8fc96f690a4"
+            },
+            {
+                "nameInfo": "org/gradle/internal/event/ListenerBroadcast",
+                "hash": "4a7a896723bc5baf9603340daaf1a39be61b7fc90232a10fe020c6cbc67cbd1b"
+            },
+            {
+                "nameInfo": "org/gradle/api/logging/LoggingOutput",
+                "hash": "26443ffe24c6d3e231d8f153ea03f38c2822e6d7b1f3f292d5c3344b00f83c54"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/MessageHub$Discard",
+                "hash": "8357863ac8aaef2cc94b52517fe24e1e74cba34c4a803d9168b05655bc39bb12"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/processors/CaptureTestOutputTestResultProcessor",
+                "hash": "ea164b2ccbf8da171acc98795845bdf315553bf85153766052bea0664d42704d"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/junit/JUnitTestClassExecutor",
+                "hash": "0542fac3c7ab58a8592981569e8347ab3f821bb488624350fd8f40f949b3390f"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/DefaultTestMethodDescriptor",
+                "hash": "520d11eb202410f389c7c2add9a16a0a94e4f2a75823438bb7ee8e751fa71e67"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/StandardOutputCapture",
+                "hash": "d217f01c80e9af75105b18ca16e7f36d49d14af8d2e68ecf4ba6d94c3ce6b2dd"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/junitplatform/JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor",
+                "hash": "bbe572b94fbe60af7d3f8275e808ffa1d6601b1adf488eecc30ada3a0207b240"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/sink/OutputEventRenderer$SnapshotImpl",
+                "hash": "f3bc3924c03bd7de13eeac43c05a991ce98d2bc390b98494b4a01dc960eb05e3"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/events/FlushOutputEvent",
+                "hash": "c77a9633afe1a0b32b9f56880a144d43083db09e12be0e5c8d5394e1f9638ec5"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$DefaultNestedTestSuiteDescriptorSerializer",
+                "hash": "6255b5e0a47117898b1ca5ffa219b19f003f66372e5a53c0c606dc43bc23fc8c"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/protocol/InterHubMessage",
+                "hash": "57d5e623faf2e59ad15c8dfc09af0cacc606cbf8a07d29c67718a3a030b1f0ab"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/BaseSerializerFactory$PathSerializer",
+                "hash": "aca2c206c7cadd3bcfcadfa22687b57febe17824c70028992471cd65d075612a"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/MethodHandleBasedServiceMethod",
+                "hash": "5a5398e7db7f7efd49c8b0b910af701db4b90837ea0eacae321e679f8b7e7130"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/MessageHub$ConnectionDispatch",
+                "hash": "e35e538874e5cc49e9a54a786e9b95cf22975a52479abe0c5c9c8deeecf5b7d2"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/source/PrintStreamLoggingSystem",
+                "hash": "d2ac73713c91e9985e002f7e99ce1d4dcad31dde83376d1d37b130250eca4705"
+            },
+            {
+                "nameInfo": "org/gradle/internal/concurrent/ManagedScheduledExecutor",
+                "hash": "d1b3b7f85635d32674dddd7b4bfe839a50a6ac5b0b5919ba41ce9e16414572b1"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/serializer/StyledTextOutputEventSerializer",
+                "hash": "1d174f06e00aea04e5357bbb669b5219f020fd6de43cbf12c523bfe089000f31"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/MessageHub$ConnectionReceive",
+                "hash": "80f43c33be2c218cc2061e0e5316549a66f84f1bfb8b0465b31b469b56170598"
+            },
+            {
+                "nameInfo": "net/rubygrapefruit/platform/memory/Memory",
+                "hash": "9d9a54e8d1d654ec603af8775d6e6fed6645a9d9c4a59429acfaa4f9e349af2b"
+            },
+            {
+                "nameInfo": "org/gradle/api/GradleException",
+                "hash": "8c528f3d95932a441a97dcc1f188b2b42e100610a105e823f2fc5b5b5a3447ec"
+            },
+            {
+                "nameInfo": "net/rubygrapefruit/platform/SystemInfo",
+                "hash": "4e61e4ace48a0db851b6d152ebca94ff4b28bfdaf5d69abb9dd67512975a4674"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/DefaultServiceRegistry$FactoryMethodService",
+                "hash": "9864091c22d5b73f80bcea516accef4363657899c9ed773399c5ba66875b31cd"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/events/ProgressStartEvent",
+                "hash": "a842d2cc237d4fc733edb8638c01dd36c5ca626e0d38c21d0da8e87d707981b7"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/TestEventSerializer",
+                "hash": "9d2d5e04fdfc5c9094367ceb621358249e0e3452fb5a40b0af47ef0acd6aa368"
+            },
+            {
+                "nameInfo": "org/gradle/api/Action",
+                "hash": "fe231a0688c309453d5bcd788bc0de184b884b984561c90ac3dd10d0a5402de7"
+            },
+            {
+                "nameInfo": "org/gradle/internal/concurrent/DefaultExecutorFactory",
+                "hash": "9cf8e46c7686497f51fb1bc7a8f8ebf6433e4e8a130fca175992e822eafa396d"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/inet/SocketConnection$1",
+                "hash": "2c732c212997160c6c4eb022676ef981e051f94690707191b4383da1407fd78c"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/protocol/InterHubMessage$Delivery",
+                "hash": "e1c638f9949533018abc93b3b03042a6258083c49579fd454956e280f8d0ef23"
+            },
+            {
+                "nameInfo": "org/gradle/internal/dispatch/ProxyDispatchAdapter$DispatchingInvocationHandler",
+                "hash": "c88de442c1ae568e83c474a6d2a2b9ded3b250426b81d6d2c72a5e12d4cfe184"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/MessageHubBackedObjectConnection$1",
+                "hash": "b90fd9fc8872d73ea1a3cdcfc9f9ebe0a544b93d51ac78c93eb1e6f2735ca00a"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/kryo/KryoBackedDecoder",
+                "hash": "33b4b7bc51155adfce751e97be520e6622d1867305e0d09c61aaf96cf8cc2871"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/filesystem/Symlink",
+                "hash": "772642d4c0dab810651688d56d4b4fbe8ac3f57ff4cba566b66b57191ff585f0"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/Service",
+                "hash": "4ce074ecf8961490c32bd38465e90d0e13ae500aede21f07d90d60bfdcc469e6"
+            },
+            {
+                "nameInfo": "org/gradle/internal/dispatch/BoundedDispatch",
+                "hash": "164bf3dbdfc08250dd5ee5bf8fcfa981829b50185a277bf92c6b53d8274f0dc4"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/ConnectionState",
+                "hash": "c3e196d99178649df2c1dea4e5110ed4f4a8db8c0f06322175e9f09ed5f2bd3e"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/queue/QueueInitializer",
+                "hash": "9edf0bd9bc0ceb7752e6b26d0f44e92d95b87bfb6ffd25b28c9b8e9cdc28fafc"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/DefaultServiceRegistry$SingletonService",
+                "hash": "6747959aefbb73fdb71fc5bf4d079d3d9fb30c2c4d70199e92b18c52eb1908a7"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/source/JavaUtilLoggingSystem",
+                "hash": "8e60ae62562c268697a5553f60f3c0e244d5f9dfd50b2e206fc38232abb26dc6"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/ExceptionReplacingObjectInputStream",
+                "hash": "1a599c9b236117e8be09a55a1bef6d181e2d1851f36a5d5044c0e2c017b5e945"
+            },
+            {
+                "nameInfo": "org/gradle/internal/file/Stat",
+                "hash": "d5fc9a9a17dce2de19e32bc26e8c4c37eba5ec9a8e5437111f037b7683256c60"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/TestWorker$1",
+                "hash": "044524b542eda5534c259174d074f2ff47277196765ca01aaeb64e466776e600"
+            },
+            {
+                "nameInfo": "org/gradle/internal/id/CompositeIdGenerator",
+                "hash": "f2f7cd914eb5d6b43bb8f4bfd89daf78bebe3d7842f2abb97e3d6535ed349a4d"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/console/ConsoleDetector",
+                "hash": "d5d82fdbd297fe22c777b92d241729a12fc70e7c6db13c8407107048cccad33c"
+            },
+            {
+                "nameInfo": "org/gradle/internal/reflect/NoSuchMethodException",
+                "hash": "e93fb97ce279d8bbf09d9d033e5f4ed554620540a2e5ffa16882b56b8733f2ad"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/TestStartEvent",
+                "hash": "af997e5975e00e67395fcb5be5ac4ce9ac273733b523ce9197655b1334cd9c75"
+            },
+            {
+                "nameInfo": "org/gradle/initialization/GradleUserHomeDirProvider",
+                "hash": "84be0365e543aefc34b63b4fe8e388c4ee14977d42bbc5d09dd5451c1367972c"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/file/temp/DefaultTemporaryFileProvider",
+                "hash": "bec580177ff0f5166c8e10936d2d6926796706b35f01ec3f5cfe2f18fb79f789"
+            },
+            {
+                "nameInfo": "org/gradle/internal/io/NullOutputStream",
+                "hash": "f0d5a8a5d670b23fe0ae740958adf69ae4a2e64634f79b343dd36fe9daaca849"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/events/OutputEvent",
+                "hash": "f99482ea2743edc9100ec07e97c74c1b19d998254e3d99bea0863ab210cc685f"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/DefaultTestDescriptor",
+                "hash": "23dfafcce843125f1544eeca8cb0356c54754020278a0fabd0e57bc1ed1e2b9c"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/text/StyledTextOutput",
+                "hash": "6e532df849c4c168ac1d090dda3474933a03d61bea1158408a9dea89ab75d3d1"
+            },
+            {
+                "nameInfo": "org/gradle/internal/actor/Actor",
+                "hash": "acb07f941bb7a1e9aa8e28386fde9418d9388d6cadd7db4b4651ea009b37dc8c"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/DefaultSerializerRegistry$TaggedTypeSerializer",
+                "hash": "8cf74ec2863a9011ab0827d12019ac2d86ea19e1450aaf1f7638bfdb72839527"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/DefaultServiceRegistry$1",
+                "hash": "9e21941acddb294fc49dd88df744d28888c60bcd0115de49e29d5d9b8fd64cf2"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/kryo/KryoBackedEncoder",
+                "hash": "84e4d2a90f6b15c6644f8316ba777e9dfa7da77f63fae4f35b62bec8695ccb79"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/ExceptionReplacingObjectOutputStream$1",
+                "hash": "fa15b655a2f750d62f776ee6043a60864f9801b20681673aaa1f5a6ecf72efd5"
+            },
+            {
+                "nameInfo": "org/gradle/internal/UncheckedException",
+                "hash": "22f84afa6b767d15ce747fa1378a32cd5e2ec32b0a9085f77aac8cb59d6741a3"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/Connection",
+                "hash": "a8f91594bc5d2834b862b2ca6d7065e9164143baa19c14945718bf32e0c0027b"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/services/LoggingServiceRegistry$1",
+                "hash": "9a71e774926c065370baf56775ac1f0c50d6903a2fbdc34569c6d5449ad8e65f"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/AnnotatedServiceLifecycleHandler$Registration",
+                "hash": "130496b9ca1158084b431b3a02be0d74acdd2b297f9e31aed0b091544738b0e5"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/ServiceLookup",
+                "hash": "f84afaf3fcd71c135378cccf99f313cc7576d9d3508f016daab6da8ba2111258"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/events/operations/StyledTextBuildOperationProgressDetails$Span",
+                "hash": "f3e7a3c4519f86904a3190a3c0ec048b3a58f0d1a7a85272fa43c172e37edce5"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/file/temp/TemporaryFileProvider",
+                "hash": "32f1dbb6ef0f58a5b24918caa2cbd4827cddffd72a6877fc4ca55d87bc462b96"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/TestResultProcessor",
+                "hash": "67f9700b8895e804340971fd98a9f39cab5190dfdccac6c6b5af2d6dfe10a2f6"
+            },
+            {
+                "nameInfo": "org/gradle/internal/time/TimeSource$1",
+                "hash": "26faf3cace28dac699d91a08363391c42a689b25708230bb86454e8e65e6d9b0"
+            },
+            {
+                "nameInfo": "org/gradle/internal/id/CompositeIdGenerator$CompositeId",
+                "hash": "c0e03e0d5ae67df07ddd18c963b1aefd8621d18bcbd7a7d07eea27a26d392d7f"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/RemoteConnection",
+                "hash": "65abfd552ec42b93d29074dfede6a24165b2aa975960bca0a3235386c1e2794f"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/ServiceCreationException",
+                "hash": "c1b0533050e89d48e4ad10de2813e5c5b2f01adf350a45bd3520445b719765c0"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/serializer/LogLevelChangeEventSerializer",
+                "hash": "4f381451363b94e6e07b2613c9474a0e91ed73e8117d53cd4d4064d84de933ac"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/DefaultServiceRegistry$ConstructorService",
+                "hash": "0857d5c79acd3f81d1ddfb3046bedb17aae12e5c800a2de3021266698363720f"
+            },
+            {
+                "nameInfo": "org/gradle/process/internal/worker/child/SystemApplicationClassLoaderWorker$WorkerServices",
+                "hash": "9408d2613015c0177e11d974d024f285e61f423df5338232ee066b25a5f4d91c"
+            },
+            {
+                "nameInfo": "org/gradle/internal/classloader/CachingClassLoader",
+                "hash": "74fecf33bcad27bae9d9e4a1a503358f47603d2fd5bd8007f90460a9e04b8b05"
+            },
+            {
+                "nameInfo": "org/gradle/internal/Factory",
+                "hash": "e42c85829d83b4514fe9eaa038327e57ba899498aa7353dfeb1fd32169c2c68d"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/ProcessEnvironment",
+                "hash": "6cbee4df8c866b58dce3fcbf1889008951e49e8539fee1af4a82b9f67315718b"
+            },
+            {
+                "nameInfo": "org/gradle/process/internal/worker/WorkerProcessContext",
+                "hash": "4c30b48335cc84b76959c0cd7a8c901a6143dc51d05b3ca540e48df1d1d718bb"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/MethodHandleBasedServiceMethodFactory",
+                "hash": "ad7beb8e0aa8f6cb6ac178d8dfbbc7195240e58a23b8740c15bbd96b5a416462"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/AbstractTestDescriptor",
+                "hash": "7aa07e33030d1998e3cfb9ab3cd0b66b26eda38606f398c1993fa93eebe916a7"
+            },
+            {
+                "nameInfo": "org/gradle/internal/file/StatStatistics$Collector",
+                "hash": "059d473e5516272cd6e5652b9d845259b0f126fea88108a29e521fa55321529a"
+            },
+            {
+                "nameInfo": "org/gradle/internal/dispatch/MethodInvocation",
+                "hash": "8ef818ed675ea6db754637ce41536393e34b1ee098c99ddea7ae67703558dd3b"
+            },
+            {
+                "nameInfo": "org/gradle/internal/actor/internal/DefaultActorFactory",
+                "hash": "83fc76c95b271076366c3fae47c7faeb3bef897e04a84c393cec17cb09fd317b"
+            },
+            {
+                "nameInfo": "org/gradle/process/internal/health/memory/JvmMemoryInfo",
+                "hash": "f749c1a957b86f52f981ef4726182d9cb7e68f86d30431bb2b697da487a12cec"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/config/LoggingSystemAdapter$SnapshotImpl",
+                "hash": "909cb72cb02683ab26719ed335a5cea8f65fd137b1209c419ef95ec66afa89f8"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/filesystem/FileModeMutator",
+                "hash": "2372face441b35a461ff470f5708a957525ac833d2e45848ff8cadcc824f5d4f"
+            },
+            {
+                "nameInfo": "org/gradle/process/internal/health/memory/OsMemoryInfo",
+                "hash": "9d95192a57628a9ea7178d7dc07dbca47e7ef26cd13e9399005c99076b6d33fb"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/RejectedMessageListener",
+                "hash": "19f2e5823765a47bd973b1867d9eff6cb94a4f5108d88d5fd948e33f1c310e07"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/ObjectWriter",
+                "hash": "65013b364b627a3c398f9f96d2ef48d48999a4e07404e313736b06bfa20b57b7"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/RemoteTestClassProcessor",
+                "hash": "7d22ded574b2d435c702aa70178c158d6e35c9dcc1d18c4f596f7bf3d4042fb8"
+            },
+            {
+                "nameInfo": "org/gradle/internal/io/StreamByteBuffer$StreamByteBufferOutputStream",
+                "hash": "fba4fdbb15629383a97068f0d135c711018d3f6e966d3f9a1a9bd7f4f597e5a4"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/inet/InetEndpoint",
+                "hash": "76aec0f00b9a2d42660bbbae999713f7bec0fa91779fe6dac34b06dc17f7f0de"
+            },
+            {
+                "nameInfo": "org/gradle/internal/time/Clock",
+                "hash": "822c9e11d2132879326a639c1b402931191614faedf5d245ce574e75bdf1d185"
+            },
+            {
+                "nameInfo": "org/gradle/internal/SystemProperties",
+                "hash": "677b8be1dad4f948ea83d1a882cd3cc53eb29d48dc622ea0d2109d569fdddf71"
+            },
+            {
+                "nameInfo": "net/rubygrapefruit/platform/ProcessLauncher",
+                "hash": "6bd9c8183a94aade0e3d965d620df75e71b90c8cbf817b7df19cb7f95efd0e2e"
+            },
+            {
+                "nameInfo": "org/gradle/internal/concurrent/AsyncStoppable",
+                "hash": "23dd0a28a548899681040970db936c4e8ca119caa23fee45d28ab0bfcdc43b2b"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/source/DefaultStdErrLoggingSystem",
+                "hash": "c06fe86adb50678bd0ed9b19e88f85c8bac29f687286d7ccb207aaf3ebc413ef"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/protocol/RejectedMessage",
+                "hash": "d7c68cb328a454a6f3a61fec0094400d55d3cbe5d95363f7bed0479d2d393b7f"
+            },
+            {
+                "nameInfo": "org/slf4j/bridge/SLF4JBridgeHandler",
+                "hash": "9ac03e910be6d620a86300c496b94bb25a092dbcc03192b664a4b7ff45d2603c"
+            },
+            {
+                "nameInfo": "org/gradle/internal/jvm/Jvm",
+                "hash": "9492857e8116317f58fe4a8610bb61261b940fb578f9462af8178426daaf47bb"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/ConnectCompletion",
+                "hash": "7dc680154a311838de78e1ee7e1a0efc2783221e0fad8d3476652b39d2f4b379"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/inet/SocketInetAddress$Serializer",
+                "hash": "c37b76ec5274b48de03297397f2bb898ff245437b056a01381e6e1d7a9154ed2"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/inet/TcpOutgoingConnector",
+                "hash": "9c1e6a4d8789d4fc81e0085a1c98c4bdd84758d58ee35b45553d5d68f4db654d"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/DefaultServiceRegistry",
+                "hash": "1e1123bd3f57c994b3962001a812d915bcae2b1f9988dad3e37a0255bc4f63f4"
+            },
+            {
+                "nameInfo": "org/gradle/internal/classloader/ClassLoaderHierarchy",
+                "hash": "8fb35fc2fb31267f1f0e60dab935eed5259d01043cef91b950cc9f585da3dde4"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/ListSerializer",
+                "hash": "7537d3e5228679316bd85e7a0119c8a8712334af98c4d1d76f438cea62dd96ac"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/services/MessagingServices",
+                "hash": "035508a7a4c56491e24aaa4fe671d42f35a797d6164b6fd079c77e37770182d4"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/SuiteTestClassProcessor",
+                "hash": "4b724742c940e246a0e6d0a1c1824c95dfb24b54a11cef2536f012ece3d69e68"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/InterHubMessageSerializer$MessageReader",
+                "hash": "e83db7474bf53d018707095567c56d0eda719e2b9472f328342ddfff07e68959"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/config/LoggingSystemAdapter",
+                "hash": "60d8a2a044f4019e8232b6f82db45cb9451cae368e1a996af705d1ab2836d29a"
+            },
+            {
+                "nameInfo": "org/gradle/internal/io/BufferCaster",
+                "hash": "d1262ba3aebeaaad737ca8bd14baef5ae50af07c5a23080e374bd1a99dfbffeb"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/protocol/Routable",
+                "hash": "239c41924e718c75196e4b4248888133421f3b0d7bbd8f35a8c4e5a3add7134b"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/sink/OutputEventTransformer",
+                "hash": "efbb7b857f917e0f4593282bf81be9719ccf62de1e3d802176581110daa50412"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/MessagingServer",
+                "hash": "46f5875d0b9bd91f0765007d0b499baf0f702206cc7826aa5e84e809b69d91ad"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/events/RenderableOutputEvent",
+                "hash": "1d5c2fca9737be98d10a094dfe64dcda6b28e541d4833ab2928000fa843384e5"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/MessageHub",
+                "hash": "7f0b51e8c61c2bf3e0efc8941a4ac34c0f269d6c15f634e813f85a3124afe907"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/ExceptionReplacingObjectOutputStream",
+                "hash": "2f6f7853c569189e2ea9dd734449a49975d62fbc72f394d6e1b28d6e5bf6fb6c"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/TestWorker",
+                "hash": "4aac1d11ee7b146ba7f65633cb499b10d4ec02312953804579f89cd513936422"
+            },
+            {
+                "nameInfo": "org/slf4j/spi/LoggerFactoryBinder",
+                "hash": "58449d02036b3bb9c745d4a90bbf43441c8e6ab82bc127320b138cac23c1677a"
+            },
+            {
+                "nameInfo": "org/gradle/internal/classloader/MultiParentClassLoader",
+                "hash": "3d3b48244d553dddbfc81551fc9b3a6fcead5ca72e327e1d707195bd3558e517"
+            },
+            {
+                "nameInfo": "net/rubygrapefruit/platform/NativeIntegration",
+                "hash": "9f1f0fcae226e95a1dde97044123ce282d0b17de7baf809f972eec17d69eb85a"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/services/NativeServices$NativeFeatures",
+                "hash": "5a69731901f886dcaa444ece2243dc8327f6b50f083dc5b335ac2d88fac829b4"
+            },
+            {
+                "nameInfo": "org/gradle/internal/dispatch/ContextClassLoaderProxy",
+                "hash": "0488bb7afd740c7f6c217ac80648a3d8be326a917a90036c35d1c54fe730851b"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/InterHubMessageSerializer",
+                "hash": "a5d51aa8ca010ecf0495a3140f3a48973c5eb7871f91e5bbee98343d15f48156"
+            },
+            {
+                "nameInfo": "com/esotericsoftware/kryo/io/Input",
+                "hash": "1cefdb84f25ffef0ab590cd30ae03d2bf37da66464853b495531fff0dd00214e"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/events/ProgressEvent",
+                "hash": "1438b7ea806ae906374bfb25b483a9149022463a775a5454cb33ef6b7dd056fc"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/MessageHub$Handler",
+                "hash": "ccbdd0df4ffa012f29a7486cb69d2ced0e5810d1300cc1a2f6b3303675ebeeef"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/junit/AbstractJUnitTestClassProcessor",
+                "hash": "db6effe34985e7a14c4f9ce96441ad148d64bacbf2ab129b3675b851f0b546b8"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/inet/SocketConnection$SocketInputStream",
+                "hash": "65f10d1273c5c2454793fe04e6271140f7dc9c02d2fa71686a665fd3dea43b06"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/DefaultSerializer",
+                "hash": "47b7ff1639ed45b5f2bc8f24b7155e5e2dac7c3bb1e029f999fb0701ae53fe77"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/DefaultTestClassRunInfo",
+                "hash": "0c5045df7b094436b534315aa53124c72c6fd35ac1defc7b353a0a9a4644e767"
+            },
+            {
+                "nameInfo": "org/gradle/api/tasks/testing/TestOutputEvent",
+                "hash": "3c2364b73174315f0756749ff3baf86e7a77ce389ed56f016c3bacee3ab4ec0f"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/BaseSerializerFactory$CharSerializer",
+                "hash": "a64fe731dc01f9c001428c1219269af743cc8f4100679f6db949528c9ea2e928"
+            },
+            {
+                "nameInfo": "org/gradle/internal/time/Time",
+                "hash": "4568f8e5b33bf4aaf3cb8a016f6237b69a51f7bd8b120d1877b374e78420e2e3"
+            },
+            {
+                "nameInfo": "org/slf4j/impl/StaticLoggerBinder",
+                "hash": "279c5c2c4780a0b649b44dff3d3a2918d0582aaee8da0857304c2097f78a2fe2"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/events/OutputEventListener",
+                "hash": "c44b98e027034610534128b5aa2b83392a73297a64705b99ba5e3689e24d9b50"
+            },
+            {
+                "nameInfo": "org/gradle/internal/concurrent/ManagedExecutorImpl$1",
+                "hash": "5472f6461b59a63391f0cc321ed09fb72afc921355fb79361975c7c87ab15c13"
+            },
+            {
+                "nameInfo": "org/gradle/internal/io/LineBufferingOutputStream",
+                "hash": "e3552a21d17244c66fd140eb392be036cd22f363150f3c2a8ac3607d46f3dd4f"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/sink/OutputEventRenderer$1",
+                "hash": "640c8430fa335839dc805d1cfc1d959422e873f773760b78d84c5a48ba4a3975"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/junitplatform/JUnitPlatformTestFramework$JUnitPlatformTestClassProcessorFactory",
+                "hash": "afd5f14ec76a8bd5e9718224f555b1a587dec26cc055582cb182e2b91e05d706"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/MessagingClient",
+                "hash": "271862d65d4da49d60ecddfd42739dd6036b3fa3db96de0f7d67382313da869b"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/inet/MultiChoiceAddressSerializer",
+                "hash": "18d7e4fb2fabe5298192cf91ddc9c6015a0957f3427f86464addeb323d3377a6"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/services/NativeServices$1",
+                "hash": "66cb866e42c45a8e8b2dd5437ed27b95a5480fd9bf0c8dc5732c5d5f6e291c5e"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/events/OutputEventListener$1",
+                "hash": "932f25f6e5f91adbd831bdfa0af40d2aad0954b7fe1215e513472dbdfd44fcb9"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/MethodInvocationSerializer$MethodInvocationWriter",
+                "hash": "667cfdfeecb5f5aefdc74e4e51865858b3cdc59d5fd9984a20c74cc634d45b74"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/inet/SocketInetAddress",
+                "hash": "3567e25f69f3f6ba904b615855f7172084dc70f456fc8c414a7cd71f9519bc65"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/junit/AbstractJUnitSpec",
+                "hash": "2155a1b784b606565e8ed9bc8d069780c61fb47998ce2f2542242237dcad0ff6"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/BaseSerializerFactory$IntegerSerializer",
+                "hash": "c34e0cc7a9ce925235eb4601d4b10c773257d28e4775efc5c9c0a0030e83a59e"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$DefaultTestOutputEventSerializer",
+                "hash": "452ea32fd3e227ca7aaff6642f3cee816c223836a207b7e2ad01c135e74ac0c0"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/AbstractServiceMethod",
+                "hash": "549fb552c79059abe31f0dc15ed31909e7b73c1e14268c374c069c04fb80ac91"
+            },
+            {
+                "nameInfo": "org/apache/commons/lang/StringUtils",
+                "hash": "4f35c6de8d632efc083f4b11dd5379c6808e3129c75c3bd234795c34b23b3d1a"
+            },
+            {
+                "nameInfo": "org/gradle/internal/reflect/JavaMethod",
+                "hash": "c5e22cfafb3c642ebe81d1fb9d06beace5cb24ebb6721c2e31303740c7075d12"
+            },
+            {
+                "nameInfo": "org/slf4j/helpers/FormattingTuple",
+                "hash": "698331dc7693926763d655cf1a7298f41165cf148617449186e8769f8d67fdbe"
+            },
+            {
+                "nameInfo": "org/gradle/internal/concurrent/CompositeStoppable",
+                "hash": "a42660cf272208515481c7020d67dd67ee18842ae5bc00bdf54fad927fdbffec"
+            },
+            {
+                "nameInfo": "org/gradle/internal/time/Timer",
+                "hash": "932bc7c5539755c01cb12134f7b7d2b2e95137be47f37c9017cba3f1ff0cfe13"
+            },
+            {
+                "nameInfo": "net/rubygrapefruit/platform/NativeException",
+                "hash": "ff4a877cab482d09348b0eb3566808f77edf1bbdb683a6be324c5cb3a67e84a5"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/ServiceMethod",
+                "hash": "2c3710a7a575baa5d9d5577c9bf297462c1a14e13c7e0cb322b6d629b6f76897"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/BaseSerializerFactory$LongSerializer",
+                "hash": "641641f6423c1e4f595344ffecccbfc48a345667141a45f2ea49d7d10ad04c5a"
+            },
+            {
+                "nameInfo": "org/gradle/process/internal/worker/child/SystemApplicationClassLoaderWorker$WorkerServices$1",
+                "hash": "1214bf45032e18e34e8442127b91da1c4610804a102762e5afaabc80b1b0c0c0"
+            },
+            {
+                "nameInfo": "org/gradle/internal/dispatch/Receive",
+                "hash": "788a40d6e427f2aeaf2feab540cbc1d9d9c24ab559a6d7e81f8036fc706770bf"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$DefaultTestClassDescriptorSerializer",
+                "hash": "5c287086f1d5bc0c8b5245a435f825013d7d96bd3acdbe9cb243b631a779cd5e"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/AbstractCollectionSerializer",
+                "hash": "eccd60876655a4f51b11e3fb65f07c3f77468e32f978c8c835e90f07856b241f"
+            },
+            {
+                "nameInfo": "org/gradle/internal/dispatch/ReflectionDispatch",
+                "hash": "ddb1ed57a4dde8a694cdae8fd884b3cbe56564f46bfff8e57d3eeca4fe48929f"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/RecoverableMessageIOException",
+                "hash": "dd33cd9fae056a8c07064bda9771c2a9b84185ed57a1de7196599092a28836a7"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/source/PrintStreamLoggingSystem$SnapshotImpl",
+                "hash": "1869f566b52e3cc07b7553e4879b93b5d26106a37e5bf3cd97fcbd01679e7c2f"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/MessageHubBackedObjectConnection",
+                "hash": "9476f3c8c1d9af3e63d022ef2a6e79478fd1fcf8390d9b17db2aa73ba455bcb1"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/queue/EndPointQueue",
+                "hash": "af63e8dae38d715ce34386660df9d050000fdac606e6226c1735cff6007696bc"
+            },
+            {
+                "nameInfo": "org/gradle/internal/io/StreamByteBuffer$StreamByteBufferInputStream",
+                "hash": "0071a9ad4a51c426343565c69190c0d3cee82da593a0db499e03e7575b39594d"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/InjectUtil",
+                "hash": "abce0c5023c2633b6af5f869804be927cc27c3c81a02b7f9bf7317c57217191a"
+            },
+            {
+                "nameInfo": "org/gradle/api/tasks/testing/junitplatform/JUnitPlatformOptions",
+                "hash": "c8f4287e56d3c80bee84a4fdf2e8b0062fa00cd51dfde86a15cef92d195eaae9"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/services/DefaultLoggingManager$StartableLoggingRouter",
+                "hash": "b6dc69158cc87488a810a5f9ed8bfc4b7486d6887c5542cc2c44c088ee703bf6"
+            },
+            {
+                "nameInfo": "org/gradle/internal/actor/ActorFactory",
+                "hash": "70517846b755035d3c66f9b0c48ce69766f04dbd2074ad4829f10d9242e94316"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/TestWorker$TestFrameworkServiceRegistry",
+                "hash": "695450009f7a6c71c6c87cdb260cb530a57012c1b73706651d386ad1ef82112c"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/filesystem/FileModeAccessor",
+                "hash": "f7cc06a7776641836c171d15e107ae50760915ec81a3f9e6cd16f610dd2b45a5"
+            },
+            {
+                "nameInfo": "org/gradle/api/logging/StandardOutputListener",
+                "hash": "5ab6c2d9af88117ca61f5a3d1489e9d047fb8fe1c0abb6d6eba2f36a7073563a"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/ObjectConnection",
+                "hash": "b59a59e490e5c085c88fa34d062f13ae6c59785c524bcbc2d0f97c0ccb25003f"
+            },
+            {
+                "nameInfo": "org/slf4j/ILoggerFactory",
+                "hash": "12cb6ba2d17e32b8eb92910f46b8318e4440cf528859fcda4acd002e616f5a08"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/junitplatform/JUnitPlatformTestClassProcessor",
+                "hash": "053cae99c4a9ec1bd86005e16f173d889443ecc1397c13aa9ea2f23871a71bc7"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/inet/MultiChoiceAddress",
+                "hash": "404d3ccc7433606ee2801aae8a5179ecbc4b76e819d9ee20ea9275fe2d312c4d"
+            },
+            {
+                "nameInfo": "org/slf4j/Logger",
+                "hash": "3ceafee60490504508a46e6eaa3d019601b479484ae80b310e22730eb04ecb88"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/DefaultServiceRegistry$State",
+                "hash": "bc5b93bde94981d41c705b2261a71e38373182fb560a92bca18f613da62e9903"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/ServiceLookupException",
+                "hash": "08e88dcf6509d73733524712bb30a794630563c52147d8ea0ba8a123ca06e54f"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/jansi/JansiBootPathConfigurer",
+                "hash": "2e44134b772b2d3b57373a20b52758f5b7043d5039b636fca56b682527a3409c"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/DefaultMethodArgsSerializer$EmptyArraySerializer",
+                "hash": "bddc3e2fb6f769768be9588d6eb56752fa57ba6fbed46ac7a2a3a040f777849b"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/BaseSerializerFactory$DoubleSerializer",
+                "hash": "4033053d813fb29e22ec722d0eb03ea43310abd95b9445ebc57ebb46a576ed6b"
+            },
+            {
+                "nameInfo": "org/gradle/internal/dispatch/Dispatch",
+                "hash": "af9971d2806a6cd9a8b0a5a3c872025b030786098cec081dc76b15ee2d5e66b0"
+            },
+            {
+                "nameInfo": "org/gradle/internal/dispatch/StreamCompletion",
+                "hash": "1ae75e46bb6ca7713c6f94fd79797cba5a181a14c7310d5ee12a3ed041e9b6a4"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/TestWorker$3",
+                "hash": "a2409a715ee487ea75c866d5a94f82611ea425f903ad020d969ce7e98dd5f112"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/events/LogEvent",
+                "hash": "38b2036bf42a1b05b755584f2aac15cb7347d60bd8e92ac7f8c1432b7f78e8da"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/JavaSerializationBackedMethodArgsSerializer",
+                "hash": "a1c754346dbdd9e9ab4c209a79233677120b9d9d0db6884c3f4e114fba02da4b"
+            },
+            {
+                "nameInfo": "org/gradle/internal/Cast",
+                "hash": "6fbbf531f314b0d9b1066584310c9821d30a24d04e7369ddaac932fc6653ada3"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/ObjectReader",
+                "hash": "103a94b5c3ce51f1a29044a92606717b90f80926af5a943aa4c762af0488a599"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/config/LoggingSystem",
+                "hash": "aef5069b1891365c3778f168f7f7e5d138451423fdcb64fec7d3b843dd347d15"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/inet/SocketConnection",
+                "hash": "876f5a0d7b34bb93af8fbc79715709e6aec7eeeaaa56acc71f67ebae5a88a5b1"
+            },
+            {
+                "nameInfo": "org/gradle/process/internal/health/memory/JvmMemoryStatusListener",
+                "hash": "47603384f24890a571aed0ae47fe75a7d1ad291bdb3f13be4da8bc65d55bf961"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/inet/SocketConnectCompletion",
+                "hash": "63d9bac7b800b5e23741a788785b70e191ab24bf86edd8b47750219c1628dfa3"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/TestSuiteExecutionException",
+                "hash": "c07d08ca465e44fd786bebf546146443bb71f4846aedf30f7cfc9978511c97c7"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/StatefulSerializer",
+                "hash": "850eb654ac68a210ddcb1bc87c4d91348cb39d6e14ccd2f37239b9ba6817d6af"
+            },
+            {
+                "nameInfo": "org/gradle/process/internal/worker/child/WorkerLogEventListener",
+                "hash": "d8066be479697b53934800d92fbf64497d3fbfafc929d06df8d80282c302a8c9"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$DefaultTestMethodDescriptorSerializer",
+                "hash": "d274a1c93f988471b64da7351149f8ac770b4121431c4c527ffbd0e0ff34df98"
+            },
+            {
+                "nameInfo": "org/gradle/internal/id/UUIDGenerator",
+                "hash": "7dd94e3ccfd4cae00593a84b46d90798755764bc5a121b6304c45546c5a8482e"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/Message",
+                "hash": "005b58ad730b271d4c7b303e3b65083fcb8bddbbe3104d7ef0359cb0af06036d"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/services/NativeServices$NativeFeatures$2",
+                "hash": "d13d729332c77704f7ad2d26c9ffd36ec2ac9d8db9449403514ad5e2b0ed9618"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/config/LoggingSystem$Snapshot",
+                "hash": "624ba2c2f4fbd5b4457b38474df17c70989b3d4a4a310515dfa0353bc686db5d"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/DefaultNestedTestSuiteDescriptor",
+                "hash": "2f3806432675df87de4643df41aeaef634c50843eed0abeaaec0015ac600d539"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/Address",
+                "hash": "a5f14c0b51c9e385c6fde2d20e6e689cd7e34059f9440e1b0c17248b18fe8558"
+            },
+            {
+                "nameInfo": "org/slf4j/helpers/SubstituteLoggerFactory",
+                "hash": "6a1595242a0e19b63deab917dcae6dcd299bcf0fcbfd4ffa65ee63cfa87224c2"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/jansi/JansiStorageLocator",
+                "hash": "8e51ebf18fe86ac1a29fff5f33cab75852baed153781332a828c7ccfe48d8f91"
+            },
+            {
+                "nameInfo": "org/gradle/process/internal/worker/child/SystemApplicationClassLoaderWorker$WorkerServices$1$1",
+                "hash": "1844fa336e0d9a52f8bc8673b0344df718749cc350f59b31e97a110bfc9e5398"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/kryo/TypeSafeSerializer$2",
+                "hash": "c97610eab36ac52dfc6dbcc1944abc195b470cf204bf8054b744936a3968ba00"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/AnnotatedServiceLifecycleHandler",
+                "hash": "20de5cfa95a6aa0b183e26c674937fbc9327b62dea07328b391e9ba01b6b37bd"
+            },
+            {
+                "nameInfo": "org/gradle/internal/io/ClassLoaderObjectInputStream",
+                "hash": "51b636a7cb23416f6d39842e0e6125021f861ba422d513c6af62d291cbba0a05"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/slf4j/Slf4jLoggingConfigurer",
+                "hash": "41bded6b97e5911e6eff3d02c7f6de8cc1c74c060a95c401b3dfb705da0b0761"
+            },
+            {
+                "nameInfo": "org/gradle/api/logging/LoggingManager",
+                "hash": "f270cf44cc1a6ebab6097ce820da58612dec6e5875732a72995c421bbca8083e"
+            },
+            {
+                "nameInfo": "org/gradle/internal/actor/internal/DefaultActorFactory$BlockingActor",
+                "hash": "69391d99a2d620fecb0335eb70b6b50a53cf9e340c4693672be50ed160a55fa8"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/text/StyledTextOutputFactory",
+                "hash": "276b330087ea3c43837aaf62708a9f913c7e72a378111db0fd5422d5fa3be3e3"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/RelevantMethodsBuilder",
+                "hash": "bda53d3813b462fdc4cdc54d44a42168eb084469999458f7cabc32e496c73ea4"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/sink/OutputEventRenderer$2",
+                "hash": "edf0d1c401ac0fc147a6ac4d468f84a43dd099c00d8c375a3a0ba28dce22f8a0"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/ConnectionSet",
+                "hash": "d4b1a5edf30a4db67ea9ef8e6b53d68de130bf905c00580d2f6b813e1c4cdfda"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/events/operations/LogEventBuildOperationProgressDetails",
+                "hash": "b6c2731cf19d41c281c89510848f2b86b142840b855fdbc1f45fabfedeb5bc1e"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/serializer/LogEventSerializer",
+                "hash": "f9f78b7a4b8429fff3799484a428d397d757f7138a30a9b4a6fd10494741c241"
+            },
+            {
+                "nameInfo": "org/gradle/internal/event/BroadcastDispatch$EmptyDispatch",
+                "hash": "8b39f00de893dec990c4ea1b10edba8b49d16b0947c1bb3d525eb2d5cc63789a"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/AbstractDecoder$DecoderStream",
+                "hash": "41531b33d10c6a534a0c0bcbcc214b9dd5c20d1f0f6a913cdcfc86a73b129d57"
+            },
+            {
+                "nameInfo": "org/gradle/process/internal/worker/child/WorkerLoggingProtocol",
+                "hash": "aac176273a94e7197c2734a8325731bd534ab6877bda1cac2dd01dc02065c501"
+            },
+            {
+                "nameInfo": "org/gradle/internal/operations/logging/StyledTextBuildOperationProgressDetails$Span",
+                "hash": "78ac63c0f9651a3d6b1803bd01fe35c5c329a5bc7d002ea8c5b277a432bf787b"
+            },
+            {
+                "nameInfo": "org/gradle/process/internal/worker/child/WorkerDirectoryProvider",
+                "hash": "1e695ea213e8ae18415607ad41699fe27723a2b4a59d38c564f052cfbfc5e5a0"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/source/StdOutLoggingSystem",
+                "hash": "0da0a2bf2ec8f357ecefe6fb7ef0e23bb722381d34fe7239ffb42bf01c583c66"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/DefaultSerializerRegistry",
+                "hash": "9330ad63d26eee19582974f9dbd07aefeec8e2bc9c7695a258d5f8ca6b546cdd"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/BaseSerializerFactory$StringSerializer",
+                "hash": "183a975cfd0d3d96d243a3ae8226dd2a09da014870e58eb348fbe5191cd0e440"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/events/operations/StyledTextBuildOperationProgressDetails",
+                "hash": "2251b3152f98adbfb0be1e8db96b9cf60d2fde43f8b91d3c6ee8b7bf125d28ed"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/OutgoingConnector",
+                "hash": "1448ed21cbbf462fcc6b71abb393c765066c5fe2196c70a4e239cdc0efe3afd3"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/MessageHubBackedClient",
+                "hash": "9c2bda0c3110394f01ea2e3554535529ad4cb4f9e2ae0d148dd2890fc791a6e4"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/DefaultServiceRegistry$SingletonService$BindState",
+                "hash": "1204374bf65b945f29474d4eb505996e657d45dffaa85a7928e84a00fb75e5e3"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/BaseSerializerFactory",
+                "hash": "feabd1bb609bfe547d2e4593c2f170faa5861844df5be93f367d203ed40e558e"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/NativeIntegrationException",
+                "hash": "12b9ee7a1b929dc84c66e285b7d3ad7ff97c10f439c3b09bfa67bdddc6637743"
+            },
+            {
+                "nameInfo": "net/rubygrapefruit/platform/NativeIntegrationUnavailableException",
+                "hash": "b9f4064f1102ccb27854a5e3c97bfdf99de50fe0462133d7a82a56fe98c8bd07"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/MethodInvocationSerializer$MethodInvocationReader",
+                "hash": "ccc4a1ba7a0f245ec6c4a515033356ce5fcb31052b06d18185b40158df9d5315"
+            },
+            {
+                "nameInfo": "org/gradle/internal/io/LinePerThreadBufferingOutputStream",
+                "hash": "dc3c0e086453a28d80e001e0879a58fff8c890fefd7bd4c3d5ee4e7988b0ed66"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/slf4j/OutputEventListenerBackedLogger",
+                "hash": "df368127d1467e1266795165a545d3015cfe09216a6230e17852ef12e5f73363"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/source/StdErrLoggingSystem",
+                "hash": "e344ae6a8c4bb71727512cbae8092b879b155cd25b4b7a8a1c271b0800b59495"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/BaseSerializerFactory$FileSerializer",
+                "hash": "e886d7f94e7af4575aa930f031d882993f91f5e91a2c0dd070bb9dad2fcc9b2f"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/SerializerRegistry",
+                "hash": "9d8227c09db67b27075ac45071121579a7461a539c99ac491602a5a16817d876"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/filesystem/FileCanonicalizer",
+                "hash": "32999f6fc9197d5bcf2a57ec148b59f6e10f9348c67dc888b0a369a593d38ad2"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/ReflectionBasedServiceMethod",
+                "hash": "fe0d888c019bdd12152b9e06c70968130ff2bf73333eada68dd7001bcbc2e659"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/slf4j/OutputEventListenerBackedLoggerContext$NoOpLogger",
+                "hash": "3bd3ff401cd61c1ad2aedbf2d4de610a554e70690cf5f613195de543bfe9763f"
+            },
+            {
+                "nameInfo": "org/gradle/internal/file/Chmod",
+                "hash": "31c18c8e73c298fb35dfb1117cb4307c1f6f4a10b0842b151a2b95205c9c2ecf"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/slf4j/BuildOperationAwareLogger",
+                "hash": "0ddfa3f43bf348bf4de2203e4efc66d18f4f1d5f432a55ded9e491e3aae59732"
+            },
+            {
+                "nameInfo": "com/esotericsoftware/kryo/KryoException",
+                "hash": "788149d8a34c77dd33896f0a5285f4e4acaaac99d7229c774af5d25491c35d36"
+            },
+            {
+                "nameInfo": "org/gradle/internal/concurrent/AbstractDelegatingExecutorService",
+                "hash": "2a0b2f85c4c2ece1f12d86926e6cd0c0cea3812039fb9478d55bb19c293c323e"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/DefaultServiceRegistry$ManagedObjectServiceProvider",
+                "hash": "eae9b02114d3275e5ccefd2d4895438f6037f990e64fb400d178cd1cadfcfd4d"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/MethodArgsSerializer",
+                "hash": "a481e409df1540d007218440e67fb0ac4efcf408449f72c9e2a443b81d7f9ba6"
+            },
+            {
+                "nameInfo": "org/gradle/internal/operations/logging/StyledTextBuildOperationProgressDetails",
+                "hash": "76ea8c35e22d627d914891732fd0599d06c2bf005d456d22385af7fb6684f6fe"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/AbstractDecoder",
+                "hash": "2cecb9d734ac906ebcecc9228ef0acc6961e5e34665e9ece126d63b600b71623"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/text/StyledTextOutput$Style",
+                "hash": "bd3cb00d1d9750fadc40fb9137b63d57c7fae6d86a75b7d79898b39137a49aef"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/junitplatform/JUnitPlatformTestExecutionListener",
+                "hash": "a59fc69a386186d0ff66efa841a0885fb07ef4e0206a21d31836f474e10bfa5b"
+            },
+            {
+                "nameInfo": "org/gradle/api/tasks/testing/TestDescriptor",
+                "hash": "d96dcd15e1113ddf7b66727f5c155068ecf4ea37b525c2fe09d9bf5c417def98"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/services/DefaultLoggingManagerFactory",
+                "hash": "4383e1c232a9e077f59b2cac1f6dd47f962ab6e204234dc24836ff666c6c0ffd"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/services/LoggingServiceRegistry",
+                "hash": "29aa30aeb42995a8b425bdcc035ab808eabe268463dd81a0a6b7495ea5284c03"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/services/DefaultLoggingManager$StartableLoggingSystem",
+                "hash": "90aa3a6db016a795c223003b3624ca705ffa8e14c31da1db03100971c63bdc0a"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$DefaultTestClassRunInfoSerializer",
+                "hash": "bd782e28abc8de94118c855b81f67572660e2293c4ab5ce6b8632f4cdc387d6b"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/DefaultServiceRegistry$FixedInstanceService",
+                "hash": "79ba40ef5d863d062fe48fa02ed5d6019c32e41cc27969eeec29d0ec8f9d9191"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/ServiceProvider$Visitor",
+                "hash": "6553cfa9ddf10768e373e8776b60486797971b39cd52b13d5b283584d91c0ff0"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/DefaultServiceRegistry$OwnServices",
+                "hash": "2af333f9891a932f04c42fb318087243cf66e8197ca3b9893f125030e909c5cb"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/services/LoggingServiceRegistry$NestedLogging",
+                "hash": "72f411bdc223fc13b87976007d3c2fa98cd7a82b1ce7a19ab6179508ac0e5e45"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/slf4j/OutputEventListenerBackedLoggerContext",
+                "hash": "d6b3b484a828d550bd7dfbcb133615c2fa1d5a5cf6fab13726a2c9034f2cf50f"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/OutgoingQueue",
+                "hash": "e1c4d5e1ebfd6fe14dbe7e7905aaac9e57373c31e76d61c6ea87b61274b35f47"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/config/LoggingRouter",
+                "hash": "b9fbede6e18fcee1edd670caff13a00af0b2a38801fe56f6f137c34c63c00558"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/protocol/EndOfStream",
+                "hash": "5a1f2694006293e0848f932322bebf9b033d1b67c390d01f9006576ca7a6c7a5"
+            },
+            {
+                "nameInfo": "org/gradle/api/tasks/testing/TestResult$ResultType",
+                "hash": "eaabc514572c0743b7d37e95afc00f2423373f2a86e6ec9068a6edf1c421c39e"
+            },
+            {
+                "nameInfo": "org/gradle/internal/concurrent/ManagedExecutor",
+                "hash": "ca49734a23a92755b9706e7f4623aca8e1b56db9212adc56fe0971741473cd7d"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$WorkerTestSuiteDescriptorSerializer",
+                "hash": "6bebb1694cc844804de23ebb1b64263aa81b52af45c74b6606eab0d3cf585264"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/DefaultMethodArgsSerializer",
+                "hash": "9d5454ba4c814fbeafc1d0c5bd178358bc6648ca0e8a8a41287a2ce004e4fa7c"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/AbstractEncoder",
+                "hash": "6f109064fb6a45eda425ed29a49918fd530a793be4677b6d75eab2646fa03404"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/MessageHubBackedObjectConnection$2",
+                "hash": "78a235d47dd0fe32168cd8d1ca244a48cbb8e1d68e774648aa84c4061910f701"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/DefaultSerializerRegistry$HierarchySerializerMatcher",
+                "hash": "b586dd3909336f5dcf3ab34e87feebd4f74652ebeba614b0df25c34aad367821"
+            },
+            {
+                "nameInfo": "org/gradle/internal/id/LongIdGenerator",
+                "hash": "05ed3ab9e47b89718000e41b422fb2000c5b25bed0307c531d29287b9100bd82"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/UnknownServiceException",
+                "hash": "a0ab9da5a51e11e216d6b02f069831836112580ae009360cd38437951f3e11ae"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/network/HostnameLookup",
+                "hash": "65b5b4b563ef619c5f809d6e49afa5fff67b3b4eed8ce0397f85eaf9c8e639cd"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/MessageHubBackedObjectConnection$DispatchWrapper",
+                "hash": "f333ed2fb9ea44869afcff1658e61eaa825e94a55dba59f9955f4729be8c2e08"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/config/LoggingSourceSystem",
+                "hash": "aeaad0e4760649ba65ef50832901d1934676645b46b72577ac33d8d740ed5ef4"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/LoggingManagerInternal",
+                "hash": "11178908fde3ecc86af19afd510e35605e84c9983f161e8d19a5907d1011ca08"
+            },
+            {
+                "nameInfo": "org/gradle/process/internal/worker/child/DefaultWorkerDirectoryProvider",
+                "hash": "09149a67ac9f4aea142b90e070ebc664cd3f335b75abd700d4b40d63bc03d1b1"
+            },
+            {
+                "nameInfo": "net/rubygrapefruit/platform/file/Files",
+                "hash": "d50e93b8ce2111675fdfce60c9481f113953d2114b9bcf952c64c7b3c9880857"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/BaseSerializerFactory$EnumSerializer",
+                "hash": "4128912c0b9008beb17f72ad44a6a36676b5c1ad574ae3b198e12c277cc29ba9"
+            },
+            {
+                "nameInfo": "org/gradle/process/internal/worker/child/SystemApplicationClassLoaderWorker",
+                "hash": "ab4259224d113ae3567976da35ff393b92e6f59b4d4d5fb12cb11a76f0575a81"
+            },
+            {
+                "nameInfo": "org/gradle/internal/event/ListenerNotificationException",
+                "hash": "2e076aff36cab11d8651bc70e976517f23ef91af5bfd7c364bc62f09d6cfd888"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/console/ConsoleMetaData",
+                "hash": "fa981d8865bd3306ac3329523edd5786247ada8f0af2fe583ad89d1b8ff6459e"
+            },
+            {
+                "nameInfo": "org/gradle/internal/io/StreamByteBuffer$StreamByteBufferChunk",
+                "hash": "993990ba928edca828205273a5c05d2fd0f8ee855c0cda32dd835f9504c42e4b"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/kryo/KryoBackedDecoder$1",
+                "hash": "5a1aadd71f37d849a6955d21f7e05f5141cd4e2db62a1740c5c619ecc434f59b"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/MessageSerializer",
+                "hash": "ca0d2ed6d5a39f59c9419ef267df27222edf7f6003eee3d0e92df45018b8d256"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/events/LogLevelChangeEvent",
+                "hash": "51fe11ef35c9bb4d114be8753056c2c2a6af1ded98b3676ad96e947772d88da4"
+            },
+            {
+                "nameInfo": "org/gradle/internal/event/AbstractBroadcastDispatch",
+                "hash": "1272ec9c87ad640c734fbe09a2de9251d46b83c48bc08ee9fd6b5fc9ccfa479f"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/queue/MultiChannelQueue",
+                "hash": "ca7c907bcb4a0d70a5eae98fb3e3ab35e724ae9a2136fe07b0d005ae5cc3646e"
+            },
+            {
+                "nameInfo": "net/rubygrapefruit/platform/file/PosixFiles",
+                "hash": "25249ae8c265751584f0a1fb820e50e5889b6e259042a7f3589c8e6efaaabef5"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/Encoder",
+                "hash": "82945c779d4a27ff6b023a00089cc1ef588e78f8a1f0abedff6da685bd515384"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/events/operations/ProgressStartBuildOperationProgressDetails",
+                "hash": "f275dce0b4ac279ccf07b9e69e4a47ba2bcae459292efd4fba49f68015ec983f"
+            },
+            {
+                "nameInfo": "org/gradle/api/logging/LogLevel",
+                "hash": "764afa99b245051df65168d5162619aae696584247a3a987f5a1d8c67506ca16"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/queue/MultiEndPointQueue",
+                "hash": "2594e76455b6ad867a55dd6d823e8abac5ff18ba7daa2f3b575cb5ded83d491c"
+            },
+            {
+                "nameInfo": "org/gradle/api/UncheckedIOException",
+                "hash": "2efe6d59a1aa1f715cbb6006949a503299d652187e96169be18a019759db09d0"
+            },
+            {
+                "nameInfo": "org/gradle/internal/operations/logging/ProgressStartBuildOperationProgressDetails",
+                "hash": "2ef76623cb8203d6d7b3f65c47759f2a9e6fb65e290f7b11f62890585893b5a0"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/protocol/ChannelMessage",
+                "hash": "e3e8484dfe0bee90d22afebe8fb2e57cd380cd2174386c2da49f51920f3b23a8"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/InterHubMessageSerializer$MessageWriter",
+                "hash": "66d0f5dcbfa401ada67c6a9a587941e6fae6e3d970809fdf171f944857f20fcf"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/sink/OutputEventListenerManager$1",
+                "hash": "544cda9af703bbebf43d15e623b87142d9418cb256a5465f398ef8a809df4be4"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/source/PrintStreamLoggingSystem$PrintStreamDestination",
+                "hash": "cb4a0841bc358a9a53df12a898a360a21d50fe2396ee7d7c3d19a8b75dc2faf6"
+            },
+            {
+                "nameInfo": "org/gradle/process/internal/worker/WorkerLoggingSerializer",
+                "hash": "ff2b7cd54ae8ed57d588c95b4ccad6972d59fc4d0dac7221b9d3bd633d6cabd7"
+            },
+            {
+                "nameInfo": "org/gradle/internal/service/ServiceRegistry",
+                "hash": "e0ef923422678b3ca42da17cbb9e3cb7d2ac30af58b07bf38dd8c944d24250ea"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/processors/TestOutputRedirector$Forwarder",
+                "hash": "420da55818b501902821e459846bed06eeffedd8ab23fc0d4a3a64b0ad412cbb"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/processors/DefaultStandardOutputRedirector",
+                "hash": "1fc847b46b5abfbdf7898ca3bbb3b871ec00940f3dff854e8f4886aa3228cf0b"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/WorkerTestClassProcessor$WorkerTestSuiteDescriptor",
+                "hash": "1f53d0c659995135a51c54523a70ab2af9cdd438b8e1d9ebb0e788f2568e2b43"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/JULRedirector",
+                "hash": "9c9ee78ac583230aea1325e05272a63f9ad9f563b34cc5d0ad8da56c2495792f"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$NullableSerializer",
+                "hash": "3c3910693ff2f7766b1e5d054c953e8f72d55c24986388ec7791380430610d2f"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/processors/StandardOutputRedirector",
+                "hash": "5e73cb4293c028e32b07b1c928845750c3b45978260a1cde8cd757a966251364"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$DefaultTestDescriptorSerializer",
+                "hash": "357e87a9a4874508cbd924c3420107b90e5313f3888c1eaca859efef132e2fd5"
+            },
+            {
+                "nameInfo": "org/gradle/internal/concurrent/CompositeStoppable$1",
+                "hash": "522fa3d26001d4626d5589ff82b45e0d387c3cadd0fb5cd4199ebf8b57060cba"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/services/NativeServices",
+                "hash": "21397549ea45b1aa8673fecd41ad7da119fb147b2ab9286e4d79807c0ade3803"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/events/EndOutputEvent",
+                "hash": "6c71ba9ce1bb31d3cec0101c57144ad6aa039cb8a1928313c6f49a4c0f73d095"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/queue/MultiEndPointQueue$1",
+                "hash": "be67b704e1fcf55512bf271d4ad1c798a7700ca49b4c9c108c05f95e9bc5c4b4"
+            },
+            {
+                "nameInfo": "org/gradle/internal/exceptions/DefaultMultiCauseException",
+                "hash": "fc4dee5378024eee28f3df49053dfb0dcab6ac551389420706733fd5a5a9a0f2"
+            },
+            {
+                "nameInfo": "org/gradle/internal/concurrent/ExecutorPolicy",
+                "hash": "ff64085b27c5a0e32698d3da15b6e7065dcb15df07e3610bdffeed75118b3d4d"
+            },
+            {
+                "nameInfo": "org/gradle/api/internal/tasks/testing/worker/TestEventSerializer$IdSerializer",
+                "hash": "0439cf136f21419d6d93bfe642de597637e08b89645c1b8dccc0a8824e96326d"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/filesystem/FileSystem",
+                "hash": "4f226642d1560e0b84f7b3cbedc01fe6846daeabb42979a7b4b9ebe61753720a"
+            },
+            {
+                "nameInfo": "org/gradle/internal/operations/CurrentBuildOperationRef",
+                "hash": "f3a7c1e2477fe35c62b50947b925e06a65232dbad96367eb19dec3fadf0e6d4f"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/BaseSerializerFactory$BigIntegerSerializer",
+                "hash": "4a5f110f0aa2b5e2fe05c2958adfa0a5ec56a5da06964ba2232f98e03b5ba419"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/BaseSerializerFactory$BooleanSerializer",
+                "hash": "62bdfb05599042ce3ae154a93c97d57bdcc856b2489e6663b747220eb2fbbf2f"
+            },
+            {
+                "nameInfo": "org/gradle/process/internal/worker/child/ActionExecutionWorker",
+                "hash": "14f59383b7f39ee2355ed496f48e0ff1b3ae57acd6aa170c5845d502d4d2ffcc"
+            },
+            {
+                "nameInfo": "org/slf4j/helpers/Util",
+                "hash": "b5d417747fee21a6b73977746cdae0b2502832f79618f31827480ef64d384735"
+            },
+            {
+                "nameInfo": "org/gradle/internal/serialize/InputStreamBackedDecoder",
+                "hash": "7a74ea87155e3ad25d1f6175a0038f46164232c4ce036714b114a2d680435e43"
+            },
+            {
+                "nameInfo": "org/gradle/internal/nativeintegration/services/NativeServices$NativeFeatures$1",
+                "hash": "5c262dc8a6190d36e557a98ac54786861f818532e22b8c3c517b9e1e0994fb9b"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/MessageHub$ChannelDispatch",
+                "hash": "efb6f47fbe7462e61fe9e0ce8800d30e04a49486f4a7faa2d299441894a82999"
+            },
+            {
+                "nameInfo": "org/gradle/internal/remote/internal/hub/protocol/ChannelIdentifier",
+                "hash": "d39a6b90908c20cbac4f47a6ced5536957660f7356bfc63f8d3218805f33461e"
+            },
+            {
+                "nameInfo": "org/slf4j/event/LoggingEvent",
+                "hash": "6a5e31eccad72342fe776744d3e2c1f41fcb735a4626a950cad861b159d18f94"
+            },
+            {
+                "nameInfo": "org/gradle/api/logging/Logger",
+                "hash": "b5c867f59bcdb0058d1aa3ec7fb55caad49f4f4994025486237ed4d715f89124"
+            },
+            {
+                "nameInfo": "org/gradle/internal/event/DefaultListenerManager",
+                "hash": "2358474a59ff756269344567c1dab72172ab6dfaa15aca1cdd5bf06b7f81bc7a"
+            },
+            {
+                "nameInfo": "org/gradle/internal/logging/services/TextStreamOutputEventListener",
+                "hash": "b4280aa4b937b7193900a4db522493a3a822d288621774952a6a35d456565882"
+            },
+            {
+                "nameInfo": "org/gradle/internal/file/StatStatistics",
+                "hash": "799895bed8222bb6b8e08e78c19aa20cd42bafbf83f057e69b99b09efeb751fb"
+            },
+            {
+                "nameInfo": "org/gradle/internal/time/TimeSource",
+                "hash": "174b723ef5ca13e12d02e909faf95f420d7763bdb0e81a9ce081ea6b5841640b"
+            }
         ]
     }
 ]
