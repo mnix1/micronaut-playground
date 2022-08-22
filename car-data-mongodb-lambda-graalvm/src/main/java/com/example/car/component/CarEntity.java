@@ -8,7 +8,7 @@ import java.time.Instant;
 import java.util.UUID;
 
 @MappedEntity(value = "car")
-class CarRecord {
+class CarEntity {
     @Id
     String id;
     String model;
@@ -18,10 +18,10 @@ class CarRecord {
     Instant createdTimestamp;
     Instant updatedTimestamp;
 
-    public CarRecord() {
+    public CarEntity() {
     }
 
-    CarRecord(Car car) {
+    CarEntity(Car car) {
         id = car.id.toString();
         model = car.model;
         producer = car.producer;

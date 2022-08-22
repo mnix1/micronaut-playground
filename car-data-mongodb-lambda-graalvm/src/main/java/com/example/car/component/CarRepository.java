@@ -4,5 +4,5 @@ import io.micronaut.data.mongodb.annotation.MongoRepository;
 import io.micronaut.data.repository.CrudRepository;
 
 @MongoRepository
-interface CarRepository extends CrudRepository<CarRecord, String> {
+interface CarRepository extends CrudRepository<CarEntity, String> {
 }

@@ -94,8 +94,8 @@ class IntegrationTest {
     private AwsProxyRequest changeOwner(ChangeCarOwnerCommand command) throws JsonProcessingException {
         AwsProxyRequest request = new AwsProxyRequest();
         request.setHttpMethod("PATCH");
-        request.setPath(String.format("/cars/%s/changeOwner", command.id));
-        request.setBody(objectMapper.writeValueAsString(Map.of("owner", command.owner)));
+        request.setPath(String.format("/cars/%s/changeOwner", command.id()));
+        request.setBody(objectMapper.writeValueAsString(Map.of("owner", command.owner())));
         return request;
     }
 

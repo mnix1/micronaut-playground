@@ -94,6 +94,36 @@
                     "com.example.car.api.CarProducer",
                     "int"
                 ]
+            },
+            {
+                "name": "id",
+                "parameterTypes": [
+                    
+                ]
+            },
+            {
+                "name": "model",
+                "parameterTypes": [
+                    
+                ]
+            },
+            {
+                "name": "owner",
+                "parameterTypes": [
+                    
+                ]
+            },
+            {
+                "name": "producer",
+                "parameterTypes": [
+                    
+                ]
+            },
+            {
+                "name": "productionYear",
+                "parameterTypes": [
+                    
+                ]
             }
         ]
     },
@@ -101,7 +131,27 @@
         "name": "com.example.car.api.command.CreateCarCommand",
         "queryAllDeclaredMethods": true,
         "allDeclaredFields": true,
-        "queryAllDeclaredConstructors": true
+        "queryAllDeclaredConstructors": true,
+        "methods": [
+            {
+                "name": "model",
+                "parameterTypes": [
+                    
+                ]
+            },
+            {
+                "name": "producer",
+                "parameterTypes": [
+                    
+                ]
+            },
+            {
+                "name": "productionYear",
+                "parameterTypes": [
+                    
+                ]
+            }
+        ]
     },
     {
         "name": "com.example.car.component.$CarRecord$IntrospectionRef",

@@ -23,22 +23,22 @@ class DefaultCarFacade implements CarFacade {
     @Override
     public UUID create(CreateCarCommand command) {
         UUID id = UUID.randomUUID();
-        Car car = new Car(id, command.model, command.producer, command.productionYear, null);
-        carRepository.save(new CarRecord(car));
+        Car car = new Car(id, command.model(), command.producer(), command.productionYear(), null);
+        carRepository.save(new CarEntity(car));
         return id;
     }
 
     @Override
     public void changeOwner(ChangeCarOwnerCommand command) {
-        Car car = carRepository.findById(command.id.toString()).map(CarRecord::toDomain).orElseThrow();
-        car.changeOwner(command.owner);
-        carRepository.update(new CarRecord(car));
+        Car car = carRepository.findById(command.id().toString()).map(CarEntity::toDomain).orElseThrow();
+        car.changeOwner(command.owner());
+        carRepository.update(new CarEntity(car));
     }
 
     @Override
     public List<CarSnapshot> list() {
         return stream(carRepository.findAll().spliterator(), false)
-                .map(CarRecord::toDomain)
+                .map(CarEntity::toDomain)
                 .map(Car::toSnapshot)
                 .collect(toList());
     }
