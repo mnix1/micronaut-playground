@@ -17,6 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @MicronautTest
 class IntegrationTest {
+
     @Inject
     BooksClient client;
 
@@ -75,9 +76,7 @@ class IntegrationTest {
         void unavailable(UUID id);
     }
 
-    record BookRequestBody(String name, Integer pages) {
-    }
+    record BookRequestBody(String name, Integer pages) {}
 
-    record CommentRequestBody(String comment) {
-    }
+    record CommentRequestBody(String comment) {}
 }

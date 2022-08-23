@@ -9,8 +9,10 @@ import java.util.UUID;
 
 @MappedEntity(value = "car")
 class CarRecord {
+
     @Id
     String id;
+
     String model;
     CarProducer producer;
     int productionYear;
@@ -18,8 +20,7 @@ class CarRecord {
     Instant createdTimestamp;
     Instant updatedTimestamp;
 
-    public CarRecord() {
-    }
+    public CarRecord() {}
 
     CarRecord(Car car) {
         id = car.id.toString();

@@ -1,6 +1,5 @@
 package com.example.car.component.http;
 
-
 import com.example.car.api.CarFacade;
 import com.example.car.api.CarProducer;
 import com.example.car.api.CarSnapshot;
@@ -15,6 +14,7 @@ import java.util.UUID;
 
 @Controller("/cars")
 class CarController {
+
     private final CarFacade facade;
 
     CarController(CarFacade facade) {
@@ -39,6 +39,7 @@ class CarController {
 
     @JsonDeserialize
     static class CreateCarRequestBody {
+
         private final String model;
         private final CarProducer producer;
         private final int productionYear;
@@ -56,6 +57,7 @@ class CarController {
 
     @JsonDeserialize
     static class ChangeCarOwnerRequestBody {
+
         private final String owner;
 
         ChangeCarOwnerRequestBody(String owner) {

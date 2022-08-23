@@ -31,5 +31,4 @@ class DeclarativeClientTest {
         assertThat(companies.stream().map(CompanyController.ListCompanySnapshot::id))
             .containsExactlyInAnyOrder(randomCompany.id(), testCompany.id());
     }
-
 }

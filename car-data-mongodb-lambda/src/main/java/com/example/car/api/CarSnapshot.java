@@ -4,11 +4,12 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class CarSnapshot {
-  public final UUID id;
-  public final String model;
-  public final CarProducer producer;
-  public final int productionYear;
-  public final String owner;
+
+    public final UUID id;
+    public final String model;
+    public final CarProducer producer;
+    public final int productionYear;
+    public final String owner;
 
     public CarSnapshot(UUID id, String model, CarProducer producer, int productionYear, String owner) {
         this.id = id;
@@ -23,7 +24,13 @@ public class CarSnapshot {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         CarSnapshot that = (CarSnapshot) o;
-        return productionYear == that.productionYear && id.equals(that.id) && model.equals(that.model) && producer == that.producer && Objects.equals(owner, that.owner);
+        return (
+            productionYear == that.productionYear &&
+            id.equals(that.id) &&
+            model.equals(that.model) &&
+            producer == that.producer &&
+            Objects.equals(owner, that.owner)
+        );
     }
 
     @Override

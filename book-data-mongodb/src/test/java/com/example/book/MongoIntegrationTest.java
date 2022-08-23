@@ -22,12 +22,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 @MicronautTest
 @Testcontainers
 class MongoIntegrationTest {
+
     static MongoDBContainer container;
 
     @BeforeAll
     static void beforeAll() {
-        container = new MongoDBContainer("mongo:5.0.10")
-                .withEnv("MONGO_INITDB_DATABASE", "test");
+        container = new MongoDBContainer("mongo:5.0.10").withEnv("MONGO_INITDB_DATABASE", "test");
         container.setPortBindings(List.of("27017:27017"));
         container.start();
     }
@@ -95,9 +95,7 @@ class MongoIntegrationTest {
         void unavailable(UUID id);
     }
 
-    record BookRequestBody(String name, Integer pages) {
-    }
+    record BookRequestBody(String name, Integer pages) {}
 
-    record CommentRequestBody(String comment) {
-    }
+    record CommentRequestBody(String comment) {}
 }

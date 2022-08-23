@@ -14,6 +14,7 @@ import static java.util.stream.StreamSupport.stream;
 
 @Singleton
 class DefaultCarFacade implements CarFacade {
+
     private final CarRepository carRepository;
 
     DefaultCarFacade(CarRepository carRepository) {
@@ -37,9 +38,6 @@ class DefaultCarFacade implements CarFacade {
 
     @Override
     public List<CarSnapshot> list() {
-        return stream(carRepository.findAll().spliterator(), false)
-                .map(CarRecord::toDomain)
-                .map(Car::toSnapshot)
-                .collect(toList());
+        return stream(carRepository.findAll().spliterator(), false).map(CarRecord::toDomain).map(Car::toSnapshot).collect(toList());
     }
 }

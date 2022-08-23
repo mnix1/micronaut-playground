@@ -36,6 +36,7 @@ class IntegrationTest {
     static CustomHandler handler;
     ObjectMapper objectMapper = handler.getApplicationContext().getBean(ObjectMapper.class);
     AuditRepository auditRepository = handler.getApplicationContext().getBean(AuditRepository.class);
+
     @BeforeAll
     static void beforeAll() {
         container = new MongoDBContainer("mongo:5.0.10").withEnv("MONGO_INITDB_DATABASE", "test");

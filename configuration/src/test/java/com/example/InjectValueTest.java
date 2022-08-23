@@ -26,7 +26,7 @@ class InjectValueTest {
 
     @Test
     void injectsFromTestSource() {
-        assertThat(value2).isEqualTo(20);
+        assertThat(value2).isEqualTo(40);
     }
 
     @Test

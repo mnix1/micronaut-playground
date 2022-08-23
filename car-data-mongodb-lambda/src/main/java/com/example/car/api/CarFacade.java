@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.UUID;
 
 public interface CarFacade {
-
     UUID create(CreateCarCommand command);
 
     void changeOwner(ChangeCarOwnerCommand command);

@@ -25,6 +25,7 @@ class FilterTest {
     }
 
     @Test
+    //TODO sometimes fails, why?
     void countsRequests() {
         for (int i = 0; i < 10; i++) {
             client.createRandom();

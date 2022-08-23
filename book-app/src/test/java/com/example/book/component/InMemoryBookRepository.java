@@ -8,6 +8,7 @@ import java.util.*;
 @Singleton
 @Requires(missingBeans = BookRepository.class)
 class InMemoryBookRepository implements BookRepository {
+
     Map<UUID, Book> books = new HashMap<>();
 
     @Override

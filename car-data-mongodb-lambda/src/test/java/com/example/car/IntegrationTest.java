@@ -27,6 +27,7 @@ import java.util.UUID;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class IntegrationTest {
+
     static MongoDBContainer container;
     static final Context lambdaContext = new MockLambdaContext();
     static CustomHandler handler;
@@ -34,8 +35,7 @@ class IntegrationTest {
 
     @BeforeAll
     static void beforeAll() {
-        container = new MongoDBContainer("mongo:5.0.10")
-                .withEnv("MONGO_INITDB_DATABASE", "test");
+        container = new MongoDBContainer("mongo:5.0.10").withEnv("MONGO_INITDB_DATABASE", "test");
         container.setPortBindings(List.of("27017:27017"));
         container.start();
         handler = new CustomHandler(Environment.TEST, Environment.FUNCTION, MicronautLambdaContext.ENVIRONMENT_LAMBDA);
@@ -58,15 +58,14 @@ class IntegrationTest {
         String car1Id = objectMapper.readValue(response.getBody(), String.class);
         response = executeRequest(createCar(new CreateCarCommand("XC-40", CarProducer.VOLVO, 2021)));
         assertSuccess(response, 201);
-        String car2Id =  objectMapper.readValue(response.getBody(), String.class);
+        String car2Id = objectMapper.readValue(response.getBody(), String.class);
 
         response = executeRequest(changeOwner(new ChangeCarOwnerCommand(UUID.fromString(car1Id), "Robert")));
         assertSuccess(response, 200);
 
         response = executeRequest(listCars());
         assertSuccess(response, 200);
-        List<CarSnapshot> cars = objectMapper.readValue(response.getBody(), new TypeReference<>() {
-        });
+        List<CarSnapshot> cars = objectMapper.readValue(response.getBody(), new TypeReference<>() {});
         assertThat(cars).hasSize(2);
         assertThat(cars.get(0)).isEqualTo(new CarSnapshot(UUID.fromString(car1Id), "CH-R", CarProducer.TOYOTA, 2020, "Robert"));
         assertThat(cars.get(1)).isEqualTo(new CarSnapshot(UUID.fromString(car2Id), "XC-40", CarProducer.VOLVO, 2021, null));

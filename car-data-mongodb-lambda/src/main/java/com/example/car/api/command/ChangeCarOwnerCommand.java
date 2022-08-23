@@ -3,6 +3,7 @@ package com.example.car.api.command;
 import java.util.UUID;
 
 public class ChangeCarOwnerCommand {
+
     public final UUID id;
     public final String owner;
 

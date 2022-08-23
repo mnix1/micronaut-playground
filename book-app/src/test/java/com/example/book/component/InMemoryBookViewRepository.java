@@ -10,6 +10,7 @@ import java.util.List;
 @Singleton
 @Requires(missingBeans = BookViewRepository.class)
 class InMemoryBookViewRepository implements BookViewRepository {
+
     private final InMemoryBookRepository bookRepository;
 
     InMemoryBookViewRepository(InMemoryBookRepository bookRepository) {

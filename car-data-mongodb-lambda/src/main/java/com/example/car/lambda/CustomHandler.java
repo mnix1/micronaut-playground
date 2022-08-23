@@ -13,9 +13,11 @@ import io.micronaut.function.aws.MicronautLambdaContext;
 import io.micronaut.function.aws.proxy.MicronautLambdaHandler;
 
 import java.io.Closeable;
-import java.io.IOException;
 
-public class CustomHandler extends DefaultApplicationContextBuilder implements RequestHandler<AwsProxyRequest, AwsProxyResponse>, ApplicationContextProvider, Closeable {
+public class CustomHandler
+    extends DefaultApplicationContextBuilder
+    implements RequestHandler<AwsProxyRequest, AwsProxyResponse>, ApplicationContextProvider, Closeable {
+
     public final MicronautLambdaHandler handler;
 
     public CustomHandler() {
@@ -23,10 +25,7 @@ public class CustomHandler extends DefaultApplicationContextBuilder implements R
     }
 
     public CustomHandler(String... environments) {
-        ApplicationContext customApplicationContext = environments(environments)
-                .eagerInitConfiguration(true)
-                .build()
-                .start();
+        ApplicationContext customApplicationContext = environments(environments).eagerInitConfiguration(true).build().start();
         try {
             handler = new MicronautLambdaHandler(customApplicationContext);
         } catch (ContainerInitializationException e) {
