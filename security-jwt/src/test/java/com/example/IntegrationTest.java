@@ -23,10 +23,16 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @MicronautTest
 class IntegrationTest {
-    private final static String VALID_USER_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1VTRVIiXSwic3ViIjoidGVzdC11c2VyIiwiaWF0IjoxNjYyNjY0MDgzLCJleHAiOjI2NjI2NjQwODN9.VhPwqksPlxE22YD1TLFWegfOf0rRVB9W7ixLKImjPSQ";
-    private final static String VALID_ADMIN_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0FETUlOIl0sInN1YiI6InRlc3QtdXNlciIsImlhdCI6MTY2MjY2NDA2NSwiZXhwIjoyNjYyNjY0MDY1fQ.RbgP6pRU3H5dor1CQg9G0KNiNgsKv6xIvrsLkCcNOqk";
-    private final static String EXPIRED_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sInN1YiI6InRlc3QtdXNlciIsImlhdCI6MTY2MjY2Mzk4MCwiZXhwIjoxNjYyNjYzOTgwfQ.LVD1iEquoZhiWTJhNNdxikTgxws2bDguQWW_YPxxwzQ";
-    private final static String OTHER_SECRET_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sInN1YiI6InRlc3QtdXNlciIsImlhdCI6MTY2MjY2NDA0NywiZXhwIjoyNjYyNjY0MDQ3fQ.On0tGGDgXbkob6Jhionb_-ZNa-sEFCsAERFUYJfVJCw";
+
+    private static final String VALID_USER_TOKEN =
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1VTRVIiXSwic3ViIjoidGVzdC11c2VyIiwiaWF0IjoxNjYyNjY0MDgzLCJleHAiOjI2NjI2NjQwODN9.VhPwqksPlxE22YD1TLFWegfOf0rRVB9W7ixLKImjPSQ";
+    private static final String VALID_ADMIN_TOKEN =
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0FETUlOIl0sInN1YiI6InRlc3QtdXNlciIsImlhdCI6MTY2MjY2NDA2NSwiZXhwIjoyNjYyNjY0MDY1fQ.RbgP6pRU3H5dor1CQg9G0KNiNgsKv6xIvrsLkCcNOqk";
+    private static final String EXPIRED_TOKEN =
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sInN1YiI6InRlc3QtdXNlciIsImlhdCI6MTY2MjY2Mzk4MCwiZXhwIjoxNjYyNjYzOTgwfQ.LVD1iEquoZhiWTJhNNdxikTgxws2bDguQWW_YPxxwzQ";
+    private static final String OTHER_SECRET_TOKEN =
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sInN1YiI6InRlc3QtdXNlciIsImlhdCI6MTY2MjY2NDA0NywiZXhwIjoyNjYyNjY0MDQ3fQ.On0tGGDgXbkob6Jhionb_-ZNa-sEFCsAERFUYJfVJCw";
+
     @Inject
     @Client("/companies")
     HttpClient client;
@@ -70,25 +76,33 @@ class IntegrationTest {
 
     @Test
     void throwsUnauthorizedWhenNoToken() {
-        HttpClientResponseException throwable = (HttpClientResponseException) Assertions.catchThrowable(() -> client.toBlocking().exchange(HttpRequest.DELETE("/")));
+        HttpClientResponseException throwable = (HttpClientResponseException) Assertions.catchThrowable(() ->
+            client.toBlocking().exchange(HttpRequest.DELETE("/"))
+        );
         assertThat(throwable.getResponse().code()).isEqualTo(HttpStatus.UNAUTHORIZED.getCode());
     }
 
     @Test
     void throwsUnauthorizedWhenExpiredToken() {
-        HttpClientResponseException throwable = (HttpClientResponseException) Assertions.catchThrowable(() -> client.toBlocking().exchange(HttpRequest.GET("/").bearerAuth(EXPIRED_TOKEN)));
+        HttpClientResponseException throwable = (HttpClientResponseException) Assertions.catchThrowable(() ->
+            client.toBlocking().exchange(HttpRequest.GET("/").bearerAuth(EXPIRED_TOKEN))
+        );
         assertThat(throwable.getResponse().code()).isEqualTo(HttpStatus.UNAUTHORIZED.getCode());
     }
 
     @Test
     void throwsUnauthorizedWhenSignedByAnotherSecretToken() {
-        HttpClientResponseException throwable = (HttpClientResponseException) Assertions.catchThrowable(() -> client.toBlocking().exchange(HttpRequest.GET("/").bearerAuth(OTHER_SECRET_TOKEN)));
+        HttpClientResponseException throwable = (HttpClientResponseException) Assertions.catchThrowable(() ->
+            client.toBlocking().exchange(HttpRequest.GET("/").bearerAuth(OTHER_SECRET_TOKEN))
+        );
         assertThat(throwable.getResponse().code()).isEqualTo(HttpStatus.UNAUTHORIZED.getCode());
     }
 
     @Test
     void throwsForbiddenWhenWrongRole() {
-        HttpClientResponseException throwable = (HttpClientResponseException) Assertions.catchThrowable(() -> client.toBlocking().exchange(HttpRequest.DELETE("/").bearerAuth(VALID_USER_TOKEN)));
+        HttpClientResponseException throwable = (HttpClientResponseException) Assertions.catchThrowable(() ->
+            client.toBlocking().exchange(HttpRequest.DELETE("/").bearerAuth(VALID_USER_TOKEN))
+        );
         assertThat(throwable.getResponse().code()).isEqualTo(HttpStatus.FORBIDDEN.getCode());
     }
 
@@ -97,11 +111,15 @@ class IntegrationTest {
     }
 
     private void createGoogleCompany() {
-        client.toBlocking().exchange(POST("/", new CompanyRequestBody("Google", "IT", 10, Instant.now(), List.of())).bearerAuth(VALID_USER_TOKEN));
+        client
+            .toBlocking()
+            .exchange(POST("/", new CompanyRequestBody("Google", "IT", 10, Instant.now(), List.of())).bearerAuth(VALID_USER_TOKEN));
     }
 
     private void createAppleCompany() {
-        client.toBlocking().exchange(POST("/", new CompanyRequestBody("Apple", "IT", 8, Instant.now(), List.of())).bearerAuth(VALID_USER_TOKEN));
+        client
+            .toBlocking()
+            .exchange(POST("/", new CompanyRequestBody("Apple", "IT", 8, Instant.now(), List.of())).bearerAuth(VALID_USER_TOKEN));
     }
 
     private void clearCompanies() {

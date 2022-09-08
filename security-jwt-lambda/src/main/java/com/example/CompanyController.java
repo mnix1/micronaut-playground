@@ -7,6 +7,7 @@ import io.micronaut.http.annotation.*;
 
 import java.time.Instant;
 import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 @Controller("/companies")
@@ -30,7 +31,7 @@ class CompanyController {
             .stream()
             .filter(c -> c.name().startsWith(namePrefix))
             .filter(c -> nameSuffix.filter(s -> !c.name().endsWith(s)).isEmpty())
-            .toList();
+            .collect(Collectors.toList());
     }
 
     @Post("/random/{count}")
@@ -60,7 +61,42 @@ class CompanyController {
         companies.clear();
     }
 
-    record CompanyRequestBody(String name, String industry, int employees, Instant createdDateTime, List<Facility> facilities) {
+    static class CompanyRequestBody {
+
+        String name;
+        String industry;
+        int employees;
+        Instant createdDateTime;
+        List<Facility> facilities;
+
+        public String getName() {
+            return name;
+        }
+
+        public String getIndustry() {
+            return industry;
+        }
+
+        public int getEmployees() {
+            return employees;
+        }
+
+        public Instant getCreatedDateTime() {
+            return createdDateTime;
+        }
+
+        public List<Facility> getFacilities() {
+            return facilities;
+        }
+
+        CompanyRequestBody(String name, String industry, int employees, Instant createdDateTime, List<Facility> facilities) {
+            this.name = name;
+            this.industry = industry;
+            this.employees = employees;
+            this.createdDateTime = createdDateTime;
+            this.facilities = facilities;
+        }
+
         Company toCompany(UUID id) {
             return new Company(id, name, industry, employees, createdDateTime, facilities);
         }
@@ -78,7 +114,7 @@ class CompanyController {
                 .rangeClosed(1, faker.number().numberBetween(1, 10))
                 .boxed()
                 .map(i -> new Facility(faker.country().name(), faker.address().cityName()))
-                .toList()
+                .collect(Collectors.toList())
         );
     }
 }

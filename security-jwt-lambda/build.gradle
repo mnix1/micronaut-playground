@@ -1,0 +1,23 @@
+application {
+    mainClass.set("io.micronaut.function.aws.proxy.MicronautLambdaHandler")
+}
+dependencies {
+    annotationProcessor("io.micronaut.security:micronaut-security-annotations")
+    implementation 'com.fasterxml.jackson.module:jackson-module-parameter-names:2.13.3'
+    implementation("io.micronaut.security:micronaut-security-jwt")
+    implementation 'io.micronaut.aws:micronaut-aws-sdk-v2'
+    implementation 'io.micronaut.aws:micronaut-function-aws'
+    implementation 'com.amazonaws:aws-lambda-java-events:3.11.0'
+}
+java {
+    sourceCompatibility = JavaVersion.toVersion('11')
+    targetCompatibility = JavaVersion.toVersion('11')
+}
+micronaut {
+    runtime("lambda_java")
+    testRuntime("junit5")
+    processing {
+        incremental(true)
+        annotations("com.example.*")
+    }
+}
