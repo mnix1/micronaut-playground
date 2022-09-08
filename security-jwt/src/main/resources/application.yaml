@@ -1,0 +1,29 @@
+micronaut:
+  security:
+    intercept-url-map:
+      - pattern: /companies/**
+        http-method: GET
+        access:
+          - isAuthenticated()
+      - pattern: /companies
+        http-method: POST
+        access:
+          - ROLE_USER
+      - pattern: /companies
+        http-method: DELETE
+        access:
+          - ROLE_ADMIN
+      - pattern: /companies/random/**
+        http-method: POST
+        access:
+          - isAnonymous()
+    token:
+      jwt:
+        signatures:
+          secret:
+            generator:
+              secret: qwertyuiopasdfghjklzxcvbnm1234567890
+              jws-algorithm: HS256
+  http:
+    client:
+      exception-on-error-status: false
