@@ -2,7 +2,7 @@ dependencies {
     annotationProcessor("io.micronaut.data:micronaut-data-document-processor")
     implementation("io.micronaut.data:micronaut-data-mongodb")
     implementation("org.mongodb:mongodb-driver-sync")
-    implementation 'com.fasterxml.jackson.module:jackson-module-parameter-names:2.13.3'
+    implementation 'com.fasterxml.jackson.module:jackson-module-parameter-names:2.13.4'
     implementation 'io.micronaut.aws:micronaut-aws-sdk-v2'
     implementation 'io.micronaut.aws:micronaut-function-aws'
     implementation 'com.amazonaws:aws-lambda-java-events:3.11.0'
