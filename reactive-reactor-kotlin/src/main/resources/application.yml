@@ -1,6 +1,6 @@
 micronaut:
   application:
-    name: reactive-reactor
+    name: reactive-reactor-kotlin
 netty:
   default:
     allocator:

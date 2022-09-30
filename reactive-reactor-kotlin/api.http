@@ -1,0 +1,7 @@
+GET http://localhost:8080/reactive-immediate
+###
+GET http://localhost:8080/reactive-streaming
+###
+GET http://localhost:8080/reactive-streaming-endless
+###
+GET http://localhost:8080/blocking
