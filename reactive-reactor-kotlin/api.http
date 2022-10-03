@@ -4,4 +4,8 @@ GET http://localhost:8080/reactive-streaming
 ###
 GET http://localhost:8080/reactive-streaming-endless
 ###
+GET http://localhost:8080/reactive-streaming-5
+###
 GET http://localhost:8080/blocking
+###
+GET http://localhost:8080/reactive-single
