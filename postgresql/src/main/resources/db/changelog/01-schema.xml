@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="create-book-table" author="username">
+        <createTable tableName="book">
+            <column name="id" type="varchar(255)">
+                <constraints nullable="false"
+                             unique="true"
+                             primaryKey="true"
+                             primaryKeyName="bookPK"/>
+            </column>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="order" type="integer">
+                <constraints nullable="false"/>
+            </column>
+            <column name="available" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="pages" type="integer">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_timestamp" type="datetime">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_timestamp" type="datetime">
+                <constraints nullable="false"/>
+            </column>
+            <column name="comments" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

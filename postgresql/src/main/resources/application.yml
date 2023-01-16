@@ -1,0 +1,16 @@
+micronaut:
+  application:
+    name: demo
+datasources:
+  default:
+    driver-class-name: org.postgresql.Driver
+    db-type: postgres
+    dialect: POSTGRES
+netty:
+  default:
+    allocator:
+      max-order: 3
+liquibase:
+  datasources:
+    default:
+      change-log: classpath:db/liquibase-changelog.xml
