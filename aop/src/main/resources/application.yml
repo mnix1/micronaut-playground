@@ -3,7 +3,7 @@ micronaut:
     name: http
   caches:
     slow-method:
-      maximumSize: 20
+      maximum-size: 20
 netty:
   default:
     allocator:
