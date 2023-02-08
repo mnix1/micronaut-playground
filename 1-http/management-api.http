@@ -1,0 +1,35 @@
+###beans
+GET http://localhost:8081/management/beans
+
+###health
+GET http://localhost:8081/management/health
+
+###info
+GET http://localhost:8081/management/info
+
+###loggers
+GET http://localhost:8081/management/loggers
+
+###metrics
+GET http://localhost:8081/management/metrics
+
+###refresh
+POST http://localhost:8081/management/refresh
+
+###routes
+GET http://localhost:8081/management/routes
+
+###threaddump
+GET http://localhost:8081/management/threaddump
+
+###env
+GET http://localhost:8081/management/env
+
+###stop
+GET http://localhost:8081/management/stop
+
+
+
+
+
+

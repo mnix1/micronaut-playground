@@ -10,6 +10,7 @@ import java.util.List;
 
 @Controller
 class CarController {
+
     private final List<Car> cars;
 
     CarController(List<Car> cars) {

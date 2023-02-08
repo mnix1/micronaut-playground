@@ -1,0 +1,28 @@
+micronaut:
+  application:
+    name: http
+  router:
+    static-resources:
+      swagger:
+        paths: classpath:META-INF/swagger
+        mapping: /swagger/**
+      swagger-ui:
+        paths: classpath:META-INF/swagger/views/swagger-ui
+        mapping: /swagger-ui/**
+  http:
+    client:
+      exception-on-error-status: false
+netty:
+  default:
+    allocator:
+      max-order: 3
+endpoints:
+  all:
+    port: 8090
+    enabled: true
+    path: /management/
+    sensitive: false
+#jackson:
+#  serialization:
+#    writeDatesAsTimestamps: false
+#  serialization-inclusion: always

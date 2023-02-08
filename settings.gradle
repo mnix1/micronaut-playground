@@ -1,9 +1,9 @@
 rootProject.name = "micronaut-playground"
 
-include 'http'
-include 'ioc'
-include 'configuration'
-include 'aop'
+include '1-http'
+include '2-ioc'
+include '3-configuration'
+include '4-aop'
 include 'book-app'
 include 'book-dynamodb'
 include 'book-data-mongodb'

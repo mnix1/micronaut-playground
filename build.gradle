@@ -54,13 +54,13 @@ subprojects {
         useJUnitPlatform()
     }
 
-    spotless {
-        java {
-            removeUnusedImports()
-            prettier(['prettier': '2.8.2', 'prettier-plugin-java': '2.0.0']).config(['parser': 'java', 'tabWidth': 4, 'printWidth': 140])
-            importOrder('', 'java', '\\#')
-        }
-    }
+//    spotless {
+//        java {
+//            removeUnusedImports()
+//            prettier(['prettier': '2.8.2', 'prettier-plugin-java': '2.0.0']).config(['parser': 'java', 'tabWidth': 4, 'printWidth': 140])
+//            importOrder('', 'java', '\\#')
+//        }
+//    }
 
     graalvmNative.toolchainDetection = false
     micronaut {

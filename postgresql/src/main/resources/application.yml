@@ -1,6 +1,6 @@
 micronaut:
   application:
-    name: demo
+    name: postgresql
 datasources:
   default:
     driver-class-name: org.postgresql.Driver

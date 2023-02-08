@@ -1,0 +1,39 @@
+## [http](https://docs.micronaut.io/latest/guide/index.html#httpServer)
+- @Controller("/companies")
+- HTTP Routing Annotations
+    - @Delete - DELETE
+    - @Get - GET
+    - @Head - HEAD
+    - @Options - OPTIONS
+    - @Patch - PATCH
+    - @Put - PUT
+    - @Post - POST
+    - @Trace - TRACE
+- [@Client("/vehicles") HttpClient client](https://docs.micronaut.io/latest/guide/index.html#clientAnnotation);
+- Parameter Binding Annotation
+    - @Body - Specifies the parameter for the body of the request - @Body String body
+    - @CookieValue - Specifies parameters to be sent as cookies - @CookieValue String myCookie
+    - @Header - Specifies parameters to be sent as HTTP headers - @Header String requestId
+    - @QueryValue - Customizes the name of the URI parameter to bind from - @QueryValue("userAge") Integer age
+    - @PathVariable - Binds a parameter exclusively from a Path Variable. - @PathVariable Long id
+    - @RequestAttribute - Specifies parameters to be set as request attributes - @RequestAttribute Integer locationId
+- [Error Handling](https://docs.micronaut.io/1.2.6/guide/#errorHandling)
+- [@Filter("/hello/**")](https://docs.micronaut.io/latest/guide/index.html#filters)
+- [@Version](https://docs.micronaut.io/latest/guide/index.html#apiVersioning)
+- [OpenApi](https://micronaut-projects.github.io/micronaut-openapi/latest/guide/index.html)
+- [Management](https://docs.micronaut.io/latest/guide/index.html#providedEndpoints)
+
+- Omówić strukturę aplikacji
+  - Omówić build.gradle
+  - Omówić application.yml
+- Omówić CompanyController
+- Przetestować API używając klienta company-api.http
+- Omówić logi aplikacji
+- Pokazać swagger-ui http://localhost:8080/swagger-ui/
+- Omówić management i przetestować używając klienta management-api.http
+- Testy
+  - Omówić application-test.yml
+  - Testy integracyjne i Client HTTP //HTTP-test-1
+  - Declarative client HTTP //HTTP-test-2
+  - Błędy //HTTP-test-3
+  - Filtry //HTTP-test-4

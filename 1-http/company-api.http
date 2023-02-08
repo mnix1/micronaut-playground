@@ -1,0 +1,77 @@
+###not existing endpoint
+GET http://localhost:8080/
+# jeśli endpoint się nie zmapuje domyślnie zwracany jest status 404 i błąd w formacie vnd.error
+# https://github.com/blongden/vnd.error
+
+
+###create random
+POST http://localhost:8080/companies/random
+# domyślna serializacja Instant
+# https://docs.micronaut.io/latest/guide/index.html#jsonBinding
+
+> {%
+    client.global.set('id', response.body.id)
+%}
+
+
+###list
+GET http://localhost:8080/companies
+
+
+
+###find
+GET http://localhost:8080/companies?employeesFrom=10&employeesTo=100
+
+
+
+###find by name
+GET http://localhost:8080/companies/findByName?namePrefix=A&nameSuffix=A
+//TODO co jeśli brak namePrefix?
+
+
+
+###get by id
+GET http://localhost:8080/companies/{{id}}
+Content-Type: application/json
+//TODO co jeśli brak header Content-Type
+
+
+
+###create many random
+POST http://localhost:8080/companies/random/100
+
+
+
+###delete by id
+DELETE http://localhost:8080/companies/{{id}}
+
+
+
+###delete all
+DELETE http://localhost:8080/companies
+
+
+
+###create with body
+POST http://localhost:8080/companies
+Content-Type: application/json
+
+{
+  "name": "Mroczek-Białek",
+  "industry": "Research",
+  "employees": 534,
+  "createdDateTime": "2018-09-02T10:23:13Z",
+  "facilities": [
+    {
+      "country": "Argentina",
+      "city": "Buenos Aires"
+    }
+  ]
+}
+
+> {%
+    client.global.set('id', response.body.id)
+%}
+###TODO co jeśli employees=-1?
+#TODO co jeśli industry=""?
+#TODO co jeśli createdDateTime="2024-09-02T10:23:13Z"?
