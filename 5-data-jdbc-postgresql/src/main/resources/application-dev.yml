@@ -1,0 +1,5 @@
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:15432/company
+    username: company
+    password: company

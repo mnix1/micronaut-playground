@@ -1,0 +1,23 @@
+micronaut:
+  application:
+    name: data-jdbc-postgresql
+  http:
+    client:
+      exception-on-error-status: false
+netty:
+  default:
+    allocator:
+      max-order: 3
+jackson:
+  serialization:
+    writeDatesAsTimestamps: false
+  serialization-inclusion: always
+datasources:
+  default:
+    driver-class-name: org.postgresql.Driver
+    db-type: postgres
+    dialect: POSTGRES
+liquibase:
+  datasources:
+    default:
+      change-log: classpath:db/liquibase-changelog.xml

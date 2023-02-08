@@ -1,0 +1,26 @@
+version: '3.9'
+
+services:
+  db-company:
+    image: postgres:15.1-alpine
+    environment:
+      POSTGRES_USER: company
+      POSTGRES_PASSWORD: company
+      POSTGRES_DB: company
+    ports:
+      - target: 5432
+        published: 15432
+        protocol: tcp
+        mode: host
+  sonarqube:
+    image: sonarqube:community
+    hostname: sonarqube
+    container_name: sonarqube
+    depends_on:
+      - db-company
+    environment:
+      SONAR_JDBC_URL: jdbc:postgresql://db-company:5432/company
+      SONAR_JDBC_USERNAME: company
+      SONAR_JDBC_PASSWORD: company
+    ports:
+      - "9000:9000"

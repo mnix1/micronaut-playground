@@ -50,7 +50,7 @@ class CompanyService {
         companies.clear();
     }
 
-    private Company generateRandomCompany() {
+    protected Company generateRandomCompany() {
         Faker faker = new Faker(Locale.forLanguageTag("PL"));
         return new Company(
             UUID.randomUUID(),
