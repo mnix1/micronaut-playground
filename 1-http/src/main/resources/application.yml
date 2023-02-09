@@ -22,6 +22,9 @@ endpoints:
     enabled: true
     path: /management/
     sensitive: false
+#logger:
+#  levels:
+#    io.micronaut.http: TRACE
 #jackson:
 #  serialization:
 #    writeDatesAsTimestamps: false

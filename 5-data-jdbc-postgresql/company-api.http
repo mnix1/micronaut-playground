@@ -1,0 +1,5 @@
+###create many random
+POST http://localhost:8080/companies/random/100
+
+###list
+GET http://localhost:8080/companies/view?page=0&size=10&sort=name,desc
