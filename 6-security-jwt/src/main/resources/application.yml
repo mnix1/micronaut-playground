@@ -1,4 +1,6 @@
 micronaut:
+  application:
+    name: security-jwt
   security:
     intercept-url-map:
       - pattern: /companies/**

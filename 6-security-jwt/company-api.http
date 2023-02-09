@@ -1,0 +1,16 @@
+###create random
+POST http://localhost:8080/companies/random
+
+> {%
+    client.global.set('id', response.body.id)
+%}
+
+
+###list
+GET http://localhost:8080/companies
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1VTRVIiXSwic3ViIjoidGVzdC11c2VyIiwiaWF0IjoxNjYyNjY0MDgzLCJleHAiOjI2NjI2NjQwODN9.VhPwqksPlxE22YD1TLFWegfOf0rRVB9W7ixLKImjPSQ
+
+
+
+###delete all
+DELETE http://localhost:8080/companies

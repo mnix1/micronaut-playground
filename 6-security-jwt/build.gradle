@@ -2,6 +2,7 @@ application {
     mainClass.set("com.example.SecurityJWTApplication")
 }
 dependencies {
+    implementation project(':1-http')
     annotationProcessor("io.micronaut.security:micronaut-security-annotations")
     implementation("io.micronaut.security:micronaut-security-jwt")
 }

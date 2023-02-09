@@ -24,11 +24,6 @@
 
 
 ## DOCUMENTATION:
-## [data](https://micronaut-projects.github.io/micronaut-data/latest/guide/)
-- https://guides.micronaut.io/latest/micronaut-jpa-hibernate-gradle-java.html
-- https://guides.micronaut.io/latest/micronaut-data-jdbc-repository-gradle-java.html
-
-
 ## [aws](https://micronaut-projects.github.io/micronaut-aws/3.5.1/guide/index.html)
 - https://guides.micronaut.io/latest/mn-serverless-function-aws-lambda-gradle-java.html
 

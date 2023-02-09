@@ -18,6 +18,7 @@ import org.junit.jupiter.api.Test;
 import java.time.Instant;
 import java.util.List;
 
+import static com.example.CompanyType.PUBLICLY_LISTED;
 import static io.micronaut.http.HttpRequest.POST;
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -113,13 +114,13 @@ class IntegrationTest {
     private void createGoogleCompany() {
         client
             .toBlocking()
-            .exchange(POST("/", new CompanyRequestBody("Google", "IT", 10, Instant.now(), List.of())).bearerAuth(VALID_USER_TOKEN));
+            .exchange(POST("/", new CompanyRequestBody("Google", "IT", PUBLICLY_LISTED, 10, Instant.now(), List.of())).bearerAuth(VALID_USER_TOKEN));
     }
 
     private void createAppleCompany() {
         client
             .toBlocking()
-            .exchange(POST("/", new CompanyRequestBody("Apple", "IT", 8, Instant.now(), List.of())).bearerAuth(VALID_USER_TOKEN));
+            .exchange(POST("/", new CompanyRequestBody("Apple", "IT", PUBLICLY_LISTED, 8, Instant.now(), List.of())).bearerAuth(VALID_USER_TOKEN));
     }
 
     private void clearCompanies() {
