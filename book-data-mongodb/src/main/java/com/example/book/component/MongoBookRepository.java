@@ -1,6 +1,7 @@
 package com.example.book.component;
 
 import io.micronaut.data.mongodb.annotation.MongoRepository;
+import io.micronaut.data.mongodb.annotation.MongoUpdateQuery;
 import io.micronaut.data.repository.CrudRepository;
 
 import java.util.List;
@@ -29,4 +30,7 @@ interface MongoBookRepository extends CrudRepository<BookRecord, String>, BookRe
     default List<Book> list() {
         return StreamSupport.stream(findAll().spliterator(), false).map(BookRecord::toDomain).toList();
     }
+
+    @MongoUpdateQuery(filter = "", update = "{$pull:{comments: {$in: :comments}}}")
+    void deleteComments(List<String> comments);
 }
